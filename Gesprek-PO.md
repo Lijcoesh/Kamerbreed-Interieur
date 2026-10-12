@@ -45,7 +45,7 @@ Na dit gesprek moet de hele site gebouwd kunnen worden zonder nog iets te vragen
 
 ## 3. Wat komt erop
 
-7. ★ Ik denk aan: **Home · Projecten · Diensten · Over ons · Contact**. Streep weg wat niet hoeft, noem wat mist. _Mag ook allemaal op één lange pagina._
+7. ★ Ik denk aan: **Home · Projecten · Diensten · Over ons · Contact**. Streep weg wat niet hoeft, noem wat mist. Wat vragen klanten je het vaakst voordat ze iets bestellen? _Mag ook allemaal op één lange pagina._
 8. ★ Projecten: hoeveel ongeveer, en wat wil je per project laten zien? Alleen foto's, of ook plaats, wat er gedaan is, welk materiaal?
 9. ★ Welke diensten en producten wil je noemen? Wil je de merknaam BD Line op de site, en heb je daar toestemming en beeldmateriaal van BD Line voor?
 10. Wil je prijzen of een indicatie op de site? _Geen prijzen, "vraag een offerte"._
