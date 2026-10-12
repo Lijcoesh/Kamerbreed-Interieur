@@ -34,9 +34,9 @@ Na dit gesprek moet de hele site gebouwd kunnen worden zonder nog iets te vragen
 ## 1. Je bedrijf
 
 1. ★ Wat doe je precies? Vertel het alsof ik een klant ben die je op een verjaardag tegenkomt. En wat doe je juist níét? _Ik zag raambekleding (BD Line) en vloerkleden/tapijt. Klopt dat? Doe je ook gordijnen, vloeren, horren, inmeten en monteren?_
-2. ★ Voor wie werk je meestal? Particulieren of bedrijven, wat voor huizen of panden?
+2. ★ Voor wie werk je meestal? Particulieren of bedrijven, wat voor huizen of panden? En waar: alleen het Westland, of verder?
 3. ★ Waarom kiezen klanten voor jou en niet voor een ander?
-4. Hoe lang bestaat het bedrijf, en werk je alleen of met anderen?
+4. ★ Hoe lang bestaat het bedrijf, en werk je alleen of met anderen? Wil je zelf met naam en foto op de site, of liever alleen het bedrijf? _Naam en foto op "Over ons", de rest draait om het bedrijf._
 
 ## 2. Wat moet de site doen
 
@@ -59,8 +59,8 @@ Na dit gesprek moet de hele site gebouwd kunnen worden zonder nog iets te vragen
 
 ## 5. Foto's en tekst
 
-15. ★ Heb je foto's van je werk, en van jezelf of je team? Hoeveel ongeveer, en wie heeft ze gemaakt? _Eigen foto's of van een fotograaf die toestemming geeft: prima. Foto's van internet of van een leverancier: alleen met hun toestemming. Zelfde geld voor foto's van klanten of herkenbare huizen_
-16. ★ Is "Thuis kiezen en je thuis voelen!" (op de huidige pagina) je slogan, en wil je die houden?
+15. ★ Heb je foto's van je werk, en van jezelf of je team? Hoeveel ongeveer, en wie heeft ze gemaakt? _Eigen foto's of van een fotograaf die toestemming geeft: prima. Foto's van internet of van een leverancier: alleen met hun toestemming. Hetzelfde geldt voor foto's van klanten of herkenbare huizen._
+16. ★ Blijven het logo en de slogan "Thuis kiezen en je thuis voelen!" (op de huidige pagina)? Wil je het kleuren thema van het logo ook terug zien op de site, of gebruik je liever andere kleuren? _Logo en slogan blijven, en de kleuren van het logo (blauw, zwart, wit) worden de basis van de site._
 17. Heb je echte reviews (Google, Werkspot) of keurmerken en garanties die erop mogen?
 
 ## 6. Uitstraling
