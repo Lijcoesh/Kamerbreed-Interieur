@@ -48,3 +48,5 @@ Dingen die makkelijk vergeten worden maar juridisch, ethisch of qua toegankelijk
 ## Openstaand
 
 _Noteer hier tijdens het werk punten die vóór oplevering nog geregeld moeten worden. Leeg = niets bekend, niet = alles gedaan; loop de lijst hierboven altijd volledig na._
+
+- Lorem ipsum in het MVP vervangen door de teksten van de PO (die schrijft hij zelf).
