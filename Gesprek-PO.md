@@ -12,7 +12,7 @@ Na dit gesprek moet de hele site gebouwd kunnen worden zonder nog iets te vragen
 |---|---|---|
 | Naam in KvK | Kamerbreed Interieur Jeroen van der Eijk | [Drimble](https://drimble.nl/bedrijf/naaldwijk/7511752/kamerbreed-interieur-jeroen-van-der-eijk.html) |
 | Rechtsvorm | Vennootschap onder firma (vof), 1 medewerker | Drimble |
-| KvK-nummer | 27067893 (hoofdvestiging 000007511752) | Drimble, nog checken op kvk.nl |
+| KvK-nummer | 27067893 (hoofdvestiging 000007511752) | Drimble, nummer klopt volgens kvk.nl |
 | Sinds | 1 januari 1994 | Drimble |
 | Adres | Schubertstraat 13, 2671 TA Naaldwijk (Westland) | [BD Line](https://www.bdline.nl/verkooppunten/kamerbreed-interieur-jeroen-van-der-eijk), [Telefoonboek](https://www.telefoonboek.nl/bedrijven/t2669945/naaldwijk/kamerbreed-interieur-jeroen-van-der-eijk/) |
 | Showroom | Showroom aan huis + opslagruimte, ma t/m vr op afspraak | BD Line, Telefoonboek |
