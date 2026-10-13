@@ -12,23 +12,23 @@ import { serifFontFamily } from 'src/Theme/typography';
 const tasks = [
     {
         title: 'Je vraag beantwoorden',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam quis nostrud.',
     },
     {
         title: 'Bij je thuis langskomen',
-        text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
+        text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate.',
     },
     {
         title: 'Advies over vloer of raambekleding',
-        text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.',
+        text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore. Eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident sunt in culpa.',
     },
     {
         title: 'Inmeten en de offerte maken',
-        text: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.',
+        text: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Deserunt mollit anim id est laborum, sed ut perspiciatis unde omnis iste natus error.',
     },
     {
         title: 'Leggen of monteren',
-        text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.',
+        text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. Doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis.',
     },
 ];
 
@@ -160,7 +160,7 @@ export default function AboutWorkflow() {
                 <SectionHeader
                     id="workflow-title"
                     title="Hoe ik werk"
-                    lead="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sem at nibh elementum imperdiet."
+                    lead="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum, praesent mauris fusce nec tellus sed augue semper porta. Mauris massa, vestibulum lacinia arcu eget nulla."
                 />
                 <div className={classes.panel}>
                     <div className={classes.columns} aria-hidden>
