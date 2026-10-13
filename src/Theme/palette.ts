@@ -2,7 +2,6 @@ import type { PaletteOptions } from '@mui/material/styles';
 
 import {
     background,
-    black,
     border,
     error,
     ink,
@@ -21,11 +20,11 @@ const palette: PaletteOptions = {
         dark: oliveDark,
         contrastText: onOlive,
     },
-    // Oker: knoppen voor bellen en mailen. Altijd met donkere tekst.
+    // Oker: knoppen voor bellen, mailen en versturen. Altijd met witte tekst.
     secondary: {
         main: ochre,
         dark: ochreDark,
-        contrastText: black,
+        contrastText: white,
     },
     error: { main: error },
     background: {

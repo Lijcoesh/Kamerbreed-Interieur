@@ -46,6 +46,7 @@ Kennismakingsgesprek 12-10-2026, aangevuld met wat daarvoor al bekend was.
 
   De koppen staan in een klassieke schreefletter, de rest in een ronde schreefloze letter. De fonts zoek ik nog uit.
   Let op: witte tekst op de okerkleur heeft een contrast van ongeveer 2,6:1 en haalt WCAG AA niet. Dat los ik op in het design (bijvoorbeeld donkere tekst op de knop, of een donkerdere tint oker).
+  **Gekozen (13-10-2026):** een donkerdere tint, koper `#A06029` (hover `#8E5525`), met witte tekst: 5,0:1. Eerst stond er zwarte tekst op de oude oker; dat vond de ontwikkelaar niet mooi. Laten zien aan de PO, want de knop is donkerder dan op de oude site.
 - **Voorbeeldsites:** heeft hij niet.
 - **Wat hij absoluut niet wil:** niets genoemd.
 

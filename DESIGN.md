@@ -4,8 +4,8 @@ description: Website van een eenmansvloerenbedrijf in het Westland; de categorie
 colors:
   olive: "#4F4A30"
   oliveDark: "#3D3925"
-  ochre: "#D49259"
-  ochreDark: "#C27F45"
+  ochre: "#A06029"
+  ochreDark: "#8E5525"
   logoBlue: "#0884AF"
   black: "#1D1F1E"
   ink: "#4F4E4A"
@@ -70,24 +70,24 @@ spacing:
 components:
   button-contact:
     backgroundColor: "{colors.ochre}"
-    textColor: "{colors.black}"
+    textColor: "{colors.white}"
     rounded: "{rounded.borderRadius}"
     typography: "{typography.button}"
     padding: "10px 24px"
     height: "56px"
   button-contact-hover:
     backgroundColor: "{colors.ochreDark}"
-    textColor: "{colors.black}"
+    textColor: "{colors.white}"
   button-submit:
     backgroundColor: "{colors.ochre}"
-    textColor: "{colors.black}"
+    textColor: "{colors.white}"
     rounded: "{rounded.borderRadius}"
     typography: "{typography.button}"
     padding: "8px 24px"
     height: "56px"
   button-submit-hover:
     backgroundColor: "{colors.ochreDark}"
-    textColor: "{colors.black}"
+    textColor: "{colors.white}"
   button-outlined:
     backgroundColor: "transparent"
     textColor: "{colors.olive}"
@@ -141,7 +141,7 @@ Bewust geweigerd (direction contract): de anonieme template met stockfoto, revie
 
 **Key Characteristics:**
 - Gebroken wit vlak, olijfbruine koppen, warm donkergrijze tekst.
-- Oker alleen als knopvlak met donkere tekst en als teken voor "actief".
+- Oker alleen als knopvlak met witte tekst en als teken voor "actief".
 - Haarlijnen in plaats van schaduw; vlak en rustig.
 - Bellen en mailen altijd even zwaar.
 - Fotoplekken zijn neutrale placeholders tot de echte foto's er zijn.
@@ -149,15 +149,15 @@ Bewust geweigerd (direction contract): de anonieme template met stockfoto, revie
 
 ## Colors
 
-Een gedempt, warm aardepalet: olijf en oker van de oude site, logoblauw als functionele uitzondering. Bron: `src/colors.ts`, gemapt op MUI-rollen in `src/Theme/palette.ts`.
+Een gedempt, warm aardepalet: olijf en oker van de oude site, logoblauw als functionele uitzondering. De oker van de oude site (#D49259) is donkerder gemaakt tot koper (#A06029), zodat witte tekst erop leesbaar is (AA). Bron: `src/colors.ts`, gemapt op MUI-rollen in `src/Theme/palette.ts`.
 
 ### Primary
 - **Olijfbruin** (`olive`): alle koppen (h1 t/m h3, footerkoppen, stapnummers en de nummers en het "ik" in de werkbon), de stippellijn in de werkbon (op 45%), de lead (`subtitle1`), hovertekst en actieve navigatie, en het vlak van de contactband. MUI `primary.main`.
 - **Diep olijf** (`oliveDark`): MUI `primary.dark`, de hovertoon van olijf.
 
 ### Secondary
-- **Oker** (`ochre`): uitsluitend het vlak van de actieknoppen (de contactknoppen en "Versturen" in het contactformulier) en de skip-link (altijd met `black` als tekst), het "actief"-streepje onder de navigatie en het blokje in het mobiele menu, en de tekstselectie (oker op 45% met zwarte tekst). MUI `secondary.main`, `contrastText: black`.
-- **Donker oker** (`ochreDark`): MUI `secondary.dark`, hover van de okerknoppen.
+- **Oker** (`ochre`): uitsluitend het vlak van de actieknoppen (de contactknoppen en "Versturen" in het contactformulier) en de skip-link (altijd met `white` als tekst en iconen: 5,0:1), het "actief"-streepje onder de navigatie (5,0:1 op wit) en het blokje in het mobiele menu, en de tekstselectie (oker op 45% met zwarte tekst, ongeveer 8:1). MUI `secondary.main`, `contrastText: white`. Op de olijfband is de rand van de okerknop maar 1,8:1 tegen olijf; dat mag onder WCAG 1.4.11 omdat het witte label de knop herkenbaar maakt, maar het vlak zelf onderscheidt zich daar nauwelijks.
+- **Donker oker** (`ochreDark`): MUI `secondary.dark`, hover van de okerknoppen (wit erop 6,0:1).
 
 ### Tertiary
 - **Logoblauw** (`logoBlue`): alleen in het logo en als focusrand (2px, offset 2) op wit en op `background`, waar hij 3:1 haalt. Ook de focusrand om een fout invoerveld, zodat de rode rand blijft staan.
@@ -171,11 +171,11 @@ Een gedempt, warm aardepalet: olijf en oker van de oude site, logoblauw als func
 - **Veldrand** (`inputBorder`): de rand van invoervelden in rust; haalt 3:1 op wit. Bron: `src/Theme/Components/inputs.ts`.
 - **Placeholdervlak** (`placeholder`): vlak van `PhotoPlaceholder`.
 - **Tekst op olijf** (`onOlive`, `onOliveMuted`): kop en lead in de contactband.
-- **Zwart** (`black`): tekst op oker, selectietekst, basis van de schaduwtokens.
+- **Zwart** (`black`): selectietekst en basis van de schaduwtokens. Niet meer voor tekst op oker.
 - **Fout** (`error`): MUI `error.main` voor formulierfouten: 2px rand van een fout veld, de foutmelding eronder, en rand en titel van de niet-verstuurd-melding.
 
 ### Named Rules
-**The Nooit-wit-op-oker Rule.** Oker draagt altijd donkere tekst (`black`). Witte tekst op oker haalt geen AA en komt niet voor.
+**The Wit-op-koperoker Rule.** Oker draagt altijd witte tekst en iconen (`white`), en alleen op de koperen `ochre` (5,0:1) of `ochreDark` (6,0:1). Nooit wit op een lichtere oker zoals de #D49259 van de oude site (2,6:1), en geen zwarte tekst meer op oker.
 
 **The Oker-is-actie Rule.** Oker is een knopvlak voor contact (bellen, mailen, WhatsApp, en het versturen van het contactformulier) of het teken voor "actief". Geen okeren koppen, achtergronden, iconen of decoratie.
 
@@ -247,8 +247,8 @@ Zacht afgeronde, verder rechthoekige vormen. Eén radius (`borderRadius`, via `s
 ### Buttons
 Stevig en rustig: een gevuld vlak, geen schaduw, geen hoofdletters. Bron: `src/Theme/Components/buttons.ts`.
 - **Shape:** zacht afgerond (`borderRadius`), minimaal `touchTarget` hoog; `size="large"` minimaal 56px met 24px zijpadding.
-- **Contactknop (contained secondary):** oker vlak, zwarte tekst, icoon links, label ("Bellen"/"Mailen") met het nummer of adres eronder in gewicht 400. Komt alleen voor via `ContactButtons`.
-- **Verstuurknop (contained secondary, large):** hetzelfde okervlak met zwarte tekst, zonder icoon, links uitgelijnd onder het formulier; label "Versturen", tijdens verzenden "Bezig met versturen…".
+- **Contactknop (contained secondary):** oker vlak, witte tekst en wit icoon, icoon links, label ("Bellen"/"Mailen") met het nummer of adres eronder in gewicht 400. Komt alleen voor via `ContactButtons`.
+- **Verstuurknop (contained secondary, large):** hetzelfde okervlak met witte tekst, zonder icoon, links uitgelijnd onder het formulier; label "Versturen", tijdens verzenden "Bezig met versturen…".
 - **Outlined primary:** olijf tekst en rand op transparant, met pijlicoon rechts; voor doorlinken ("Alle projecten bekijken", "Meer over mij", en in `size="large"` "Bekijk mijn projecten" op Over mij).
 - **Hover / Focus:** achtergrond- en randkleur in 160ms ease-out naar de `dark`-toon. Focus: 2px `logoBlue` outline met offset 2 op elk `ButtonBase`-element; wit binnen de olijfband.
 - **Icon button:** `touchTarget` vierkant, olijf, zelfde radius.
@@ -309,12 +309,12 @@ Wit met haarlijn boven: merk en slogan, contact, pagina's, bedrijfsgegevens (`Co
 Altijd onderstreept (1px, offset 0.2em, `currentColor`), 2px bij hover, focusrand in logoblauw. Bron: `overrideMuiLink` in `src/Theme/Components/layout.ts`.
 
 ### SkipLink
-Oker vlak met zwarte tekst, logoblauwe focusrand; eerste focusbare element.
+Oker vlak met witte tekst, logoblauwe focusrand; eerste focusbare element.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** gebruik oker alleen als knopvlak met `black` tekst of als "actief"-teken.
+- **Do** gebruik oker alleen als knopvlak met `white` tekst of als "actief"-teken.
 - **Do** toon bellen en mailen altijd samen en even zwaar, via `ContactButtons`.
 - **Do** scheid secties met een 1px `border`-haarlijn en `sectionSpacing`.
 - **Do** gebruik `background` als paginagrond; wit alleen voor appbar, footer, losse panelen en invoervelden.
@@ -324,7 +324,7 @@ Oker vlak met zwarte tekst, logoblauwe focusrand; eerste focusbare element.
 - **Do** haal kleuren uit `src/colors.ts` en maten uit `src/Theme/sizes.ts`.
 
 ### Don't:
-- **Don't** zet witte tekst op oker.
+- **Don't** zet witte tekst op een lichtere oker dan `ochre` (zoals de #D49259 van de oude site), en geen zwarte tekst op oker.
 - **Don't** gebruik logoblauw buiten het logo en de focusrand.
 - **Don't** gebruik schaduw voor kaarten, panelen of secties; alleen menu's en de drawer hebben diepte.
 - **Don't** maak bellen of mailen dominanter dan de ander, ook niet met een los nummer in de desktop-appbar.

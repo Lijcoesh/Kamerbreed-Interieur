@@ -54,7 +54,7 @@ Eén vakman die alles zelf doet. Hij komt bij de klant thuis, adviseert, en legt
 - Slogan: **"Thuis kiezen en je thuis voelen!"** blijft.
 - Logo blijft: "KAMER" in blauwe strepen als een jaloezie, "BREED" wit op een zwarte tapijtrol, "INTERIEUR" in blauwe blokletters. Het staat samen met de bedrijfsnaam in de appbar. Het originele bestand moet nog komen.
 - Gevoel, in de woorden van de eigenaar: **netjes en persoonlijk**. Liever rustig en verzorgd dan spectaculair.
-- Kleuren van de huidige site blijven, aangevuld met de logokleuren (zie Gesprek-PO.md). Deze zijn door de eigenaar vastgelegd.
+- Kleuren van de huidige site blijven, aangevuld met de logokleuren (zie Gesprek-PO.md). Deze zijn door de eigenaar vastgelegd. Uitzondering: de knopkleur is een donkerdere tint van de oker (koper), zodat witte knoptekst leesbaar blijft (13-10-2026, nog laten zien aan de PO).
 - De eigenaar schrijft zijn teksten zelf. Tot die tijd: lorem ipsum.
 - Er waren geen voorbeeldsites en niets wat hij absoluut niet wil.
 - **Vorm: de categoriestandaard, verzorgd uitgevoerd.** Bij de keuze van de richting (12-10-2026) is bewust gekozen voor wat bezoekers van een lokale vakman verwachten, boven een eigenzinnige richting. Ook vastgelegd: niet zakelijk of anoniem, en niet trendy. De site moet jaren meegaan.

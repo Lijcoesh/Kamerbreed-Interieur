@@ -5,10 +5,11 @@
 export const olive = '#4F4A30';
 export const oliveDark = '#3D3925';
 
-// Accent: alleen als knopvlak (met donkere tekst) en als teken voor "actief".
-// Witte tekst op oker haalt geen AA, dus nooit wit op oker.
-export const ochre = '#D49259';
-export const ochreDark = '#C27F45';
+// Accent: alleen als knopvlak (met witte tekst) en als teken voor "actief".
+// Donkerder dan de oker van de oude site (#D49259), zodat witte tekst AA haalt: 5,0:1, hover 6,0:1.
+// Wit op de oude oker haalde maar 2,6:1 (keuze ontwikkelaar, 13-10-2026).
+export const ochre = '#A06029';
+export const ochreDark = '#8E5525';
 
 // Logo
 export const logoBlue = '#0884AF';

@@ -1,6 +1,6 @@
 import { makeStyles } from 'tss-react/mui';
 
-import { black, logoBlue, ochre } from 'src/colors';
+import { logoBlue, ochre, white } from 'src/colors';
 import { borderRadius } from 'src/Theme/sizes';
 
 // Onzichtbaar tot hij toetsenbordfocus krijgt; springt naar <main id="main">
@@ -13,7 +13,7 @@ const useStyles = makeStyles()(theme => ({
         padding: theme.spacing(1.5, 2.5),
         borderRadius,
         backgroundColor: ochre,
-        color: black,
+        color: white,
         fontWeight: 600,
         textDecoration: 'none',
         transform: 'translateY(-200%)',
