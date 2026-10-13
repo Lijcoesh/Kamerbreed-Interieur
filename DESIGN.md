@@ -108,6 +108,11 @@ components:
   panel:
     backgroundColor: "{colors.white}"
     rounded: "{rounded.borderRadius}"
+  werkbon:
+    backgroundColor: "{colors.white}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.borderRadius}"
+    padding: "24px 40px"
   input:
     backgroundColor: "{colors.white}"
     textColor: "{colors.ink}"
@@ -147,7 +152,7 @@ Bewust geweigerd (direction contract): de anonieme template met stockfoto, revie
 Een gedempt, warm aardepalet: olijf en oker van de oude site, logoblauw als functionele uitzondering. Bron: `src/colors.ts`, gemapt op MUI-rollen in `src/Theme/palette.ts`.
 
 ### Primary
-- **Olijfbruin** (`olive`): alle koppen (h1 t/m h3, footerkoppen, stapnummers), de lead (`subtitle1`), hovertekst en actieve navigatie, en het vlak van de contactband. MUI `primary.main`.
+- **Olijfbruin** (`olive`): alle koppen (h1 t/m h3, footerkoppen, stapnummers en de nummers en het "ik" in de werkbon), de stippellijn in de werkbon (op 45%), de lead (`subtitle1`), hovertekst en actieve navigatie, en het vlak van de contactband. MUI `primary.main`.
 - **Diep olijf** (`oliveDark`): MUI `primary.dark`, de hovertoon van olijf.
 
 ### Secondary
@@ -159,10 +164,10 @@ Een gedempt, warm aardepalet: olijf en oker van de oude site, logoblauw als func
 
 ### Neutral
 - **Gebroken wit** (`background`): de grond van elke pagina, ook van het mobiele menu. MUI `background.default`.
-- **Wit** (`white`): appbar, footer (de tijdelijke logo-JPEG heeft een witte grond) losse panelen zoals het binnenzonweringsblok en het formulierpaneel, en invoervelden. MUI `background.paper`. Ook de focusrand op de olijfband.
+- **Wit** (`white`): appbar, footer (de tijdelijke logo-JPEG heeft een witte grond) losse panelen zoals het binnenzonweringsblok, het formulierpaneel en de werkbon, en invoervelden. MUI `background.paper`. Ook de focusrand op de olijfband.
 - **Warm donkergrijs** (`ink`): lopende tekst, navigatielinks, tekst in placeholders, veldlabels en veldtekst, en de hoverrand van een invoerveld. MUI `text.primary`.
-- **Gedempt grijs** (`muted`): secundaire tekst in de footer, "(optioneel)" en hints bij veldlabels, de tekenteller en de privacynotitie onder het formulier. MUI `text.secondary`.
-- **Haarlijn** (`border`): sectiescheidingen, appbar- en footerrand, panelrand, stapscheidingen. MUI `divider`. Niet voor invoervelden: op wit haalt hij geen 3:1.
+- **Gedempt grijs** (`muted`): secundaire tekst in de footer, "(optioneel)" en hints bij veldlabels, de tekenteller, de privacynotitie onder het formulier en de kolomkoppen "Wat"/"Wie" van de werkbon. MUI `text.secondary`.
+- **Haarlijn** (`border`): sectiescheidingen, appbar- en footerrand, panelrand, stapscheidingen, rijen van de werkbon en van de dienstenlijst op Over mij. MUI `divider`. Niet voor invoervelden: op wit haalt hij geen 3:1.
 - **Veldrand** (`inputBorder`): de rand van invoervelden in rust; haalt 3:1 op wit. Bron: `src/Theme/Components/inputs.ts`.
 - **Placeholdervlak** (`placeholder`): vlak van `PhotoPlaceholder`.
 - **Tekst op olijf** (`onOlive`, `onOliveMuted`): kop en lead in de contactband.
@@ -190,16 +195,16 @@ Een gedempt, warm aardepalet: olijf en oker van de oude site, logoblauw als func
 ### Hierarchy
 - **h1** (600, vloeiend 2.4 tot 3.75rem, 1.08, -0.015em): één per pagina, het aanbod.
 - **h2** (600, vloeiend 1.9 tot 2.6rem, 1.15, -0.01em): sectiekoppen via `SectionHeader`, en de contactband.
-- **h3** (600, 1.375rem, 1.25): dienstnamen, stappen, paneelkoppen (ook "Stuur een bericht", "Werkgebied" en "Bedrijfsgegevens" op de contactpagina, als h2-element), de bevestiging na versturen.
+- **h3** (600, 1.375rem, 1.25): dienstnamen, stappen, taken in de werkbon, groepsnamen in de dienstenlijst op Over mij, paneelkoppen (ook "Stuur een bericht", "Werkgebied" en "Bedrijfsgegevens" op de contactpagina, als h2-element), de bevestiging na versturen.
 - **subtitle1** (500, vloeiend 1.25 tot 1.5rem, 1.4, olijf): de slogan als lead onder de h1.
 - **body1** (400, 1.125rem = 18px, 1.6): lopende tekst; regels begrensd op 40 tot 62ch.
 - **body2** (400, 1rem, 1.55): korte samenvattingen onder dienstkaarten, de privacynotitie onder de verstuurknop.
 - **button** (600, 1.0625rem, geen hoofdletters, geen letterspatiëring).
 
-Alle koppen zijn olijf, gewicht 600, `text-wrap: balance`; body heeft `text-wrap: pretty`. Stapnummers in de werkwijze zijn Source Serif 4 500, 2.25rem, oldstyle-cijfers, olijf. Formuliertekst: veldlabels 600, 1.0625rem, `ink`; veldtekst 1.125rem; hints, foutmeldingen (500) en de tekenteller 1rem, de teller met tabulaire cijfers.
+Alle koppen zijn olijf, gewicht 600, `text-wrap: balance`; body heeft `text-wrap: pretty`. Stapnummers in de werkwijze op Home zijn Source Serif 4 500, 2.25rem, oldstyle-cijfers, olijf, los boven hun stap. In de werkbon op Over mij staan dezelfde nummers bewust kleiner, 1.75rem (zelfde letter, gewicht 500, oldstyle-cijfers, olijf, regelhoogte 1), omdat ze in de rij op de basislijn van de h3 staan; 2.25rem zou daar boven de taak uitsteken. Dit is de enige maat buiten de schaal, en alleen voor nummers naast een h3. Het "ik" achter elke taak is Source Serif 4 600 op h3-maat, olijf; de kolomkoppen "Wat" en "Wie" zijn 600, 1rem, `muted`. Formuliertekst: veldlabels 600, 1.0625rem, `ink`; veldtekst 1.125rem; hints, foutmeldingen (500) en de tekenteller 1rem, de teller met tabulaire cijfers.
 
 ### Named Rules
-**The Royale-maat Rule.** Lopende tekst is minimaal 18px (`body1`); kleiner alleen voor korte samenvattingen (16px), footer, placeholderlabels en de korte formulierhulp (labels 17px; hints, foutmeldingen, teller en privacynotitie 16px). Wat de bezoeker typt is 18px. De doelgroep is deels 50+.
+**The Royale-maat Rule.** Lopende tekst is minimaal 18px (`body1`); kleiner alleen voor korte samenvattingen (16px), footer, placeholderlabels, de kolomkoppen van de werkbon (16px) en de korte formulierhulp (labels 17px; hints, foutmeldingen, teller en privacynotitie 16px). Wat de bezoeker typt is 18px. De doelgroep is deels 50+.
 
 **The Zelf-gehost Rule.** Fonts komen uit `src/Resources/Fonts` met hun OFL-licentie ernaast. Geen Google Fonts of ander CDN.
 
@@ -212,6 +217,8 @@ Secties stapelen verticaal met `sectionSpacing` boven en onder, gescheiden door 
 Breakpoints zijn de MUI-standaard (sm 600, md 900, lg 1200) en worden alleen via `theme.breakpoints` gebruikt. Onder `md` vervalt de desktopnavigatie voor belknop + menuknop, worden tweekoloms blokken één kolom en komt tekst vóór de foto. Grids gebruiken `auto-fit`/`minmax` waar mogelijk (contactknoppen: naast elkaar zodra beide 320px halen). Fotoverhoudingen wisselen per breakpoint in plaats van een `minHeight` naast `aspectRatio`.
 
 Contactpagina: een tweekoloms grid 5/7 met benoemde gebieden. Links de intro (h1, lead, `ContactButtons` gestapeld, max 420px) en daaronder, na een haarlijn, werkgebied en bedrijfsgegevens; rechts het witte formulierpaneel over beide rijen. Kolomafstand 64px, rijafstand 48px, bovenmarge `clamp(40px, 6vw, 88px)`, onder `sectionSpacing`. Onder `md` één kolom in de volgorde intro, formulier, gegevens; onder `sm` loopt het paneel 8px in de gutter. Geen contactband op deze pagina. Een veld met focus houdt 56px `scroll-margin-top`, zodat zijn label niet onder de sticky appbar verdwijnt.
+
+Over mij: een intro in een tweekoloms grid 4/7 (portret 4:5 links, rechts h1, lead met `ownerName` uit `src/Config/company.ts`, tekst max 56ch en de `ContactButtons` naast elkaar, max 680px), kolomafstand 64px, verticaal gecentreerd. Vanaf `md` is de intro krapper dan op andere pagina's (boven 56px, onder `theme.spacing(8)`), zodat de kop van "Hoe ik werk" en de bovenkant van de werkbon op 1440×900 nog in het eerste scherm vallen; onder `md` gewone maten (boven `clamp(40px, 6vw, 88px)`, onder `sectionSpacing`), eerst tekst en knoppen, dan het portret (max 420px). Daarna twee secties met dezelfde 4/7-verdeling: links de `SectionHeader`, rechts de inhoud (gap 64px; onder `md` één kolom zonder gap, de kop draagt dan zijn eigen ondermarge). "Hoe ik werk" heeft haarlijnen boven en onder en de werkbon; "Wat ik doe" is een definitielijst met haarlijnen (groepsnaam als h3 in een kolom van 11rem, de diensten als één Nederlandse opsomming "a, b en c"; onder `sm` onder elkaar) met daaronder een outlined knop "Bekijk mijn projecten". De `ContactBand` sluit de pagina af.
 
 ## Elevation & Depth
 
@@ -236,7 +243,7 @@ Stevig en rustig: een gevuld vlak, geen schaduw, geen hoofdletters. Bron: `src/T
 - **Shape:** zacht afgerond (`borderRadius`), minimaal `touchTarget` hoog; `size="large"` minimaal 56px met 24px zijpadding.
 - **Contactknop (contained secondary):** oker vlak, zwarte tekst, icoon links, label ("Bellen"/"Mailen") met het nummer of adres eronder in gewicht 400. Komt alleen voor via `ContactButtons`.
 - **Verstuurknop (contained secondary, large):** hetzelfde okervlak met zwarte tekst, zonder icoon, links uitgelijnd onder het formulier; label "Versturen", tijdens verzenden "Bezig met versturen…".
-- **Outlined primary:** olijf tekst en rand op transparant, met pijlicoon rechts; voor doorlinken ("Alle projecten bekijken", "Meer over mij").
+- **Outlined primary:** olijf tekst en rand op transparant, met pijlicoon rechts; voor doorlinken ("Alle projecten bekijken", "Meer over mij", en in `size="large"` "Bekijk mijn projecten" op Over mij).
 - **Hover / Focus:** achtergrond- en randkleur in 160ms ease-out naar de `dark`-toon. Focus: 2px `logoBlue` outline met offset 2 op elk `ButtonBase`-element; wit binnen de olijfband.
 - **Icon button:** `touchTarget` vierkant, olijf, zelfde radius.
 
@@ -246,6 +253,7 @@ Twee even grote, even zware okerknoppen voor bellen en mailen, altijd samen, met
 ### Cards / Containers
 - **Dienstkaart:** geen kaart: een fotoplaceholder, h3 en body2 direct op het gebroken wit.
 - **Paneel:** wit, 1px haarlijn, `borderRadius`, foto en tekst naast elkaar; tekstpadding 32/40px (mobiel 24/20px).
+- **Werkbon:** wit paneel met rijen; zie Werkbon hieronder.
 - **Shadow Strategy:** geen; zie Elevation & Depth.
 
 ### Inputs / Fields
@@ -273,8 +281,14 @@ Neutraal vlak (`placeholder`) met 1px haarlijn, 4px radius en een klein label li
 - **Desktop (vanaf md):** links in `ink`, 500, 1.0625rem, 48px hoog. Hover: olijf. Actief: olijf, 600, met een 3px oker streep die in 200ms vanaf links inschuift (uit bij reduced motion). Geen los telefoonnummer, zodat bellen en mailen gelijk blijven.
 - **Mobiel (onder md):** belknop en menuknop (icoonknoppen). Het menu is een drawer van rechts (`min(360px, 88vw)`) op gebroken wit; het actieve item krijgt een okerblokje, onderaan staan de `ContactButtons` gestapeld.
 
+### SectionHeader
+h2 met optionele lead (`body1`) eronder, max 62ch, ondermarge 40px (onder `sm` 32px). Staat boven een sectie of, in de 4/7-secties op Over mij, als linkerkolom. Gebruikt op Home en Over mij. Bron: `src/Components/SectionHeader/SectionHeader.tsx`.
+
+### Werkbon (signatuur, Over mij)
+De rolverdeling van een klus, als een werkbon: wat er gebeurt en wie het doet, en achter elke taak staat "ik". Eén wit paneel met 1px haarlijn en `borderRadius` (onder `sm` 8px in de gutter, zoals het formulierpaneel). Bovenaan een kolomkoprij "Wat" links en "Wie" rechts (600, 1rem, `muted`, `aria-hidden`), met een haarlijn eronder. Daaronder een genummerde lijst (`ol`, CSS-teller); rijen gescheiden door haarlijnen, padding 24/40px (onder `sm` 20px). Elke rij is een grid op de basislijn: nummer (olijf, Source Serif 4 500, 1.75rem, oldstyle-cijfers; zie Typography), taak als h3, een stippellijn van olijf stippen op 45% (8px ritme) die de ruimte vult, en "ik" in olijf serif op h3-maat; schermlezers horen "Wie: ik". De toelichting (`body1`, max 48ch) staat eronder, ingesprongen onder de taak. Onder `sm` vervalt de stippellijn en staat "ik" rechts naast de taak. Geen slotzin onder de lijst: de rijen laten zien wat een zin zou beweren. Bron: `src/Modules/About/Scenes/About/Components/AboutWorkflow.tsx`.
+
 ### Contactband
-Olijf vlak in twee verticaal gecentreerde kolommen (5/7): links `onOlive` kop en `onOliveMuted` lead (max 46ch), rechts alle acties als één blok: de `ContactButtons` en daaronder over de volle breedte een outlined knop "Of stuur een bericht" naar `/contact` in `onOlive` (rand 70%, bij hover vol met een vlak van 8%). Zo is het formulier vindbaar zonder bellen of mailen te verdringen. De afsluiting van een inhoudspagina. Niet op de contactpagina. Focusrand wordt hier wit.
+Olijf vlak in twee verticaal gecentreerde kolommen (5/7): links `onOlive` kop en `onOliveMuted` lead (max 46ch), rechts alle acties als één blok: de `ContactButtons` en daaronder over de volle breedte een outlined knop "Of stuur een bericht" naar `/contact` in `onOlive` (rand 70%, bij hover vol met een vlak van 8%). Zo is het formulier vindbaar zonder bellen of mailen te verdringen. De afsluiting van een inhoudspagina, nu op Home en Over mij. Niet op de contactpagina. Focusrand wordt hier wit. Bron: `src/Components/ContactBand/ContactBand.tsx`.
 
 ### Footer
 Wit met haarlijn boven: merk en slogan, contact, pagina's, bedrijfsgegevens (`CompanyDetails`, 1rem) in kolommen met serif-koppen (600, 1.125rem, olijf); links onderstreept.

@@ -1,5 +1,6 @@
+import ContactBand from 'src/Components/ContactBand/ContactBand';
+
 import HomeAbout from './Components/HomeAbout';
-import HomeContact from './Components/HomeContact';
 import HomeHero from './Components/HomeHero';
 import HomeProjects from './Components/HomeProjects';
 import HomeServices from './Components/HomeServices';
@@ -13,7 +14,7 @@ export default function Home() {
             <HomeWorkflow />
             <HomeProjects />
             <HomeAbout />
-            <HomeContact />
+            <ContactBand />
         </>
     );
 }

@@ -1,5 +1,16 @@
-import PageStub from 'src/Components/PageStub/PageStub';
+import ContactBand from 'src/Components/ContactBand/ContactBand';
+
+import AboutIntro from './Components/AboutIntro';
+import AboutServices from './Components/AboutServices';
+import AboutWorkflow from './Components/AboutWorkflow';
 
 export default function About() {
-    return <PageStub title="Over mij" />;
+    return (
+        <>
+            <AboutIntro />
+            <AboutWorkflow />
+            <AboutServices />
+            <ContactBand />
+        </>
+    );
 }

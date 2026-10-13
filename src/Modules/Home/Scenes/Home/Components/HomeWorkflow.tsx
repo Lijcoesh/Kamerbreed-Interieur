@@ -2,10 +2,9 @@ import { Container, Typography } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
 
 import { border, olive } from 'src/colors';
+import SectionHeader from 'src/Components/SectionHeader/SectionHeader';
 import { sectionSpacing } from 'src/Theme/sizes';
 import { serifFontFamily } from 'src/Theme/typography';
-
-import SectionHeader from './SectionHeader';
 
 // Werktitels; de PO schrijft de definitieve tekst. De volgorde is de werkwijze zelf.
 const steps = [

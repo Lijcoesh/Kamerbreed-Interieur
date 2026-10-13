@@ -4,6 +4,9 @@ export const companyName = 'Kamerbreed Interieur';
 export const slogan = 'Thuis kiezen en je thuis voelen!';
 export const region = 'Westland';
 
+// Voornaam van de eigenaar, uit de KvK-inschrijving. TODO: laten bevestigen dat hij met naam op de site wil (Gesprek-PO.md, vraag 6).
+export const ownerName = 'Jeroen';
+
 export const phoneDisplay = '06-22243488';
 export const phoneHref = 'tel:+31622243488';
 

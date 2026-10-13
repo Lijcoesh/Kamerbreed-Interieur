@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-13T12:00:00Z",
+  "generatedAt": "2026-10-13T18:00:00Z",
   "title": "Design System: Kamerbreed Interieur",
   "extensions": {
     "colorMeta": {
@@ -256,7 +256,7 @@
       },
       "h3": {
         "displayName": "H3",
-        "purpose": "Dienstnamen, stappen, paneelkoppen (ook de koppen op de contactpagina), de bevestiging na versturen."
+        "purpose": "Dienstnamen, stappen, taken in de werkbon, groepsnamen in de dienstenlijst op Over mij, paneelkoppen (ook de koppen op de contactpagina), de bevestiging na versturen."
       },
       "subtitle1": {
         "displayName": "Lead",
@@ -273,6 +273,10 @@
       "button": {
         "displayName": "Knop",
         "purpose": "Knoplabels, geen hoofdletters."
+      },
+      "werkbon-number": {
+        "displayName": "Werkbonnummer",
+        "purpose": "Source Serif 4 500, 1.75rem, oldstyle-cijfers, olijf, regelhoogte 1: nummers op de basislijn van een h3 in de werkbon. Bewust kleiner dan de losse stapnummers op Home (2.25rem); enige maat buiten de schaal."
       }
     },
     "shadows": [
@@ -383,7 +387,7 @@
       "name": "Contactband",
       "kind": "custom",
       "refersTo": "contact-band",
-      "description": "Olijf afsluiting van een inhoudspagina (niet op de contactpagina); focusrand wordt hier wit.",
+      "description": "Olijf afsluiting van een inhoudspagina (Home en Over mij; niet op de contactpagina); focusrand wordt hier wit. Bron: src/Components/ContactBand/ContactBand.tsx.",
       "html": "<section class=\"ds-band\"><h2 class=\"ds-band-title\">Neem contact op</h2><p class=\"ds-band-lead\">Bel of mail, ik kom bij je thuis.</p><a class=\"ds-band-btn\" href=\"#\">Bellen</a></section>",
       "css": ".ds-band { background: #4F4A30; color: #F0F1EE; padding: 64px 28px; } .ds-band-title { margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 2.6rem; line-height: 1.15; letter-spacing: -0.01em; color: #F0F1EE; } .ds-band-lead { margin: 16px 0 24px; max-width: 46ch; color: #D6D4C6; font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 1.125rem; line-height: 1.6; } .ds-band-btn { display: inline-flex; align-items: center; min-height: 56px; padding: 0 24px; background: #D49259; color: #1D1F1E; border-radius: 6px; font-family: 'Source Sans 3', system-ui, sans-serif; font-weight: 600; font-size: 1.0625rem; text-decoration: none; } .ds-band-btn:hover { background: #C27F45; } .ds-band-btn:focus-visible { outline: 2px solid #ffffff; outline-offset: 2px; }"
     },
@@ -394,6 +398,14 @@
       "description": "Los wit paneel met haarlijn, foto en tekst naast elkaar; geen schaduw.",
       "html": "<div class=\"ds-panel\"><div class=\"ds-photo\">Foto volgt</div><div class=\"ds-panel-body\"><h3 class=\"ds-h3\">Daarnaast: binnenzonwering</h3><p class=\"ds-body\">Korte uitleg over het tweede aanbod.</p></div></div>",
       "css": ".ds-panel { display: grid; grid-template-columns: 1fr 1fr; align-items: center; background: #ffffff; border: 1px solid #D9DAD3; border-radius: 6px; overflow: hidden; } .ds-panel .ds-photo { aspect-ratio: 3 / 2; display: flex; align-items: flex-end; padding: 16px; background: #E2E3DD; color: #4F4E4A; font-size: 0.9375rem; font-family: 'Source Sans 3', system-ui, sans-serif; } .ds-panel-body { max-width: 52ch; padding: 32px 40px; } .ds-h3 { margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 1.375rem; line-height: 1.25; color: #4F4A30; } .ds-body { margin: 8px 0 0; font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 1.125rem; line-height: 1.6; color: #4F4E4A; }"
+    },
+    {
+      "name": "Werkbon",
+      "kind": "custom",
+      "refersTo": "werkbon",
+      "description": "Rolverdeling van een klus op Over mij: wit paneel, kolomkoppen Wat/Wie, genummerde rijen met taak, stippellijn en \"ik\". Onder sm geen stippellijn. Geen slotzin.",
+      "html": "<div class=\"ds-wb\"><div class=\"ds-wb-cols\" aria-hidden=\"true\"><span>Wat</span><span>Wie</span></div><ol class=\"ds-wb-list\"><li class=\"ds-wb-row\"><h3 class=\"ds-wb-title\">Je vraag beantwoorden</h3><span class=\"ds-wb-leader\" aria-hidden=\"true\"></span><span class=\"ds-wb-who\">ik</span><p class=\"ds-wb-text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li><li class=\"ds-wb-row\"><h3 class=\"ds-wb-title\">Bij je thuis langskomen</h3><span class=\"ds-wb-leader\" aria-hidden=\"true\"></span><span class=\"ds-wb-who\">ik</span><p class=\"ds-wb-text\">Ut enim ad minim veniam, quis nostrud exercitation.</p></li></ol></div>",
+      "css": ".ds-wb { background: #ffffff; border: 1px solid #D9DAD3; border-radius: 6px; font-family: 'Source Sans 3', system-ui, sans-serif; color: #4F4E4A; } .ds-wb-cols { display: flex; justify-content: space-between; padding: 20px 40px 16px; border-bottom: 1px solid #D9DAD3; color: #67665F; font-size: 1rem; font-weight: 600; } .ds-wb-list { margin: 0; padding: 0; list-style: none; counter-reset: task; } .ds-wb-row { display: grid; grid-template-columns: 2.5rem minmax(0, max-content) minmax(32px, 1fr) auto; grid-template-areas: 'num title leader who' '. text text .'; align-items: baseline; column-gap: 12px; padding: 24px 40px; counter-increment: task; } .ds-wb-row + .ds-wb-row { border-top: 1px solid #D9DAD3; } .ds-wb-row::before { content: counter(task); grid-area: num; font-family: 'Source Serif 4', Georgia, serif; font-weight: 500; font-size: 1.75rem; font-variant-numeric: oldstyle-nums; line-height: 1; color: #4F4A30; } .ds-wb-title { grid-area: title; margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 1.375rem; line-height: 1.25; color: #4F4A30; } .ds-wb-leader { grid-area: leader; height: 4px; background-image: radial-gradient(circle, rgba(79,74,48,0.45) 1.25px, transparent 1.75px); background-size: 8px 4px; background-repeat: repeat-x; background-position: left bottom; } .ds-wb-who { grid-area: who; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 1.375rem; line-height: 1.25; color: #4F4A30; } .ds-wb-text { grid-area: text; margin: 8px 0 0; max-width: 48ch; font-size: 1.125rem; line-height: 1.6; }"
     },
     {
       "name": "Formulierveld",
@@ -467,7 +479,7 @@
       },
       {
         "name": "The Royale-maat Rule",
-        "body": "Lopende tekst is minimaal 18px (`body1`); kleiner alleen voor korte samenvattingen (16px), footer, placeholderlabels en de korte formulierhulp (labels 17px; hints, foutmeldingen, teller en privacynotitie 16px). Wat de bezoeker typt is 18px. De doelgroep is deels 50+.",
+        "body": "Lopende tekst is minimaal 18px (`body1`); kleiner alleen voor korte samenvattingen (16px), footer, placeholderlabels, de kolomkoppen van de werkbon (16px) en de korte formulierhulp (labels 17px; hints, foutmeldingen, teller en privacynotitie 16px). Wat de bezoeker typt is 18px. De doelgroep is deels 50+.",
         "section": "typography"
       },
       {

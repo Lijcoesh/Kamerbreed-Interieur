@@ -14,7 +14,7 @@ Op volgorde. Vragen voor de PO staan in `Gesprek-PO.md` ("Nog open"), juridische
 - [x] Home: slogan, diensten, werkwijze, projecten, over mij, contact
 - [ ] Projecten: overzicht met placeholderfoto's, data uit één bestand zodat er makkelijk een project bij kan. Elk project krijgt de dienst(en) als veld (`ServiceId` uit `src/Definitions/Service.ts`) en toont die als label.
 - [ ] Filter op dienst bij Projecten, alleen als er genoeg projecten zijn (zie vraag 5 in `Gesprek-PO.md`). De filter staat in de URL (`/projecten?dienst=pvc`), zodat de diensten op Home ernaar kunnen linken.
-- [ ] Over mij
+- [x] Over mij: verhaal, portretplek, "Hoe ik werk" als rolverdeling (achter elke taak "ik"), kort "Wat ik doe", contactband. De PO loopt de vijf taken na.
 - [x] Contact: bellen en mailen, contactformulier (verstuurt nog niet), werkgebied, bedrijfsgegevens. De WhatsApp-knop staat klaar: aanzetten met `whatsappNumber` in `src/Config/company.ts` zodra de PO bevestigt.
 - [ ] Backend in `/server` voor het contactformulier: .NET volgens de conventies van `F:/Development/UpNext/UpNext.API`, e-mail via Brevo, eigen VPS. Command met dezelfde velden en grenzen als `src/Helpers/validateContactMessage.ts` (of ruimer), een gevulde honeypot `website` stil negeren, rate limiting (429), CORS voor het domein. Daarna `contactEndpoint` in `src/Config/api.ts` invullen.
 - [ ] Privacyverklaring: `/privacy` bestaat als lege pagina, het formulier linkt ernaar

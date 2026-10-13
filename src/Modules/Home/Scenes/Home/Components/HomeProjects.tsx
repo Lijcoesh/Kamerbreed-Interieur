@@ -5,9 +5,8 @@ import { makeStyles } from 'tss-react/mui';
 import { border } from 'src/colors';
 import ArrowForwardIcon from 'src/Components/Icons/ArrowForwardIcon';
 import PhotoPlaceholder from 'src/Components/PhotoPlaceholder/PhotoPlaceholder';
+import SectionHeader from 'src/Components/SectionHeader/SectionHeader';
 import { sectionSpacing } from 'src/Theme/sizes';
-
-import SectionHeader from './SectionHeader';
 
 // TODO: vervangen door de nieuwste projecten zodra de PO foto's stuurt
 const placeholderCount = 3;

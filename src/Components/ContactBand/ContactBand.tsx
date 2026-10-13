@@ -54,7 +54,7 @@ const useStyles = makeStyles()(theme => ({
     },
 }));
 
-export default function HomeContact() {
+export default function ContactBand() {
     const { classes } = useStyles();
 
     return (

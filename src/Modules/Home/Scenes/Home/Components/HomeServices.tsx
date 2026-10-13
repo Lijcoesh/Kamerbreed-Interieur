@@ -3,10 +3,9 @@ import { makeStyles } from 'tss-react/mui';
 
 import { border, white } from 'src/colors';
 import PhotoPlaceholder from 'src/Components/PhotoPlaceholder/PhotoPlaceholder';
+import SectionHeader from 'src/Components/SectionHeader/SectionHeader';
 import { services } from 'src/Config/services';
 import { borderRadius, sectionSpacing } from 'src/Theme/sizes';
-
-import SectionHeader from './SectionHeader';
 
 const useStyles = makeStyles()(theme => ({
     root: {
