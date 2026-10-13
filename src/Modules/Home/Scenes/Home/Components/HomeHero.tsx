@@ -59,10 +59,6 @@ export default function HomeHero() {
                     incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam.
                 </Typography>
                 <ContactButtons className={classes.actions} />
-                {/* Werktitel: één persoon, van begin tot eind (PO) */}
-                <Typography variant="body2" color="textSecondary" className={classes.personal}>
-                    Ik kom zelf bij je thuis en doe het werk zelf.
-                </Typography>
             </div>
             <Photo
                 photo={heroPhoto}
