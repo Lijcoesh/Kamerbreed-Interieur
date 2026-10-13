@@ -75,7 +75,7 @@ export default function HomeWorkflow() {
         <Container component="section" aria-labelledby="workflow-title" className={classes.root}>
             <SectionHeader
                 id="workflow-title"
-                title="Hoe ik werk"
+                title="Werkwijze"
                 lead="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sem at nibh elementum imperdiet."
             />
             <ol className={classes.steps}>
