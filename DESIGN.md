@@ -222,6 +222,8 @@ Over mij: een intro in een tweekoloms grid 4/7 (portret 4:5 links, rechts h1, le
 
 Projecten: bovenaan een intro (boven `clamp(40px, 6vw, 88px)`) met h1, een lead in `body1` (max 58ch, 16px eronder) en 32px lager het snelmenu (zie Components). Daarna één sectie per soort, in de volgorde van `src/Config/services.ts` (Pvc-vloeren, Laminaat, Vloerbedekking, Tapijt, Binnenzonwering), elk met id `#<dienst-id>` zodat `/projecten#pvc` er direct heen gaat. Een soortsectie heeft bovenpadding `clamp(48px, 6vw, 80px)`; dat is krapper dan `sectionSpacing`, omdat de soorten samen één lijst vormen en geen losse secties. Een project met meer diensten staat onder elke soort. Na de laatste soort `sectionSpacing`, dan sluit de `ContactBand` de pagina af. Een anker landt onder de appbar via `scroll-padding-top`.
 
+Privacyverklaring (Read): een intro over de volle breedte (h1, lead in `body1` max 62ch, een regel "Concept. Laatst bijgewerkt: …" in `body2` `muted`) met een haarlijn eronder. Daaronder een grid 4/7: links de inhoudsopgave "Op deze pagina" (kop 600 1rem `muted`, onderstreepte links in `ink` 1.0625rem, 48px hoog, hover olijf), die op desktop meeloopt (`sticky`, 32px onder de appbar); rechts één leeskolom van max 65ch met per onderwerp een h3-stijl kop (als h2-element), alinea's in `body1` en lijsten met een olijf opsommingsteken. Onder `md` één kolom: intro, inhoudsopgave (met haarlijn eronder), tekst. Geen contactband. Bron: `src/Modules/Privacy/Scenes/Privacy/Privacy.tsx`.
+
 Navigatie: bij elke andere pagina begint de bezoeker bovenaan; met een anker in de URL (`/projecten#tapijt`) landt hij op die sectie. Beide direct, zonder vloeiend scrollen. Bron: `src/Hooks/useScrollOnNavigate.ts`, aangeroepen in `App.tsx`.
 
 ## Elevation & Depth
@@ -301,7 +303,7 @@ Het opgeleverde werk per soort, rij na rij, zoals een vakman het in een map bijh
 Olijf vlak in twee verticaal gecentreerde kolommen (5/7): links `onOlive` kop en `onOliveMuted` lead (max 46ch), rechts alle acties als één blok: de `ContactButtons` en daaronder over de volle breedte een outlined knop "Of stuur een bericht" naar `/contact` in `onOlive` (rand 70%, bij hover vol met een vlak van 8%). Zo is het formulier vindbaar zonder bellen of mailen te verdringen. De afsluiting van een inhoudspagina, nu op Home, Over mij en Projecten. Niet op de contactpagina. Focusrand wordt hier wit. Bron: `src/Components/ContactBand/ContactBand.tsx`.
 
 ### Footer
-Wit met haarlijn boven: merk en slogan, contact, pagina's, bedrijfsgegevens (`CompanyDetails`, 1rem) in kolommen met serif-koppen (600, 1.125rem, olijf); links onderstreept.
+Wit met haarlijn boven: merk en slogan, contact, pagina's, bedrijfsgegevens (`CompanyDetails`, 1rem) in kolommen met serif-koppen (600, 1.125rem, olijf); links onderstreept. Onderaan, na een haarlijn, links het copyright in `muted` en rechts de link "Privacyverklaring" in `ink` (48px hoog); op een smal scherm onder elkaar.
 
 ### Links
 Altijd onderstreept (1px, offset 0.2em, `currentColor`), 2px bij hover, focusrand in logoblauw. Bron: `overrideMuiLink` in `src/Theme/Components/layout.ts`.

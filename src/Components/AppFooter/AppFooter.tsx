@@ -19,6 +19,7 @@ import {
     slogan,
 } from 'src/Config/company';
 import { navItems } from 'src/Config/navigation';
+import { touchTarget } from 'src/Theme/sizes';
 import { serifFontFamily } from 'src/Theme/typography';
 
 const useStyles = makeStyles()(theme => ({
@@ -87,12 +88,24 @@ const useStyles = makeStyles()(theme => ({
     pending: {
         color: muted,
     },
+    // Copyright links, privacyverklaring rechts; op de telefoon onder elkaar
     bottom: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        columnGap: theme.spacing(3),
         marginTop: theme.spacing(7),
-        paddingTop: theme.spacing(3),
+        paddingTop: theme.spacing(2),
         borderTop: `1px solid ${border}`,
         color: muted,
         fontSize: '1rem',
+    },
+    bottomLink: {
+        display: 'inline-flex',
+        alignItems: 'center',
+        minHeight: touchTarget,
+        color: ink,
     },
 }));
 
@@ -153,7 +166,12 @@ export default function AppFooter() {
                 </div>
 
                 <div className={classes.bottom}>
-                    © {new Date().getFullYear()} {companyName}
+                    <span>
+                        © {new Date().getFullYear()} {companyName}
+                    </span>
+                    <Link component={RouterLink} to="/privacy" className={classes.bottomLink}>
+                        Privacyverklaring
+                    </Link>
                 </div>
             </Container>
         </footer>

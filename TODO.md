@@ -17,7 +17,8 @@ Op volgorde. Vragen voor de PO staan in `Gesprek-PO.md` ("Nog open"), juridische
 - [x] Over mij: verhaal, portretplek, "Hoe ik werk" als rolverdeling (achter elke taak "ik"), kort "Wat ik doe", contactband. De PO loopt de vijf taken na.
 - [x] Contact: bellen en mailen, contactformulier (verstuurt nog niet), werkgebied, bedrijfsgegevens. De WhatsApp-knop staat klaar: aanzetten met `whatsappNumber` in `src/Config/company.ts` zodra de PO bevestigt.
 - [ ] Backend in `/server` voor het contactformulier: .NET volgens de conventies van `F:/Development/UpNext/UpNext.API`, e-mail via Brevo, eigen VPS. Command met dezelfde velden en grenzen als `src/Helpers/validateContactMessage.ts` (of ruimer), een gevulde honeypot `website` stil negeren, rate limiting (429), CORS voor het domein. Daarna `contactEndpoint` in `src/Config/api.ts` invullen.
-- [ ] Privacyverklaring: `/privacy` bestaat als lege pagina, het formulier linkt ernaar
+- [x] Privacyverklaring: opbouw met koppen volgens de AVG en lorem, inhoudsopgave, link in de footer en vanuit het formulier
+- [ ] Echte tekst voor de privacyverklaring, zodra adres, rechtsvorm, hostingpartij en bewaartermijnen bekend zijn (launch-checklist); laten controleren door de PO of een jurist
 - [ ] Titel per pagina (document title)
 
 ## Zodra de PO iets aanlevert
