@@ -7,7 +7,6 @@ import { sectionSpacing } from 'src/Theme/sizes';
 
 import ProjectGroup from './Components/ProjectGroup';
 import ProjectsIntro from './Components/ProjectsIntro';
-import { useScrollToHash } from './Hooks/useScrollToHash';
 
 // Per soort, in de volgorde van de diensten
 const groups = services.map(service => ({
@@ -23,8 +22,6 @@ const useStyles = makeStyles()({
 
 export default function Projects() {
     const { classes } = useStyles();
-
-    useScrollToHash();
 
     return (
         <>

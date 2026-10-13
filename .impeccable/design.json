@@ -348,7 +348,7 @@
     },
     "scrollMargin": {
       "focusedField": "56px (scroll-margin-top op het veld, zodat het label onder de sticky appbar zichtbaar blijft)",
-      "anchors": "scroll-padding-top: headerHeight op html; op Projecten scrolt useScrollToHash na het renderen alsnog naar #<dienst-id>."
+      "anchors": "scroll-padding-top: headerHeight op html; useScrollOnNavigate (App) scrolt bij elke paginawissel direct naar boven, of naar #<id> als de URL een anker heeft."
     }
   },
   "components": [

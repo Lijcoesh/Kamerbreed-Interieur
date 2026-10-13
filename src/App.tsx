@@ -4,6 +4,7 @@ import { makeStyles } from 'tss-react/mui';
 import AppFooter from 'src/Components/AppFooter/AppFooter';
 import AppHeader from 'src/Components/AppHeader/AppHeader';
 import SkipLink from 'src/Components/SkipLink/SkipLink';
+import { useScrollOnNavigate } from 'src/Hooks/useScrollOnNavigate';
 import About from 'src/Modules/About/Scenes/About/About';
 import Contact from 'src/Modules/Contact/Scenes/Contact/Contact';
 import Home from 'src/Modules/Home/Scenes/Home/Home';
@@ -28,6 +29,8 @@ const useStyles = makeStyles()({
 
 export default function App() {
     const { classes } = useStyles();
+
+    useScrollOnNavigate();
 
     return (
         <div className={classes.root}>
