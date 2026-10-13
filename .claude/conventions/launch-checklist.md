@@ -60,4 +60,4 @@ _Noteer hier tijdens het werk punten die vóór oplevering nog geregeld moeten w
 - Werkgebied op Contact: alle kernen van de gemeente Westland. Laten bevestigen door de PO dat hij overal komt.
 - Placeholders die vóór livegang weg moeten: "Foto volgt"-vlakken, "Instagram volgt" en "Btw-nummer volgt" in de footer en op Contact, en het lorem-bevestigingsbericht van het formulier.
 - Projecten: de placeholderprojecten in `src/Config/projects.ts` ("Voorbeeldproject 1/2/3" met lorem) en de lorem-inleiding vervangen door echt werk van de PO, met foto, titel, tekst en de juiste dienst(en).
-- Over mij: lorem in verhaal en taakteksten, het portret ("Foto volgt") en de werktitel "Ik ben Jeroen. Kamerbreed Interieur, dat ben ik." De voornaam (uit de KvK) en de vijf taken in "Hoe ik werk" laten bevestigen door de PO. "Sinds 1994" staat er bewust niet op tot de PO het bevestigt.
+- Over mij: lorem in het verhaal, het portret (nu een tijdelijke stockfoto) en de werktitel "Ik ben Jeroen. Kamerbreed Interieur, dat ben ik." De voornaam (uit de KvK) laten bevestigen door de PO. "Sinds 1994" staat er bewust niet op tot de PO het bevestigt.

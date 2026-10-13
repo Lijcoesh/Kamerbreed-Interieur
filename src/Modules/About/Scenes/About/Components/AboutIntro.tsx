@@ -5,25 +5,28 @@ import ContactButtons from 'src/Components/ContactButtons/ContactButtons';
 import Photo from 'src/Components/Photo/Photo';
 import { ownerName } from 'src/Config/company';
 import { ownerPhoto } from 'src/Config/photos';
-import { sectionSpacing } from 'src/Theme/sizes';
+import { headerHeight, headerHeightSmall, sectionSpacing } from 'src/Theme/sizes';
 
 // Portret links, tekst rechts. Op de telefoon eerst tekst en knoppen, dan het portret.
+// Vult het scherm onder de appbar, zodat de footer bij openen niet al in beeld staat.
 const useStyles = makeStyles()(theme => ({
     root: {
         display: 'grid',
         gridTemplateColumns: '4fr 7fr',
         gridTemplateAreas: '"photo text"',
         alignItems: 'center',
+        alignContent: 'center',
+        minHeight: `calc(100dvh - ${headerHeight}px)`,
         gap: theme.spacing(8),
-        // Krapper dan op andere pagina's, zodat "Hoe ik werk" op desktop nog in het eerste scherm valt
-        paddingTop: 56,
-        paddingBottom: theme.spacing(8),
+        paddingTop: 'clamp(40px, 6vw, 88px)',
+        paddingBottom: sectionSpacing,
         [theme.breakpoints.down('md')]: {
-            paddingTop: 'clamp(40px, 6vw, 88px)',
-            paddingBottom: sectionSpacing,
             gridTemplateColumns: '1fr',
             gridTemplateAreas: '"text" "photo"',
             gap: theme.spacing(5),
+        },
+        [theme.breakpoints.down('sm')]: {
+            minHeight: `calc(100dvh - ${headerHeightSmall}px)`,
         },
     },
     photo: {
