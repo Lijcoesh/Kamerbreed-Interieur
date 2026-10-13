@@ -5,7 +5,6 @@ Op volgorde. Vragen voor de PO staan in `Gesprek-PO.md` ("Nog open"), juridische
 ## Nu
 
 - [ ] De ★-vragen uit "Nog open" bij de PO navragen: adres, KvK/btw, contactkanalen, Instagram
-- [ ] `npm ci` werkt niet: `package-lock.json` verwijst naar een CodeArtifact-registry (`rfh-…codeartifact…`) met een verlopen token. Token vernieuwen, of de lockfile opnieuw laten resolven tegen registry.npmjs.org.
 
 ## MVP (lorem ipsum)
 
@@ -30,6 +29,6 @@ Op volgorde. Vragen voor de PO staan in `Gesprek-PO.md` ("Nog open"), juridische
 
 ## Livegang
 
-- [ ] Hosting bij Mijndomein inrichten, de WordPress-pagina vervangen
+- [ ] Domein naar de VPS laten wijzen (DNS bij Mijndomein) en in `deploy/kamerbreed.caddy` het IP vervangen door het domein, zodat Caddy HTTPS regelt; de WordPress-pagina vervalt dan. De site draait al op de VPS (`deploy/README.md`).
 - [ ] `noindex` uit `index.html` halen, meta-description en titel per pagina
 - [ ] Launch-checklist volledig nalopen
