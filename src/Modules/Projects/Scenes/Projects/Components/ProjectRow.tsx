@@ -2,7 +2,7 @@ import { Typography } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
 
 import { border } from 'src/colors';
-import PhotoPlaceholder from 'src/Components/PhotoPlaceholder/PhotoPlaceholder';
+import Photo from 'src/Components/Photo/Photo';
 import { services } from 'src/Config/services';
 import type { Project } from 'src/Definitions/Project';
 import type { ServiceId } from 'src/Definitions/Service';
@@ -33,13 +33,6 @@ const useStyles = makeStyles()(theme => ({
             padding: theme.spacing(3, 0),
         },
     },
-    photo: {
-        display: 'block',
-        width: '100%',
-        aspectRatio: '4 / 3',
-        objectFit: 'cover',
-        borderRadius: 4,
-    },
     text: {
         marginTop: theme.spacing(1),
         maxWidth: '52ch',
@@ -60,16 +53,7 @@ export default function ProjectRow(props: IProps) {
 
     return (
         <li className={classes.root}>
-            {project.photo ? (
-                <img
-                    src={project.photo.src}
-                    alt={project.photo.alt}
-                    loading="lazy"
-                    className={classes.photo}
-                />
-            ) : (
-                <PhotoPlaceholder ratio="4 / 3" label="Projectfoto volgt" />
-            )}
+            <Photo photo={project.photo} ratio="4 / 3" label="Projectfoto volgt" />
             <div>
                 <Typography variant="h3">{project.title}</Typography>
                 <Typography variant="body1" className={classes.text}>

@@ -276,7 +276,7 @@ Op één wit paneel met haarlijn en `borderRadius` (padding 40/48px, mobiel 24/2
 Bedrijfsnaam, KvK en btw onder elkaar, 1.125rem, regelhoogte 1.7; een ontbrekend gegeven in `muted`. Op de contactpagina op deze maat; de footer geeft een `className` mee die hem terugzet naar 1rem, gelijk aan de andere footerkolommen. Bron: `src/Components/CompanyDetails/CompanyDetails.tsx`.
 
 ### PhotoPlaceholder
-Neutraal vlak (`placeholder`) met 1px haarlijn, 4px radius en een klein label linksonder ("Foto volgt"/"Projectfoto volgt"), vaste `aspectRatio` per gebruik, `aria-hidden`. Staat op elke plek waar een echte foto van de PO hoort, ook in de opleverlijst op Projecten (4:3). Bron: `src/Components/PhotoPlaceholder/PhotoPlaceholder.tsx`.
+Neutraal vlak (`placeholder`) met 1px haarlijn, 4px radius en een klein label linksonder ("Foto volgt"/"Projectfoto volgt"), vaste `aspectRatio` per gebruik, `aria-hidden`. Is de terugval van `Photo` op elke plek waar een echte foto van de PO hoort, ook in de opleverlijst op Projecten (4:3); nu staan daar tijdelijke stockfoto's (zie Tijdelijk). Bron: `src/Components/PhotoPlaceholder/PhotoPlaceholder.tsx`.
 
 ### Navigation
 - **Appbar:** wit, sticky, haarlijn onder; `BrandLockup` (logo + "Kamerbreed Interieur" in Source Serif 4) links.
@@ -316,7 +316,7 @@ Oker vlak met zwarte tekst, logoblauwe focusrand; eerste focusbare element.
 - **Do** gebruik `background` als paginagrond; wit alleen voor appbar, footer, losse panelen en invoervelden.
 - **Do** geef elk bedienbaar element minimaal `touchTarget` (48px) en een 2px `logoBlue` focusrand met offset 2 (wit op olijf). Invoervelden tonen focus met een 2px olijf rand.
 - **Do** bouw formuliervelden met `FormField`: label erboven, fout eronder in `error`, `inputBorder` als rand.
-- **Do** gebruik `PhotoPlaceholder` waar een foto van de PO nog ontbreekt.
+- **Do** toon beeld via `Photo` (`src/Components/Photo/Photo.tsx`): een foto op een vaste verhouding (`object-fit: cover`, 4px radius, `loading="lazy"` behalve in het eerste scherm), of `PhotoPlaceholder` zolang de foto ontbreekt.
 - **Do** haal kleuren uit `src/colors.ts` en maten uit `src/Theme/sizes.ts`.
 
 ### Don't:
@@ -324,7 +324,7 @@ Oker vlak met zwarte tekst, logoblauwe focusrand; eerste focusbare element.
 - **Don't** gebruik logoblauw buiten het logo en de focusrand.
 - **Don't** gebruik schaduw voor kaarten, panelen of secties; alleen menu's en de drawer hebben diepte.
 - **Don't** maak bellen of mailen dominanter dan de ander, ook niet met een los nummer in de desktop-appbar.
-- **Don't** gebruik gegenereerde of stockbeelden; die zouden doorgaan voor zijn werk.
+- **Don't** gebruik gegenereerde of stockbeelden in de live site; die zouden doorgaan voor zijn werk. (Uitzondering: de tijdelijke voorbeeldfoto's, zie Tijdelijk.)
 - **Don't** laad fonts via een CDN.
 - **Don't** zet lopende tekst kleiner dan 18px.
 - **Don't** geef een invoerveld de haarlijn (`border`) als rand; die haalt op wit geen 3:1.
@@ -334,4 +334,4 @@ Oker vlak met zwarte tekst, logoblauwe focusrand; eerste focusbare element.
 Wat in de build staat maar niet blijvend is (geen ontwerpregel):
 - **Logo:** `src/Resources/Logo/kamerbreed-logo.jpeg`, gedownload van de oude site (310 × 264, witte grond). Vervangen door het origineel zodra de PO het stuurt.
 - **Teksten:** lorem ipsum; de PO schrijft de definitieve teksten.
-- **Foto's:** alle beeldplekken zijn `PhotoPlaceholder`; projectfoto's en een foto van de eigenaar komen van de PO.
+- **Foto's:** tijdelijke stockfoto's (CC0, `src/Resources/Photos/Temp/`, herkomst in `src/Resources/README.md`) op alle beeldplekken, voor het eerste voorbeeld-design (13-10-2026). Niet zijn werk: vóór livegang vervangen door foto's van de PO. De eigenaarfoto laat bewust geen gezicht zien. Een plek zonder foto valt terug op `PhotoPlaceholder`.

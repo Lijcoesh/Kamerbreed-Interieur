@@ -2,8 +2,9 @@ import { Container, Typography } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
 
 import ContactButtons from 'src/Components/ContactButtons/ContactButtons';
-import PhotoPlaceholder from 'src/Components/PhotoPlaceholder/PhotoPlaceholder';
+import Photo from 'src/Components/Photo/Photo';
 import { region, slogan } from 'src/Config/company';
+import { heroPhoto } from 'src/Config/photos';
 import { sectionSpacing } from 'src/Theme/sizes';
 
 const useStyles = makeStyles()(theme => ({
@@ -63,7 +64,13 @@ export default function HomeHero() {
                     Ik kom zelf bij je thuis en doe het werk zelf.
                 </Typography>
             </div>
-            <PhotoPlaceholder ratio="4 / 5" label="Projectfoto volgt" className={classes.photo} />
+            <Photo
+                photo={heroPhoto}
+                ratio="4 / 5"
+                label="Projectfoto volgt"
+                eager
+                className={classes.photo}
+            />
         </Container>
     );
 }

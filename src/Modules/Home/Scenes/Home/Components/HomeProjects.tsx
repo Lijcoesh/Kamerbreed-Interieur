@@ -4,12 +4,13 @@ import { makeStyles } from 'tss-react/mui';
 
 import { border } from 'src/colors';
 import ArrowForwardIcon from 'src/Components/Icons/ArrowForwardIcon';
-import PhotoPlaceholder from 'src/Components/PhotoPlaceholder/PhotoPlaceholder';
+import Photo from 'src/Components/Photo/Photo';
 import SectionHeader from 'src/Components/SectionHeader/SectionHeader';
+import { projects } from 'src/Config/projects';
 import { sectionSpacing } from 'src/Theme/sizes';
 
-// TODO: vervangen door de nieuwste projecten zodra de PO foto's stuurt
-const placeholderCount = 3;
+// De drie nieuwste projecten
+const latest = projects.slice(0, 3);
 
 const useStyles = makeStyles()(theme => ({
     root: {
@@ -31,9 +32,11 @@ const useStyles = makeStyles()(theme => ({
     large: {
         gridRow: 'span 2',
         aspectRatio: 'auto',
+        height: '100%',
         [theme.breakpoints.down('sm')]: {
             gridRow: 'auto',
             aspectRatio: '4 / 3',
+            height: 'auto',
         },
     },
     more: {
@@ -53,9 +56,10 @@ export default function HomeProjects() {
                     lead="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tellus sed augue semper porta."
                 />
                 <div className={classes.grid}>
-                    {Array.from({ length: placeholderCount }, (_, index) => (
-                        <PhotoPlaceholder
-                            key={index}
+                    {latest.map((project, index) => (
+                        <Photo
+                            key={project.id}
+                            photo={project.photo}
                             ratio={index === 0 ? '4 / 3' : '16 / 10'}
                             label="Projectfoto volgt"
                             className={index === 0 ? classes.large : undefined}

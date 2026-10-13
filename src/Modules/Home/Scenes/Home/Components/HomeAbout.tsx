@@ -3,7 +3,8 @@ import { Link as RouterLink } from 'react-router';
 import { makeStyles } from 'tss-react/mui';
 
 import ArrowForwardIcon from 'src/Components/Icons/ArrowForwardIcon';
-import PhotoPlaceholder from 'src/Components/PhotoPlaceholder/PhotoPlaceholder';
+import Photo from 'src/Components/Photo/Photo';
+import { ownerPhoto } from 'src/Config/photos';
 import { sectionSpacing } from 'src/Theme/sizes';
 
 const useStyles = makeStyles()(theme => ({
@@ -36,8 +37,8 @@ export default function HomeAbout() {
 
     return (
         <Container component="section" aria-labelledby="about-title" className={classes.root}>
-            {/* TODO: foto van de eigenaar, als hij die wil (Gesprek-PO.md, vraag 6) */}
-            <PhotoPlaceholder ratio="4 / 5" className={classes.photo} />
+            {/* TODO: nu een tijdelijke stockfoto (src/Config/photos.ts); foto van de eigenaar als hij die wil (Gesprek-PO.md, vraag 6) */}
+            <Photo photo={ownerPhoto} ratio="4 / 5" className={classes.photo} />
             <div>
                 <Typography variant="h2" id="about-title">
                     Over mij

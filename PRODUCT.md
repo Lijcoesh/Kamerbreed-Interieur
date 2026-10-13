@@ -62,7 +62,7 @@ Eén vakman die alles zelf doet. Hij komt bij de klant thuis, adviseert, en legt
 ## Evidence on Hand
 
 - Logo: alleen een kleine JPEG (320 px) van de huidige site.
-- Projectfoto's en een foto van de eigenaar: komen later.
+- Projectfoto's en een foto van de eigenaar: komen later. Tot die tijd staan er tijdelijke stockfoto's (CC0) in het voorbeeld-design, op verzoek van de ontwikkelaar (13-10-2026). Die gaan er vóór livegang uit; ze zijn niet zijn werk.
 - Teksten: komen later.
 - **Niet aanwezig, dus niet verzinnen:** reviews, klantcijfers, keurmerken, garanties en prijzen. Het cijfer op Telefoonboek (5,6 uit 2017) wordt niet gebruikt. Geen gegenereerde beelden van interieurs of vloeren: die zouden doorgaan voor zijn werk.
 

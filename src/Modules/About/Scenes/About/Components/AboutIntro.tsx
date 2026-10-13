@@ -2,8 +2,9 @@ import { Container, Typography } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
 
 import ContactButtons from 'src/Components/ContactButtons/ContactButtons';
-import PhotoPlaceholder from 'src/Components/PhotoPlaceholder/PhotoPlaceholder';
+import Photo from 'src/Components/Photo/Photo';
 import { ownerName } from 'src/Config/company';
+import { ownerPhoto } from 'src/Config/photos';
 import { sectionSpacing } from 'src/Theme/sizes';
 
 // Portret links, tekst rechts. Op de telefoon eerst tekst en knoppen, dan het portret.
@@ -71,8 +72,8 @@ export default function AboutIntro() {
                 </Typography>
                 <ContactButtons className={classes.actions} />
             </div>
-            {/* TODO: foto van de eigenaar, als hij die wil (Gesprek-PO.md, vraag 6) */}
-            <PhotoPlaceholder ratio="4 / 5" className={classes.photo} />
+            {/* TODO: nu een tijdelijke stockfoto (src/Config/photos.ts); foto van de eigenaar als hij die wil (Gesprek-PO.md, vraag 6) */}
+            <Photo photo={ownerPhoto} ratio="4 / 5" eager className={classes.photo} />
         </Container>
     );
 }

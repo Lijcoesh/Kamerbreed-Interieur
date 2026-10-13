@@ -2,9 +2,11 @@ import { Container, Typography } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
 
 import { border, white } from 'src/colors';
-import PhotoPlaceholder from 'src/Components/PhotoPlaceholder/PhotoPlaceholder';
+import Photo from 'src/Components/Photo/Photo';
 import SectionHeader from 'src/Components/SectionHeader/SectionHeader';
+import { projects } from 'src/Config/projects';
 import { services } from 'src/Config/services';
+import type { ServiceId } from 'src/Definitions/Service';
 import { borderRadius, sectionSpacing } from 'src/Theme/sizes';
 
 const useStyles = makeStyles()(theme => ({
@@ -41,8 +43,6 @@ const useStyles = makeStyles()(theme => ({
     floorPhoto: {
         [theme.breakpoints.down('sm')]: {
             aspectRatio: '1 / 1',
-            padding: theme.spacing(1),
-            fontSize: '0.8125rem',
         },
     },
     name: {
@@ -81,6 +81,11 @@ const useStyles = makeStyles()(theme => ({
     },
 }));
 
+// De foto van het nieuwste project in die soort
+function photoFor(serviceId: ServiceId) {
+    return projects.find(project => project.services.includes(serviceId) && project.photo)?.photo;
+}
+
 export default function HomeServices() {
     const { classes } = useStyles();
 
@@ -99,7 +104,11 @@ export default function HomeServices() {
                 <ul className={classes.floors}>
                     {floors.map(service => (
                         <li key={service.id} className={classes.floor}>
-                            <PhotoPlaceholder ratio="4 / 3" className={classes.floorPhoto} />
+                            <Photo
+                                photo={photoFor(service.id)}
+                                ratio="4 / 3"
+                                className={classes.floorPhoto}
+                            />
                             <div>
                                 <Typography variant="h3" className={classes.name}>
                                     {service.name}
@@ -114,7 +123,11 @@ export default function HomeServices() {
 
                 {extras.map(service => (
                     <div key={service.id} className={classes.extra}>
-                        <PhotoPlaceholder ratio="3 / 2" className={classes.extraPhoto} />
+                        <Photo
+                            photo={photoFor(service.id)}
+                            ratio="3 / 2"
+                            className={classes.extraPhoto}
+                        />
                         <div className={classes.extraText}>
                             <Typography variant="h3">
                                 Daarnaast: {service.name.toLowerCase()}
