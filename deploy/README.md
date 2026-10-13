@@ -30,3 +30,9 @@ Wijzig je later `kamerbreed.caddy`, kopieer hem dan opnieuw en doe `sudo systemc
 
 - Laatste deploy: tabblad Actions op GitHub.
 - Site: `curl -I http://85.10.151.178:8080/` geeft `200` en `X-Robots-Tag: noindex, nofollow`.
+
+## GitHub Pages (demo)
+
+[deploy-pages.yml](../.github/workflows/deploy-pages.yml) bouwt bij elke push naar `main` ook een versie voor GitHub Pages, op `https://lijcoesh.github.io/Kamerbreed-Interieur/`. Die build zet `BASE_PATH=/Kamerbreed-Interieur/` (zie `vite.config.ts`; de router leest dat via `import.meta.env.BASE_URL`) en kopieert `index.html` naar `404.html`, zodat directe links als `/Kamerbreed-Interieur/contact` werken.
+
+Eenmalig: repo → Settings → Pages → Source: **GitHub Actions**. Pages op een privé-repo kan alleen met een betaald GitHub-account; de Pages-site zelf is altijd openbaar.
