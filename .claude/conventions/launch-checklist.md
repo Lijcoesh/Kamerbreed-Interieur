@@ -53,6 +53,6 @@ _Noteer hier tijdens het werk punten die vóór oplevering nog geregeld moeten w
 - Adres: de PO wil zijn (woon)adres niet op de site, maar art. 3:15d BW vraagt waarschijnlijk wel het vestigingsadres. De beslissing ligt bij de PO (`Gesprek-PO.md`, "Nog open").
 - KvK-nummer bevestigen en btw-nummer ontvangen voor de bedrijfsgegevens in de footer.
 - Instagram alleen als gewone link, geen ingesloten feed of embed (die laadt scripts van Meta, en dan zijn cookieconsent en een privacyverklaring nodig).
-- Kleurcontrast: de knop van de oude site (witte tekst op `#D49259`) haalt ongeveer 2,6:1, onder AA. Niet zo overnemen.
-- Fonts zelf hosten (geen Google Fonts-CDN) en de licentie vastleggen in `LICENSES.md`.
-- Logo en projectfoto's: herkomst en toestemming vastleggen. Op projectfoto's geen klantnamen, huisnummers of herkenbare personen zonder toestemming.
+- Logo en projectfoto's: herkomst en toestemming vastleggen in `src/Resources/README.md`. Op projectfoto's geen klantnamen, huisnummers of herkenbare personen zonder toestemming.
+- Logo: nu een tijdelijke JPEG van 310 px van de oude site (onscherp). Vervangen door het originele bestand van de PO.
+- Placeholders die vóór livegang weg moeten: "Foto volgt"-vlakken, "Instagram volgt" en "Btw-nummer volgt" in de footer, en de pagina's Projecten, Over mij en Contact ("Deze pagina wordt nog gebouwd").

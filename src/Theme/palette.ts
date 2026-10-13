@@ -1,26 +1,31 @@
 import type { PaletteOptions } from '@mui/material/styles';
 
 import {
-    accent,
     background,
+    black,
     border,
     error,
     ink,
     muted,
-    primary,
-    primaryDark,
+    ochre,
+    ochreDark,
+    olive,
+    oliveDark,
+    onOlive,
     white,
 } from 'src/colors';
 
 const palette: PaletteOptions = {
     primary: {
-        main: primary,
-        dark: primaryDark,
-        contrastText: white,
+        main: olive,
+        dark: oliveDark,
+        contrastText: onOlive,
     },
+    // Oker: knoppen voor bellen en mailen. Altijd met donkere tekst.
     secondary: {
-        main: accent,
-        contrastText: white,
+        main: ochre,
+        dark: ochreDark,
+        contrastText: black,
     },
     error: { main: error },
     background: {

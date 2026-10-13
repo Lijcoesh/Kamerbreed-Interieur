@@ -1,0 +1,272 @@
+---
+name: Kamerbreed Interieur
+description: Website van een eenmansvloerenbedrijf in het Westland; de categoriestandaard van een lokale vakman, rustig en goed uitgevoerd.
+colors:
+  olive: "#4F4A30"
+  oliveDark: "#3D3925"
+  ochre: "#D49259"
+  ochreDark: "#C27F45"
+  logoBlue: "#0884AF"
+  black: "#1D1F1E"
+  ink: "#4F4E4A"
+  muted: "#67665F"
+  onOlive: "#F0F1EE"
+  onOliveMuted: "#D6D4C6"
+  background: "#F0F1EE"
+  placeholder: "#E2E3DD"
+  border: "#D9DAD3"
+  white: "#ffffff"
+  error: "#B3261E"
+typography:
+  h1:
+    fontFamily: "\"Source Serif 4\", Georgia, \"Times New Roman\", serif"
+    fontSize: "clamp(2.4rem, 1.7rem + 2.6vw, 3.75rem)"
+    fontWeight: 600
+    lineHeight: 1.08
+    letterSpacing: "-0.015em"
+  h2:
+    fontFamily: "\"Source Serif 4\", Georgia, \"Times New Roman\", serif"
+    fontSize: "clamp(1.9rem, 1.5rem + 1.5vw, 2.6rem)"
+    fontWeight: 600
+    lineHeight: 1.15
+    letterSpacing: "-0.01em"
+  h3:
+    fontFamily: "\"Source Serif 4\", Georgia, \"Times New Roman\", serif"
+    fontSize: "1.375rem"
+    fontWeight: 600
+    lineHeight: 1.25
+  subtitle1:
+    fontFamily: "\"Source Sans 3\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+    fontSize: "clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem)"
+    fontWeight: 500
+    lineHeight: 1.4
+  body1:
+    fontFamily: "\"Source Sans 3\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+    fontSize: "1.125rem"
+    fontWeight: 400
+    lineHeight: 1.6
+  body2:
+    fontFamily: "\"Source Sans 3\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+    fontSize: "1rem"
+    fontWeight: 400
+    lineHeight: 1.55
+  button:
+    fontFamily: "\"Source Sans 3\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+    fontSize: "1.0625rem"
+    fontWeight: 600
+    letterSpacing: "0"
+rounded:
+  borderRadius: "6px"
+spacing:
+  unit: "8px"
+  pageGutterSmall: "20px"
+  pageGutter: "28px"
+  touchTarget: "48px"
+  headerHeightSmall: "64px"
+  headerHeight: "76px"
+  sectionSpacing: "clamp(64px, 8vw, 120px)"
+  contentMaxWidth: "1200px"
+components:
+  button-contact:
+    backgroundColor: "{colors.ochre}"
+    textColor: "{colors.black}"
+    rounded: "{rounded.borderRadius}"
+    typography: "{typography.button}"
+    padding: "10px 24px"
+    height: "56px"
+  button-contact-hover:
+    backgroundColor: "{colors.ochreDark}"
+    textColor: "{colors.black}"
+  button-outlined:
+    backgroundColor: "transparent"
+    textColor: "{colors.olive}"
+    rounded: "{rounded.borderRadius}"
+    typography: "{typography.button}"
+    height: "48px"
+  icon-button:
+    textColor: "{colors.olive}"
+    rounded: "{rounded.borderRadius}"
+    size: "48px"
+  appbar:
+    backgroundColor: "{colors.white}"
+    textColor: "{colors.ink}"
+    height: "76px"
+  contact-band:
+    backgroundColor: "{colors.olive}"
+    textColor: "{colors.onOlive}"
+  panel:
+    backgroundColor: "{colors.white}"
+    rounded: "{rounded.borderRadius}"
+  photo-placeholder:
+    backgroundColor: "{colors.placeholder}"
+    textColor: "{colors.ink}"
+    rounded: "4px"
+    padding: "16px"
+---
+
+# Design System: Kamerbreed Interieur
+
+## Overview
+
+**Creative North Star: "De vakman aan de keukentafel"**
+
+Een lokale vakman die je al half kent, op z'n best gepresenteerd: logo en naam van de bus, een rustige schreefkop in olijfbruin, foto en tekst naast elkaar, en twee even grote okerknoppen om te bellen of te mailen. Het systeem is de categoriestandaard van een vloerenbedrijf (aanbod, diensten, werkwijze, projecten, over mij, contact), niet vernieuwd maar zorgvuldig uitgevoerd. De warmte komt uit de kleur van de oude "in aanbouw"-pagina en het logo, niet uit decoratie.
+
+Het vlak is gebroken wit (`background`); secties scheiden door haarlijnen (`border`), niet door schaduw of kaarten. Wit is uitzondering: appbar, footer en losse panelen. Eén olijfbruine contactband sluit elke pagina af. Typografie is royaal (body 18px, tikdoelen 48px) omdat de doelgroep deels 50+ is en meestal op de telefoon kijkt.
+
+Bewust geweigerd (direction contract): de anonieme template met stockfoto, reviewslider en "wij"-taal, en trendy designstatements.
+
+**Key Characteristics:**
+- Gebroken wit vlak, olijfbruine koppen, warm donkergrijze tekst.
+- Oker alleen als knopvlak met donkere tekst en als teken voor "actief".
+- Haarlijnen in plaats van schaduw; vlak en rustig.
+- Bellen en mailen altijd even zwaar.
+- Fotoplekken zijn neutrale placeholders tot de echte foto's er zijn.
+- Royale maten: 18px body, 48px tikdoelen.
+
+## Colors
+
+Een gedempt, warm aardepalet: olijf en oker van de oude site, logoblauw als functionele uitzondering. Bron: `src/colors.ts`, gemapt op MUI-rollen in `src/Theme/palette.ts`.
+
+### Primary
+- **Olijfbruin** (`olive`): alle koppen (h1 t/m h3, footerkoppen, stapnummers), de lead (`subtitle1`), hovertekst en actieve navigatie, en het vlak van de contactband. MUI `primary.main`.
+- **Diep olijf** (`oliveDark`): MUI `primary.dark`, de hovertoon van olijf.
+
+### Secondary
+- **Oker** (`ochre`): uitsluitend het vlak van de contactknoppen en de skip-link (altijd met `black` als tekst), het "actief"-streepje onder de navigatie en het blokje in het mobiele menu, en de tekstselectie (oker op 45% met zwarte tekst). MUI `secondary.main`, `contrastText: black`.
+- **Donker oker** (`ochreDark`): MUI `secondary.dark`, hover van de okerknoppen.
+
+### Tertiary
+- **Logoblauw** (`logoBlue`): alleen in het logo en als focusrand (2px, offset 2) op wit en op `background`, waar hij 3:1 haalt.
+
+### Neutral
+- **Gebroken wit** (`background`): de grond van elke pagina, ook van het mobiele menu. MUI `background.default`.
+- **Wit** (`white`): appbar, footer (de tijdelijke logo-JPEG heeft een witte grond) en losse panelen zoals het binnenzonweringsblok. MUI `background.paper`. Ook de focusrand op de olijfband.
+- **Warm donkergrijs** (`ink`): lopende tekst, navigatielinks, tekst in placeholders. MUI `text.primary`.
+- **Gedempt grijs** (`muted`): secundaire tekst in de footer. MUI `text.secondary`.
+- **Haarlijn** (`border`): sectiescheidingen, appbar- en footerrand, panelrand, stapscheidingen. MUI `divider`.
+- **Placeholdervlak** (`placeholder`): vlak van `PhotoPlaceholder`.
+- **Tekst op olijf** (`onOlive`, `onOliveMuted`): kop en lead in de contactband.
+- **Zwart** (`black`): tekst op oker, selectietekst, basis van de schaduwtokens.
+- **Fout** (`error`): MUI `error.main` voor formulierfouten.
+
+### Named Rules
+**The Nooit-wit-op-oker Rule.** Oker draagt altijd donkere tekst (`black`). Witte tekst op oker haalt geen AA en komt niet voor.
+
+**The Oker-is-actie Rule.** Oker is een knopvlak voor contact of het teken voor "actief". Geen okeren koppen, achtergronden, iconen of decoratie.
+
+**The Blauw-blijft-logo Rule.** Logoblauw verschijnt alleen in het logo en als focusrand. Op de olijfband wordt de focusrand wit, omdat blauw daar geen 3:1 haalt.
+
+**The Gebroken-wit-is-grond Rule.** `background` is de grond van de hele pagina. Wit alleen voor appbar, footer en losse panelen.
+
+## Typography
+
+**Display Font:** Source Serif 4 (met Georgia, "Times New Roman", serif)
+**Body Font:** Source Sans 3 (met system-ui, -apple-system, "Segoe UI", sans-serif)
+
+**Character:** Een rustige, ambachtelijke schreefletter voor koppen naast een heldere humanistische schreefloze voor tekst. Beide van Adobe, zelf gehost als variabele woff2 (latin-subset) via `src/Theme/fonts.ts`; geen font-CDN. Bron van de schaal: `src/Theme/typography.ts`.
+
+### Hierarchy
+- **h1** (600, vloeiend 2.4 tot 3.75rem, 1.08, -0.015em): één per pagina, het aanbod.
+- **h2** (600, vloeiend 1.9 tot 2.6rem, 1.15, -0.01em): sectiekoppen via `SectionHeader`, en de contactband.
+- **h3** (600, 1.375rem, 1.25): dienstnamen, stappen, paneelkoppen.
+- **subtitle1** (500, vloeiend 1.25 tot 1.5rem, 1.4, olijf): de slogan als lead onder de h1.
+- **body1** (400, 1.125rem = 18px, 1.6): lopende tekst; regels begrensd op 40 tot 62ch.
+- **body2** (400, 1rem, 1.55): korte samenvattingen onder dienstkaarten.
+- **button** (600, 1.0625rem, geen hoofdletters, geen letterspatiëring).
+
+Alle koppen zijn olijf, gewicht 600, `text-wrap: balance`; body heeft `text-wrap: pretty`. Stapnummers in de werkwijze zijn Source Serif 4 500, 2.25rem, oldstyle-cijfers, olijf.
+
+### Named Rules
+**The Royale-maat Rule.** Lopende tekst is minimaal 18px (`body1`); kleiner alleen voor korte samenvattingen (16px), footer en placeholderlabels. De doelgroep is deels 50+.
+
+**The Zelf-gehost Rule.** Fonts komen uit `src/Resources/Fonts` met hun OFL-licentie ernaast. Geen Google Fonts of ander CDN.
+
+## Layout
+
+Eén inhoudsbreedte voor de hele site: `contentMaxWidth` plus gutters (`pageGutter`, onder `sm` `pageGutterSmall`), centraal ingesteld op `MuiContainer` in `src/Theme/Components/layout.ts`. Maten in `src/Theme/sizes.ts`; spacing via `theme.spacing` (8px-basis).
+
+Secties stapelen verticaal met `sectionSpacing` boven en onder, gescheiden door een haarlijn boven en onder. De appbar is sticky (`headerHeight`, onder `sm` `headerHeightSmall`); `scroll-padding-top` voorkomt dat ankers en de skip-link eronder landen.
+
+Breakpoints zijn de MUI-standaard (sm 600, md 900, lg 1200) en worden alleen via `theme.breakpoints` gebruikt. Onder `md` vervalt de desktopnavigatie voor belknop + menuknop, worden tweekoloms blokken één kolom en komt tekst vóór de foto. Grids gebruiken `auto-fit`/`minmax` waar mogelijk (contactknoppen: naast elkaar zodra beide 320px halen). Fotoverhoudingen wisselen per breakpoint in plaats van een `minHeight` naast `aspectRatio`.
+
+## Elevation & Depth
+
+Het systeem is vlak. Diepte en scheiding komen van haarlijnen (`border`, 1px) en van het verschil tussen gebroken wit, wit en olijf. Knoppen hebben `disableElevation`. Schaduw bestaat alleen voor wat boven de pagina zweeft: menu's en de mobiele drawer. Bron: `src/Theme/shadow.ts`, gemapt op de MUI-elevaties.
+
+### Shadow Vocabulary
+- **softShadow** (`0 1px 2px` zwart 6%): elevatie 1 tot 2.
+- **mediumShadow** (`0 8px 24px -10px` zwart 25%): elevatie 3 tot 8, menu's.
+- **strongShadow** (`0 16px 40px -16px` zwart 35%): elevatie 9 en hoger, de drawer.
+
+### Named Rules
+**The Haarlijn-niet-schaduw Rule.** Secties, panelen en kaarten scheiden met een 1px haarlijn. Schaduw alleen voor overlays (menu, drawer).
+
+## Shapes
+
+Zacht afgeronde, verder rechthoekige vormen. Eén radius (`borderRadius`, via `shape.borderRadius` in `src/Theme/theme.ts`) voor knoppen, icoonknoppen en panelen. Fotoplaceholders zijn iets strakker (4px), links en focusranden 2px. Op mobiel verliest het binnenzonweringspaneel zijn foto-randen en radius aan de binnenkant. Geen cirkels, pillen of schuine vormen.
+
+## Components
+
+### Buttons
+Stevig en rustig: een gevuld vlak, geen schaduw, geen hoofdletters. Bron: `src/Theme/Components/buttons.ts`.
+- **Shape:** zacht afgerond (`borderRadius`), minimaal `touchTarget` hoog; `size="large"` minimaal 56px met 24px zijpadding.
+- **Contactknop (contained secondary):** oker vlak, zwarte tekst, icoon links, label ("Bellen"/"Mailen") met het nummer of adres eronder in gewicht 400. Komt alleen voor via `ContactButtons`.
+- **Outlined primary:** olijf tekst en rand op transparant, met pijlicoon rechts; voor doorlinken ("Alle projecten bekijken", "Meer over mij").
+- **Hover / Focus:** achtergrond- en randkleur in 160ms ease-out naar de `dark`-toon. Focus: 2px `logoBlue` outline met offset 2 op elk `ButtonBase`-element; wit binnen de olijfband.
+- **Icon button:** `touchTarget` vierkant, olijf, zelfde radius.
+
+### ContactButtons (signatuur)
+Twee even grote, even zware okerknoppen voor bellen en mailen, altijd samen, met nummer en e-mailadres zichtbaar. Layout `row` (naast elkaar zodra beide passen, anders onder elkaar) of `stack` (drawer). Gebruikt in hero, contactband en mobiel menu. Bron: `src/Components/ContactButtons/ContactButtons.tsx`.
+
+### Cards / Containers
+- **Dienstkaart:** geen kaart: een fotoplaceholder, h3 en body2 direct op het gebroken wit.
+- **Paneel:** wit, 1px haarlijn, `borderRadius`, foto en tekst naast elkaar; tekstpadding 32/40px (mobiel 24/20px).
+- **Shadow Strategy:** geen; zie Elevation & Depth.
+
+### PhotoPlaceholder
+Neutraal vlak (`placeholder`) met 1px haarlijn, 4px radius en een klein label linksonder ("Foto volgt"/"Projectfoto volgt"), vaste `aspectRatio` per gebruik, `aria-hidden`. Staat op elke plek waar een echte foto van de PO hoort. Bron: `src/Components/PhotoPlaceholder/PhotoPlaceholder.tsx`.
+
+### Navigation
+- **Appbar:** wit, sticky, haarlijn onder; `BrandLockup` (logo + "Kamerbreed Interieur" in Source Serif 4) links.
+- **Desktop (vanaf md):** links in `ink`, 500, 1.0625rem, 48px hoog. Hover: olijf. Actief: olijf, 600, met een 3px oker streep die in 200ms vanaf links inschuift (uit bij reduced motion). Geen los telefoonnummer, zodat bellen en mailen gelijk blijven.
+- **Mobiel (onder md):** belknop en menuknop (icoonknoppen). Het menu is een drawer van rechts (`min(360px, 88vw)`) op gebroken wit; het actieve item krijgt een okerblokje, onderaan staan de `ContactButtons` gestapeld.
+
+### Contactband
+Olijf vlak met `onOlive` kop en `onOliveMuted` lead (max 46ch), naast de `ContactButtons`; de afsluiting van de pagina. Focusrand wordt hier wit.
+
+### Footer
+Wit met haarlijn boven: merk en slogan, contact, pagina's, bedrijfsgegevens in kolommen met serif-koppen (600, 1.125rem, olijf); links onderstreept.
+
+### Links
+Altijd onderstreept (1px, offset 0.2em, `currentColor`), 2px bij hover, focusrand in logoblauw. Bron: `overrideMuiLink` in `src/Theme/Components/layout.ts`.
+
+### SkipLink
+Oker vlak met zwarte tekst, logoblauwe focusrand; eerste focusbare element.
+
+## Do's and Don'ts
+
+### Do:
+- **Do** gebruik oker alleen als knopvlak met `black` tekst of als "actief"-teken.
+- **Do** toon bellen en mailen altijd samen en even zwaar, via `ContactButtons`.
+- **Do** scheid secties met een 1px `border`-haarlijn en `sectionSpacing`.
+- **Do** gebruik `background` als paginagrond; wit alleen voor appbar, footer en losse panelen.
+- **Do** geef elk bedienbaar element minimaal `touchTarget` (48px) en een 2px `logoBlue` focusrand met offset 2 (wit op olijf).
+- **Do** gebruik `PhotoPlaceholder` waar een foto van de PO nog ontbreekt.
+- **Do** haal kleuren uit `src/colors.ts` en maten uit `src/Theme/sizes.ts`.
+
+### Don't:
+- **Don't** zet witte tekst op oker.
+- **Don't** gebruik logoblauw buiten het logo en de focusrand.
+- **Don't** gebruik schaduw voor kaarten, panelen of secties; alleen menu's en de drawer hebben diepte.
+- **Don't** maak bellen of mailen dominanter dan de ander, ook niet met een los nummer in de desktop-appbar.
+- **Don't** gebruik gegenereerde of stockbeelden; die zouden doorgaan voor zijn werk.
+- **Don't** laad fonts via een CDN.
+- **Don't** zet lopende tekst kleiner dan 18px.
+
+## Tijdelijk
+
+Wat in de build staat maar niet blijvend is (geen ontwerpregel):
+- **Logo:** `src/Resources/Logo/kamerbreed-logo.jpeg`, gedownload van de oude site (310 × 264, witte grond). Vervangen door het origineel zodra de PO het stuurt.
+- **Teksten:** lorem ipsum; de PO schrijft de definitieve teksten.
+- **Foto's:** alle beeldplekken zijn `PhotoPlaceholder`; projectfoto's en een foto van de eigenaar komen van de PO.

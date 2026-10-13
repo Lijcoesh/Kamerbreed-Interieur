@@ -1,17 +1,31 @@
 // Kleurconstanten. Componenten importeren hiervandaan, nooit hardcoded hex.
-// Voorlopige neutrale tinten; vervangen zodra het design er is.
+// Basis: de kleuren van de oude "in aanbouw"-pagina plus die van het logo (PO, 12-10-2026).
 
-export const primary = '#1F2933';
-export const primaryDark = '#111820';
-export const accent = '#9A6B3F';
+// Koppen en de donkere contactband
+export const olive = '#4F4A30';
+export const oliveDark = '#3D3925';
+
+// Accent: alleen als knopvlak (met donkere tekst) en als teken voor "actief".
+// Witte tekst op oker haalt geen AA, dus nooit wit op oker.
+export const ochre = '#D49259';
+export const ochreDark = '#C27F45';
+
+// Logo
+export const logoBlue = '#0884AF';
+export const black = '#1D1F1E';
 
 // Tekst op licht
-export const ink = '#1F2933';
-export const muted = '#52606D';
+export const ink = '#4F4E4A';
+export const muted = '#67665F';
+
+// Tekst op olijf
+export const onOlive = '#F0F1EE';
+export const onOliveMuted = '#D6D4C6';
 
 // Vlakken en lijnen
-export const background = '#FAF9F7';
-export const border = '#E4E1DC';
+export const background = '#F0F1EE';
+export const placeholder = '#E2E3DD';
+export const border = '#D9DAD3';
 
 export const white = '#ffffff';
-export const error = '#C62828';
+export const error = '#B3261E';

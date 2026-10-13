@@ -1,21 +1,19 @@
-import { Container, Typography } from '@mui/material';
-import { makeStyles } from 'tss-react/mui';
-
-import { sectionSpacing } from 'src/Theme/sizes';
-
-const useStyles = makeStyles()({
-    root: {
-        paddingTop: sectionSpacing,
-        paddingBottom: sectionSpacing,
-    },
-});
+import HomeAbout from './Components/HomeAbout';
+import HomeContact from './Components/HomeContact';
+import HomeHero from './Components/HomeHero';
+import HomeProjects from './Components/HomeProjects';
+import HomeServices from './Components/HomeServices';
+import HomeWorkflow from './Components/HomeWorkflow';
 
 export default function Home() {
-    const { classes } = useStyles();
-
     return (
-        <Container className={classes.root}>
-            <Typography variant="h1">Kamerbreed Interieur</Typography>
-        </Container>
+        <>
+            <HomeHero />
+            <HomeServices />
+            <HomeWorkflow />
+            <HomeProjects />
+            <HomeAbout />
+            <HomeContact />
+        </>
     );
 }

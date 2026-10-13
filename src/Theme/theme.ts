@@ -1,7 +1,7 @@
 import { createTheme } from '@mui/material/styles';
 
-import { overrideMuiButton } from './Components/buttons';
-import { overrideMuiContainer, overrideMuiCssBaseline } from './Components/layout';
+import { overrideMuiButton, overrideMuiIconButton } from './Components/buttons';
+import { overrideMuiContainer, overrideMuiCssBaseline, overrideMuiLink } from './Components/layout';
 import palette from './palette';
 import overrideShadows from './shadow';
 import { borderRadius } from './sizes';
@@ -17,8 +17,10 @@ const theme = createTheme({
 
 theme.components = {
     MuiButton: overrideMuiButton(),
+    MuiIconButton: overrideMuiIconButton(),
     MuiContainer: overrideMuiContainer(theme),
     MuiCssBaseline: overrideMuiCssBaseline(),
+    MuiLink: overrideMuiLink(),
 };
 
 theme.shadows = overrideShadows();
