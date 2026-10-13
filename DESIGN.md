@@ -15,6 +15,7 @@ colors:
   background: "#F0F1EE"
   placeholder: "#E2E3DD"
   border: "#D9DAD3"
+  inputBorder: "#8A887F"
   white: "#ffffff"
   error: "#B3261E"
 typography:
@@ -77,6 +78,16 @@ components:
   button-contact-hover:
     backgroundColor: "{colors.ochreDark}"
     textColor: "{colors.black}"
+  button-submit:
+    backgroundColor: "{colors.ochre}"
+    textColor: "{colors.black}"
+    rounded: "{rounded.borderRadius}"
+    typography: "{typography.button}"
+    padding: "8px 24px"
+    height: "56px"
+  button-submit-hover:
+    backgroundColor: "{colors.ochreDark}"
+    textColor: "{colors.black}"
   button-outlined:
     backgroundColor: "transparent"
     textColor: "{colors.olive}"
@@ -97,6 +108,13 @@ components:
   panel:
     backgroundColor: "{colors.white}"
     rounded: "{rounded.borderRadius}"
+  input:
+    backgroundColor: "{colors.white}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.borderRadius}"
+    typography: "{typography.body1}"
+    padding: "12px 14px"
+    height: "48px"
   photo-placeholder:
     backgroundColor: "{colors.placeholder}"
     textColor: "{colors.ink}"
@@ -112,7 +130,7 @@ components:
 
 Een lokale vakman die je al half kent, op z'n best gepresenteerd: logo en naam van de bus, een rustige schreefkop in olijfbruin, foto en tekst naast elkaar, en twee even grote okerknoppen om te bellen of te mailen. Het systeem is de categoriestandaard van een vloerenbedrijf (aanbod, diensten, werkwijze, projecten, over mij, contact), niet vernieuwd maar zorgvuldig uitgevoerd. De warmte komt uit de kleur van de oude "in aanbouw"-pagina en het logo, niet uit decoratie.
 
-Het vlak is gebroken wit (`background`); secties scheiden door haarlijnen (`border`), niet door schaduw of kaarten. Wit is uitzondering: appbar, footer en losse panelen. Eén olijfbruine contactband sluit elke pagina af. Typografie is royaal (body 18px, tikdoelen 48px) omdat de doelgroep deels 50+ is en meestal op de telefoon kijkt.
+Het vlak is gebroken wit (`background`); secties scheiden door haarlijnen (`border`), niet door schaduw of kaarten. Wit is uitzondering: appbar, footer, losse panelen en invoervelden. Eén olijfbruine contactband sluit een inhoudspagina af; de contactpagina heeft er geen, want die pagina is zelf het contact. Typografie is royaal (body 18px, tikdoelen 48px) omdat de doelgroep deels 50+ is en meestal op de telefoon kijkt.
 
 Bewust geweigerd (direction contract): de anonieme template met stockfoto, reviewslider en "wij"-taal, en trendy designstatements.
 
@@ -133,31 +151,34 @@ Een gedempt, warm aardepalet: olijf en oker van de oude site, logoblauw als func
 - **Diep olijf** (`oliveDark`): MUI `primary.dark`, de hovertoon van olijf.
 
 ### Secondary
-- **Oker** (`ochre`): uitsluitend het vlak van de contactknoppen en de skip-link (altijd met `black` als tekst), het "actief"-streepje onder de navigatie en het blokje in het mobiele menu, en de tekstselectie (oker op 45% met zwarte tekst). MUI `secondary.main`, `contrastText: black`.
+- **Oker** (`ochre`): uitsluitend het vlak van de actieknoppen (de contactknoppen en "Versturen" in het contactformulier) en de skip-link (altijd met `black` als tekst), het "actief"-streepje onder de navigatie en het blokje in het mobiele menu, en de tekstselectie (oker op 45% met zwarte tekst). MUI `secondary.main`, `contrastText: black`.
 - **Donker oker** (`ochreDark`): MUI `secondary.dark`, hover van de okerknoppen.
 
 ### Tertiary
-- **Logoblauw** (`logoBlue`): alleen in het logo en als focusrand (2px, offset 2) op wit en op `background`, waar hij 3:1 haalt.
+- **Logoblauw** (`logoBlue`): alleen in het logo en als focusrand (2px, offset 2) op wit en op `background`, waar hij 3:1 haalt. Ook de focusrand om een fout invoerveld, zodat de rode rand blijft staan.
 
 ### Neutral
 - **Gebroken wit** (`background`): de grond van elke pagina, ook van het mobiele menu. MUI `background.default`.
-- **Wit** (`white`): appbar, footer (de tijdelijke logo-JPEG heeft een witte grond) en losse panelen zoals het binnenzonweringsblok. MUI `background.paper`. Ook de focusrand op de olijfband.
-- **Warm donkergrijs** (`ink`): lopende tekst, navigatielinks, tekst in placeholders. MUI `text.primary`.
-- **Gedempt grijs** (`muted`): secundaire tekst in de footer. MUI `text.secondary`.
-- **Haarlijn** (`border`): sectiescheidingen, appbar- en footerrand, panelrand, stapscheidingen. MUI `divider`.
+- **Wit** (`white`): appbar, footer (de tijdelijke logo-JPEG heeft een witte grond) losse panelen zoals het binnenzonweringsblok en het formulierpaneel, en invoervelden. MUI `background.paper`. Ook de focusrand op de olijfband.
+- **Warm donkergrijs** (`ink`): lopende tekst, navigatielinks, tekst in placeholders, veldlabels en veldtekst, en de hoverrand van een invoerveld. MUI `text.primary`.
+- **Gedempt grijs** (`muted`): secundaire tekst in de footer, "(optioneel)" en hints bij veldlabels, de tekenteller en de privacynotitie onder het formulier. MUI `text.secondary`.
+- **Haarlijn** (`border`): sectiescheidingen, appbar- en footerrand, panelrand, stapscheidingen. MUI `divider`. Niet voor invoervelden: op wit haalt hij geen 3:1.
+- **Veldrand** (`inputBorder`): de rand van invoervelden in rust; haalt 3:1 op wit. Bron: `src/Theme/Components/inputs.ts`.
 - **Placeholdervlak** (`placeholder`): vlak van `PhotoPlaceholder`.
 - **Tekst op olijf** (`onOlive`, `onOliveMuted`): kop en lead in de contactband.
 - **Zwart** (`black`): tekst op oker, selectietekst, basis van de schaduwtokens.
-- **Fout** (`error`): MUI `error.main` voor formulierfouten.
+- **Fout** (`error`): MUI `error.main` voor formulierfouten: 2px rand van een fout veld, de foutmelding eronder, en rand en titel van de niet-verstuurd-melding.
 
 ### Named Rules
 **The Nooit-wit-op-oker Rule.** Oker draagt altijd donkere tekst (`black`). Witte tekst op oker haalt geen AA en komt niet voor.
 
-**The Oker-is-actie Rule.** Oker is een knopvlak voor contact of het teken voor "actief". Geen okeren koppen, achtergronden, iconen of decoratie.
+**The Oker-is-actie Rule.** Oker is een knopvlak voor contact (bellen, mailen, WhatsApp, en het versturen van het contactformulier) of het teken voor "actief". Geen okeren koppen, achtergronden, iconen of decoratie.
 
-**The Blauw-blijft-logo Rule.** Logoblauw verschijnt alleen in het logo en als focusrand. Op de olijfband wordt de focusrand wit, omdat blauw daar geen 3:1 haalt.
+**The Blauw-blijft-logo Rule.** Logoblauw verschijnt alleen in het logo en als focusrand (ook om een fout invoerveld met focus). Op de olijfband wordt de focusrand wit, omdat blauw daar geen 3:1 haalt.
 
-**The Gebroken-wit-is-grond Rule.** `background` is de grond van de hele pagina. Wit alleen voor appbar, footer en losse panelen.
+**The Gebroken-wit-is-grond Rule.** `background` is de grond van de hele pagina. Wit alleen voor appbar, footer, losse panelen en invoervelden.
+
+**The Veld-is-herkenbaar Rule.** Een invoerveld is wit met een `inputBorder`-rand die 3:1 haalt, nooit alleen de haarlijn: de rand is wat een leeg veld als veld herkenbaar maakt.
 
 ## Typography
 
@@ -169,16 +190,16 @@ Een gedempt, warm aardepalet: olijf en oker van de oude site, logoblauw als func
 ### Hierarchy
 - **h1** (600, vloeiend 2.4 tot 3.75rem, 1.08, -0.015em): één per pagina, het aanbod.
 - **h2** (600, vloeiend 1.9 tot 2.6rem, 1.15, -0.01em): sectiekoppen via `SectionHeader`, en de contactband.
-- **h3** (600, 1.375rem, 1.25): dienstnamen, stappen, paneelkoppen.
+- **h3** (600, 1.375rem, 1.25): dienstnamen, stappen, paneelkoppen (ook "Stuur een bericht", "Werkgebied" en "Bedrijfsgegevens" op de contactpagina, als h2-element), de bevestiging na versturen.
 - **subtitle1** (500, vloeiend 1.25 tot 1.5rem, 1.4, olijf): de slogan als lead onder de h1.
 - **body1** (400, 1.125rem = 18px, 1.6): lopende tekst; regels begrensd op 40 tot 62ch.
-- **body2** (400, 1rem, 1.55): korte samenvattingen onder dienstkaarten.
+- **body2** (400, 1rem, 1.55): korte samenvattingen onder dienstkaarten, de privacynotitie onder de verstuurknop.
 - **button** (600, 1.0625rem, geen hoofdletters, geen letterspatiëring).
 
-Alle koppen zijn olijf, gewicht 600, `text-wrap: balance`; body heeft `text-wrap: pretty`. Stapnummers in de werkwijze zijn Source Serif 4 500, 2.25rem, oldstyle-cijfers, olijf.
+Alle koppen zijn olijf, gewicht 600, `text-wrap: balance`; body heeft `text-wrap: pretty`. Stapnummers in de werkwijze zijn Source Serif 4 500, 2.25rem, oldstyle-cijfers, olijf. Formuliertekst: veldlabels 600, 1.0625rem, `ink`; veldtekst 1.125rem; hints, foutmeldingen (500) en de tekenteller 1rem, de teller met tabulaire cijfers.
 
 ### Named Rules
-**The Royale-maat Rule.** Lopende tekst is minimaal 18px (`body1`); kleiner alleen voor korte samenvattingen (16px), footer en placeholderlabels. De doelgroep is deels 50+.
+**The Royale-maat Rule.** Lopende tekst is minimaal 18px (`body1`); kleiner alleen voor korte samenvattingen (16px), footer, placeholderlabels en de korte formulierhulp (labels 17px; hints, foutmeldingen, teller en privacynotitie 16px). Wat de bezoeker typt is 18px. De doelgroep is deels 50+.
 
 **The Zelf-gehost Rule.** Fonts komen uit `src/Resources/Fonts` met hun OFL-licentie ernaast. Geen Google Fonts of ander CDN.
 
@@ -189,6 +210,8 @@ Eén inhoudsbreedte voor de hele site: `contentMaxWidth` plus gutters (`pageGutt
 Secties stapelen verticaal met `sectionSpacing` boven en onder, gescheiden door een haarlijn boven en onder. De appbar is sticky (`headerHeight`, onder `sm` `headerHeightSmall`); `scroll-padding-top` voorkomt dat ankers en de skip-link eronder landen.
 
 Breakpoints zijn de MUI-standaard (sm 600, md 900, lg 1200) en worden alleen via `theme.breakpoints` gebruikt. Onder `md` vervalt de desktopnavigatie voor belknop + menuknop, worden tweekoloms blokken één kolom en komt tekst vóór de foto. Grids gebruiken `auto-fit`/`minmax` waar mogelijk (contactknoppen: naast elkaar zodra beide 320px halen). Fotoverhoudingen wisselen per breakpoint in plaats van een `minHeight` naast `aspectRatio`.
+
+Contactpagina: een tweekoloms grid 5/7 met benoemde gebieden. Links de intro (h1, lead, `ContactButtons` gestapeld, max 420px) en daaronder, na een haarlijn, werkgebied en bedrijfsgegevens; rechts het witte formulierpaneel over beide rijen. Kolomafstand 64px, rijafstand 48px, bovenmarge `clamp(40px, 6vw, 88px)`, onder `sectionSpacing`. Onder `md` één kolom in de volgorde intro, formulier, gegevens; onder `sm` loopt het paneel 8px in de gutter. Geen contactband op deze pagina. Een veld met focus houdt 56px `scroll-margin-top`, zodat zijn label niet onder de sticky appbar verdwijnt.
 
 ## Elevation & Depth
 
@@ -204,7 +227,7 @@ Het systeem is vlak. Diepte en scheiding komen van haarlijnen (`border`, 1px) en
 
 ## Shapes
 
-Zacht afgeronde, verder rechthoekige vormen. Eén radius (`borderRadius`, via `shape.borderRadius` in `src/Theme/theme.ts`) voor knoppen, icoonknoppen en panelen. Fotoplaceholders zijn iets strakker (4px), links en focusranden 2px. Op mobiel verliest het binnenzonweringspaneel zijn foto-randen en radius aan de binnenkant. Geen cirkels, pillen of schuine vormen.
+Zacht afgeronde, verder rechthoekige vormen. Eén radius (`borderRadius`, via `shape.borderRadius` in `src/Theme/theme.ts`) voor knoppen, icoonknoppen, panelen, invoervelden en de niet-verstuurd-melding. Fotoplaceholders zijn iets strakker (4px), links en focusranden 2px. Op mobiel verliest het binnenzonweringspaneel zijn foto-randen en radius aan de binnenkant. Geen cirkels, pillen of schuine vormen.
 
 ## Components
 
@@ -212,17 +235,35 @@ Zacht afgeronde, verder rechthoekige vormen. Eén radius (`borderRadius`, via `s
 Stevig en rustig: een gevuld vlak, geen schaduw, geen hoofdletters. Bron: `src/Theme/Components/buttons.ts`.
 - **Shape:** zacht afgerond (`borderRadius`), minimaal `touchTarget` hoog; `size="large"` minimaal 56px met 24px zijpadding.
 - **Contactknop (contained secondary):** oker vlak, zwarte tekst, icoon links, label ("Bellen"/"Mailen") met het nummer of adres eronder in gewicht 400. Komt alleen voor via `ContactButtons`.
+- **Verstuurknop (contained secondary, large):** hetzelfde okervlak met zwarte tekst, zonder icoon, links uitgelijnd onder het formulier; label "Versturen", tijdens verzenden "Bezig met versturen…".
 - **Outlined primary:** olijf tekst en rand op transparant, met pijlicoon rechts; voor doorlinken ("Alle projecten bekijken", "Meer over mij").
 - **Hover / Focus:** achtergrond- en randkleur in 160ms ease-out naar de `dark`-toon. Focus: 2px `logoBlue` outline met offset 2 op elk `ButtonBase`-element; wit binnen de olijfband.
 - **Icon button:** `touchTarget` vierkant, olijf, zelfde radius.
 
 ### ContactButtons (signatuur)
-Twee even grote, even zware okerknoppen voor bellen en mailen, altijd samen, met nummer en e-mailadres zichtbaar. Layout `row` (naast elkaar zodra beide passen, anders onder elkaar) of `stack` (drawer). Gebruikt in hero, contactband en mobiel menu. Bron: `src/Components/ContactButtons/ContactButtons.tsx`.
+Twee even grote, even zware okerknoppen voor bellen en mailen, altijd samen, met nummer en e-mailadres zichtbaar. Staat `whatsappNumber` in `src/Config/company.ts` aan, dan sluit een derde, even zware WhatsApp-knop aan (nu uit). Layout `row` (naast elkaar zodra beide passen, anders onder elkaar) of `stack` (drawer). Gebruikt in hero, contactband, mobiel menu en (gestapeld) op de contactpagina. Bron: `src/Components/ContactButtons/ContactButtons.tsx`.
 
 ### Cards / Containers
 - **Dienstkaart:** geen kaart: een fotoplaceholder, h3 en body2 direct op het gebroken wit.
 - **Paneel:** wit, 1px haarlijn, `borderRadius`, foto en tekst naast elkaar; tekstpadding 32/40px (mobiel 24/20px).
 - **Shadow Strategy:** geen; zie Elevation & Depth.
+
+### Inputs / Fields
+Wit en rustig, met een rand die je ziet. Bron: `src/Theme/Components/inputs.ts` (`MuiOutlinedInput`).
+- **Style:** wit vlak, 1px `inputBorder`, `borderRadius`, tekst `ink` 1.125rem, padding 12/14px, minimaal `touchTarget` hoog. Hover: rand `ink`.
+- **Focus:** 2px olijf rand; geen extra outline.
+- **Error:** 2px `error` rand. Krijgt een fout veld focus, dan blijft de rode rand en komt de gewone focusrand (2px `logoBlue`, offset 2) eromheen.
+- **Autofill:** de browser kleurt het veld niet; het blijft wit met `ink` tekst.
+- Randkleur wisselt in 160ms ease-out.
+
+### FormField
+Eén veld met label erboven (600, 1.0625rem), optioneel "(optioneel)" in `muted`, een hint eronder in `muted` 1rem, het veld, en daaronder de foutmelding in `error` (500, 1rem), met rechts een tekenteller ("123 / 2000", tabulaire cijfers) voor lange tekst. Hint en fout zijn via `aria-describedby` aan het veld gekoppeld; `invalid` en `describedBy` laten een veld meedoen aan een groepsfout. Bron: `src/Components/FormField/FormField.tsx`.
+
+### Contactformulier
+Op één wit paneel met haarlijn en `borderRadius` (padding 40/48px, mobiel 24/20px), kop in h3. `noValidate`; de controle zit in `src/Helpers/validateContactMessage.ts` en de focus gaat naar het eerste foute veld. E-mail en telefoon staan als paar in een `fieldset` met een legend die alleen schermlezers horen (geen zichtbare kop of hint); de regel "één van beide" verschijnt pas als groepsfout onder het paar. Mislukt verzenden: een melding met 1px `error` rand rondom (geen zijstreep), titel "Niet verstuurd" in `error`, tekst in `ink` en links naar telefoon en e-mail. Gelukt: de bevestiging vervangt het formulier en krijgt de focus, met een outlined knop om nog een bericht te sturen. Onder de verstuurknop een korte privacynotitie met link. Bron: `src/Modules/Contact/Scenes/Contact/Components/ContactForm.tsx`.
+
+### CompanyDetails
+Bedrijfsnaam, KvK en btw onder elkaar, 1.125rem, regelhoogte 1.7; een ontbrekend gegeven in `muted`. Op de contactpagina op deze maat; de footer geeft een `className` mee die hem terugzet naar 1rem, gelijk aan de andere footerkolommen. Bron: `src/Components/CompanyDetails/CompanyDetails.tsx`.
 
 ### PhotoPlaceholder
 Neutraal vlak (`placeholder`) met 1px haarlijn, 4px radius en een klein label linksonder ("Foto volgt"/"Projectfoto volgt"), vaste `aspectRatio` per gebruik, `aria-hidden`. Staat op elke plek waar een echte foto van de PO hoort. Bron: `src/Components/PhotoPlaceholder/PhotoPlaceholder.tsx`.
@@ -233,10 +274,10 @@ Neutraal vlak (`placeholder`) met 1px haarlijn, 4px radius en een klein label li
 - **Mobiel (onder md):** belknop en menuknop (icoonknoppen). Het menu is een drawer van rechts (`min(360px, 88vw)`) op gebroken wit; het actieve item krijgt een okerblokje, onderaan staan de `ContactButtons` gestapeld.
 
 ### Contactband
-Olijf vlak met `onOlive` kop en `onOliveMuted` lead (max 46ch), naast de `ContactButtons`; de afsluiting van de pagina. Focusrand wordt hier wit.
+Olijf vlak in twee verticaal gecentreerde kolommen (5/7): links `onOlive` kop en `onOliveMuted` lead (max 46ch), rechts alle acties als één blok: de `ContactButtons` en daaronder over de volle breedte een outlined knop "Of stuur een bericht" naar `/contact` in `onOlive` (rand 70%, bij hover vol met een vlak van 8%). Zo is het formulier vindbaar zonder bellen of mailen te verdringen. De afsluiting van een inhoudspagina. Niet op de contactpagina. Focusrand wordt hier wit.
 
 ### Footer
-Wit met haarlijn boven: merk en slogan, contact, pagina's, bedrijfsgegevens in kolommen met serif-koppen (600, 1.125rem, olijf); links onderstreept.
+Wit met haarlijn boven: merk en slogan, contact, pagina's, bedrijfsgegevens (`CompanyDetails`, 1rem) in kolommen met serif-koppen (600, 1.125rem, olijf); links onderstreept.
 
 ### Links
 Altijd onderstreept (1px, offset 0.2em, `currentColor`), 2px bij hover, focusrand in logoblauw. Bron: `overrideMuiLink` in `src/Theme/Components/layout.ts`.
@@ -250,8 +291,9 @@ Oker vlak met zwarte tekst, logoblauwe focusrand; eerste focusbare element.
 - **Do** gebruik oker alleen als knopvlak met `black` tekst of als "actief"-teken.
 - **Do** toon bellen en mailen altijd samen en even zwaar, via `ContactButtons`.
 - **Do** scheid secties met een 1px `border`-haarlijn en `sectionSpacing`.
-- **Do** gebruik `background` als paginagrond; wit alleen voor appbar, footer en losse panelen.
-- **Do** geef elk bedienbaar element minimaal `touchTarget` (48px) en een 2px `logoBlue` focusrand met offset 2 (wit op olijf).
+- **Do** gebruik `background` als paginagrond; wit alleen voor appbar, footer, losse panelen en invoervelden.
+- **Do** geef elk bedienbaar element minimaal `touchTarget` (48px) en een 2px `logoBlue` focusrand met offset 2 (wit op olijf). Invoervelden tonen focus met een 2px olijf rand.
+- **Do** bouw formuliervelden met `FormField`: label erboven, fout eronder in `error`, `inputBorder` als rand.
 - **Do** gebruik `PhotoPlaceholder` waar een foto van de PO nog ontbreekt.
 - **Do** haal kleuren uit `src/colors.ts` en maten uit `src/Theme/sizes.ts`.
 
@@ -263,6 +305,7 @@ Oker vlak met zwarte tekst, logoblauwe focusrand; eerste focusbare element.
 - **Don't** gebruik gegenereerde of stockbeelden; die zouden doorgaan voor zijn werk.
 - **Don't** laad fonts via een CDN.
 - **Don't** zet lopende tekst kleiner dan 18px.
+- **Don't** geef een invoerveld de haarlijn (`border`) als rand; die haalt op wit geen 3:1.
 
 ## Tijdelijk
 

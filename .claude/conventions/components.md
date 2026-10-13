@@ -48,4 +48,5 @@ Helpers/hooks in dezelfde file gebruiken named exports (`export function useX()`
 
 - Velden via één gedeelde `src/Components/FormField` (label, `maxLength`, foutmelding onder het veld); maak die aan bij het eerste formulier.
 - Het formulier heeft `noValidate` en controleert bij verzenden zelf, met pure functies in `src/Helpers/`. Bij een fout gaat de focus naar het eerste foute veld.
+- Een regel over meerdere velden (bv. "e-mail óf telefoon") staat als één melding onder de groep (`fieldset` met `legend`), niet bij één van de velden. Beide velden krijgen `invalid` en verwijzen met `describedBy` naar die melding; zet dan geen "(optioneel)" bij die velden.
 - Komt er een backend: de frontend controleert even streng of strenger dan de API, zodat een gebruiker nooit een 400 krijgt voor een typfout. Wijzig je een regel aan één kant, pas dan de andere ook aan.

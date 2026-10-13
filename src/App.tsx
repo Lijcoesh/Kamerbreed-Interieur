@@ -7,6 +7,7 @@ import SkipLink from 'src/Components/SkipLink/SkipLink';
 import About from 'src/Modules/About/Scenes/About/About';
 import Contact from 'src/Modules/Contact/Scenes/Contact/Contact';
 import Home from 'src/Modules/Home/Scenes/Home/Home';
+import Privacy from 'src/Modules/Privacy/Scenes/Privacy/Privacy';
 import Projects from 'src/Modules/Projects/Scenes/Projects/Projects';
 
 // Minstens schermhoog, zodat een footer op korte pagina's onderaan blijft
@@ -38,6 +39,7 @@ export default function App() {
                     <Route path="/projecten" element={<Projects />} />
                     <Route path="/over-mij" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/privacy" element={<Privacy />} />
                     <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
             </main>

@@ -4,6 +4,7 @@ import { makeStyles } from 'tss-react/mui';
 
 import { border, ink, muted, olive, white } from 'src/colors';
 import BrandLockup from 'src/Components/BrandLockup/BrandLockup';
+import CompanyDetails from 'src/Components/CompanyDetails/CompanyDetails';
 import InstagramIcon from 'src/Components/Icons/InstagramIcon';
 import MailIcon from 'src/Components/Icons/MailIcon';
 import PhoneIcon from 'src/Components/Icons/PhoneIcon';
@@ -12,12 +13,10 @@ import {
     email,
     emailHref,
     instagramUrl,
-    kvkNumber,
     phoneDisplay,
     phoneHref,
     region,
     slogan,
-    vatNumber,
 } from 'src/Config/company';
 import { navItems } from 'src/Config/navigation';
 import { serifFontFamily } from 'src/Theme/typography';
@@ -80,20 +79,20 @@ const useStyles = makeStyles()(theme => ({
             color: olive,
         },
     },
-    pending: {
-        color: muted,
-    },
-    details: {
-        margin: 0,
+    // De footer houdt de kleinere stap van de andere footerkolommen
+    companyDetails: {
         fontSize: '1rem',
         lineHeight: 1.8,
+    },
+    pending: {
+        color: muted,
     },
     bottom: {
         marginTop: theme.spacing(7),
         paddingTop: theme.spacing(3),
         borderTop: `1px solid ${border}`,
         color: muted,
-        fontSize: '0.9375rem',
+        fontSize: '1rem',
     },
 }));
 
@@ -149,24 +148,7 @@ export default function AppFooter() {
 
                     <div>
                         <h2 className={classes.heading}>Bedrijfsgegevens</h2>
-                        <p className={classes.details}>
-                            {companyName}
-                            <br />
-                            KvK {kvkNumber}
-                            {vatNumber ? (
-                                <>
-                                    <br />
-                                    Btw {vatNumber}
-                                </>
-                            ) : (
-                                <>
-                                    <br />
-                                    {/* TODO: btw-nummer volgt van de PO */}
-                                    <span className={classes.pending}>Btw-nummer volgt</span>
-                                </>
-                            )}
-                            {/* TODO: adres? De PO wil het niet tonen, maar art. 3:15d BW vraagt waarschijnlijk het vestigingsadres. Beslissing staat open in Gesprek-PO.md. */}
-                        </p>
+                        <CompanyDetails className={classes.companyDetails} />
                     </div>
                 </div>
 

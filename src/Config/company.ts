@@ -10,6 +10,25 @@ export const phoneHref = 'tel:+31622243488';
 export const email = 'info@kamerbreedinterieur.nl';
 export const emailHref = `mailto:${email}`;
 
+// TODO: WhatsApp staat uit tot de PO bevestigt dat het op dit nummer kan (Gesprek-PO.md, vraag 3).
+// Zet hier het nummer in internationale vorm zonder + of spaties ('31622243488') om de knop te tonen.
+export const whatsappNumber: string | null = null;
+
+// Kernen van de gemeente Westland. TODO: laten bevestigen dat hij overal komt.
+export const serviceArea = [
+    'Naaldwijk',
+    'Wateringen',
+    "'s-Gravenzande",
+    'Monster',
+    'De Lier',
+    'Maasdijk',
+    'Honselersdijk',
+    'Poeldijk',
+    'Kwintsheul',
+    'Ter Heijde',
+    'Heenweg',
+];
+
 // TODO: account volgt van de PO (Gesprek-PO.md, "Nog open"). Alleen een link, geen ingesloten feed.
 export const instagramUrl: string | null = null;
 

@@ -26,6 +26,8 @@ export const onOliveMuted = '#D6D4C6';
 export const background = '#F0F1EE';
 export const placeholder = '#E2E3DD';
 export const border = '#D9DAD3';
+// Rand van invoervelden: haalt 3:1 op wit, want de rand is wat het veld herkenbaar maakt
+export const inputBorder = '#8A887F';
 
 export const white = '#ffffff';
 export const error = '#B3261E';

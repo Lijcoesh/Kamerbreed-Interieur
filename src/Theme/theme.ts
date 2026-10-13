@@ -1,6 +1,7 @@
 import { createTheme } from '@mui/material/styles';
 
 import { overrideMuiButton, overrideMuiIconButton } from './Components/buttons';
+import { overrideMuiOutlinedInput } from './Components/inputs';
 import { overrideMuiContainer, overrideMuiCssBaseline, overrideMuiLink } from './Components/layout';
 import palette from './palette';
 import overrideShadows from './shadow';
@@ -21,6 +22,7 @@ theme.components = {
     MuiContainer: overrideMuiContainer(theme),
     MuiCssBaseline: overrideMuiCssBaseline(),
     MuiLink: overrideMuiLink(),
+    MuiOutlinedInput: overrideMuiOutlinedInput(theme),
 };
 
 theme.shadows = overrideShadows();
