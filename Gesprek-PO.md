@@ -10,7 +10,7 @@ Kennismakingsgesprek 12-10-2026, aangevuld met wat daarvoor al bekend was.
 ### Bedrijf
 
 - **Naam op de site:** Kamerbreed Interieur.
-- **Wat hij doet:** vooral vloeren, alles behalve steen: pvc, tapijt, laminaat, vloeronderhoud. Daarnaast raambekleding binnen (binnenzonwering).
+- **Wat hij doet:** vooral vloeren, alles behalve steen: pvc, laminaat, vloerbedekking en tapijt. Daarnaast raambekleding binnen (binnenzonwering). Bijgesteld 13-10-2026: vloerbedekking erbij, vloeronderhoud staat niet meer op de site.
 - **Werkwijze:** hij werkt alleen, komt bij de klant thuis en doet alles zelf van begin tot eind. De klant heeft één aanspreekpunt, er zit niemand tussen. Dit is het verschil met anderen. Het hoeft niet uitgebreid op de site, maar moet er wel uit spreken.
 - **Klanten:** in het Westland.
 - **Hoe klanten hem nu vinden:** via via. Met de site wil hij ook nieuwe klanten bereiken.
@@ -65,7 +65,7 @@ Vragen voor een volgend contact (bellen of appen is genoeg).
 2. ★ **KvK en btw.** Klopt KvK-nummer 27067893? Wat is het btw-nummer? En is het nog een vof, of inmiddels een eenmanszaak (hij werkt alleen)?
 3. ★ **Contact.** Hoe wil hij benaderd worden: bellen, mailen, WhatsApp? Staat WhatsApp op het 06-nummer? _Knoppen voor bellen, mailen en WhatsApp, geen contactformulier. Bij een formulier worden berichten opgeslagen en is een privacyverklaring nodig._
 4. ★ **Instagram.** Wat is de accountnaam of link? _Alleen een link met icoon (in de footer en op Contact), geen ingesloten feed. Een feed laadt scripts van Meta, en dan zijn een cookiebanner en privacyverklaring nodig._
-5. **Projecten.** Hoeveel ongeveer, en wat per project: alleen foto's, of ook plaats en wat er gedaan is? Welke dienst hoort bij elk project (pvc, tapijt, laminaat, vloeronderhoud, binnenzonwering)? Dat bepaalt of een filter op dienst zin heeft. _Foto's met een korte titel (soort vloer, plaats in het Westland), geen klantnamen of huisnummers._
+5. **Projecten.** Hoeveel ongeveer, en wat per project: alleen foto's, of ook plaats en wat er gedaan is? Welke dienst hoort bij elk project (pvc, laminaat, vloerbedekking, tapijt, binnenzonwering)? Dat bepaalt of een filter op dienst zin heeft. _Foto's met een korte titel (soort vloer, plaats in het Westland), geen klantnamen of huisnummers._
 6. **Over mij.** Wil hij met naam en foto op die pagina? Kloppen de taken die er nu staan (je vraag beantwoorden, langskomen, advies, inmeten en offerte, leggen of monteren), en doet hij die allemaal zelf? Mag erbij dat het bedrijf er sinds 1994 is (KvK)? _Ja, met naam ("Jeroen" staat er al), en een foto als hij die stuurt. Taken zo laten; 1994 weglaten._
 7. **Particulier of zakelijk.** Werkt hij ook voor bedrijven? _De site richt zich op particulieren._
 8. **Binnenzonwering.** Hoe groot is dat deel van zijn werk? Wil hij de merknaam BD Line noemen, en mag hij hun beeldmateriaal gebruiken? _Binnenzonwering kort noemen naast de vloeren, zonder merknaam en zonder beeld van BD Line._

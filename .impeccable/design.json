@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-13T18:00:00Z",
+  "generatedAt": "2026-10-13T20:00:00Z",
   "title": "Design System: Kamerbreed Interieur",
   "extensions": {
     "colorMeta": {
@@ -252,11 +252,11 @@
       },
       "h2": {
         "displayName": "H2",
-        "purpose": "Sectiekoppen (SectionHeader) en de contactband."
+        "purpose": "Sectiekoppen (SectionHeader), de soortkoppen op Projecten en de contactband."
       },
       "h3": {
         "displayName": "H3",
-        "purpose": "Dienstnamen, stappen, taken in de werkbon, groepsnamen in de dienstenlijst op Over mij, paneelkoppen (ook de koppen op de contactpagina), de bevestiging na versturen."
+        "purpose": "Dienstnamen, stappen, taken in de werkbon, groepsnamen in de dienstenlijst op Over mij, projecttitels in de opleverlijst, paneelkoppen (ook de koppen op de contactpagina), de bevestiging na versturen."
       },
       "subtitle1": {
         "displayName": "Lead",
@@ -268,7 +268,7 @@
       },
       "body2": {
         "displayName": "Body klein",
-        "purpose": "Korte samenvattingen onder dienstkaarten, de privacynotitie onder de verstuurknop."
+        "purpose": "Korte samenvattingen onder dienstkaarten, de privacynotitie onder de verstuurknop, de regel \"Ook: …\" onder een project."
       },
       "button": {
         "displayName": "Knop",
@@ -347,7 +347,8 @@
       "inputError": "border: 2px solid #B3261E; bij focus daarbovenop outline: 2px solid #0884AF; outline-offset: 2px"
     },
     "scrollMargin": {
-      "focusedField": "56px (scroll-margin-top op het veld, zodat het label onder de sticky appbar zichtbaar blijft)"
+      "focusedField": "56px (scroll-margin-top op het veld, zodat het label onder de sticky appbar zichtbaar blijft)",
+      "anchors": "scroll-padding-top: headerHeight op html; op Projecten scrolt useScrollToHash na het renderen alsnog naar #<dienst-id>."
     }
   },
   "components": [
@@ -387,7 +388,7 @@
       "name": "Contactband",
       "kind": "custom",
       "refersTo": "contact-band",
-      "description": "Olijf afsluiting van een inhoudspagina (Home en Over mij; niet op de contactpagina); focusrand wordt hier wit. Bron: src/Components/ContactBand/ContactBand.tsx.",
+      "description": "Olijf afsluiting van een inhoudspagina (Home, Over mij en Projecten; niet op de contactpagina); focusrand wordt hier wit. Bron: src/Components/ContactBand/ContactBand.tsx.",
       "html": "<section class=\"ds-band\"><h2 class=\"ds-band-title\">Neem contact op</h2><p class=\"ds-band-lead\">Bel of mail, ik kom bij je thuis.</p><a class=\"ds-band-btn\" href=\"#\">Bellen</a></section>",
       "css": ".ds-band { background: #4F4A30; color: #F0F1EE; padding: 64px 28px; } .ds-band-title { margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 2.6rem; line-height: 1.15; letter-spacing: -0.01em; color: #F0F1EE; } .ds-band-lead { margin: 16px 0 24px; max-width: 46ch; color: #D6D4C6; font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 1.125rem; line-height: 1.6; } .ds-band-btn { display: inline-flex; align-items: center; min-height: 56px; padding: 0 24px; background: #D49259; color: #1D1F1E; border-radius: 6px; font-family: 'Source Sans 3', system-ui, sans-serif; font-weight: 600; font-size: 1.0625rem; text-decoration: none; } .ds-band-btn:hover { background: #C27F45; } .ds-band-btn:focus-visible { outline: 2px solid #ffffff; outline-offset: 2px; }"
     },
@@ -406,6 +407,22 @@
       "description": "Rolverdeling van een klus op Over mij: wit paneel, kolomkoppen Wat/Wie, genummerde rijen met taak, stippellijn en \"ik\". Onder sm geen stippellijn. Geen slotzin.",
       "html": "<div class=\"ds-wb\"><div class=\"ds-wb-cols\" aria-hidden=\"true\"><span>Wat</span><span>Wie</span></div><ol class=\"ds-wb-list\"><li class=\"ds-wb-row\"><h3 class=\"ds-wb-title\">Je vraag beantwoorden</h3><span class=\"ds-wb-leader\" aria-hidden=\"true\"></span><span class=\"ds-wb-who\">ik</span><p class=\"ds-wb-text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li><li class=\"ds-wb-row\"><h3 class=\"ds-wb-title\">Bij je thuis langskomen</h3><span class=\"ds-wb-leader\" aria-hidden=\"true\"></span><span class=\"ds-wb-who\">ik</span><p class=\"ds-wb-text\">Ut enim ad minim veniam, quis nostrud exercitation.</p></li></ol></div>",
       "css": ".ds-wb { background: #ffffff; border: 1px solid #D9DAD3; border-radius: 6px; font-family: 'Source Sans 3', system-ui, sans-serif; color: #4F4E4A; } .ds-wb-cols { display: flex; justify-content: space-between; padding: 20px 40px 16px; border-bottom: 1px solid #D9DAD3; color: #67665F; font-size: 1rem; font-weight: 600; } .ds-wb-list { margin: 0; padding: 0; list-style: none; counter-reset: task; } .ds-wb-row { display: grid; grid-template-columns: 2.5rem minmax(0, max-content) minmax(32px, 1fr) auto; grid-template-areas: 'num title leader who' '. text text .'; align-items: baseline; column-gap: 12px; padding: 24px 40px; counter-increment: task; } .ds-wb-row + .ds-wb-row { border-top: 1px solid #D9DAD3; } .ds-wb-row::before { content: counter(task); grid-area: num; font-family: 'Source Serif 4', Georgia, serif; font-weight: 500; font-size: 1.75rem; font-variant-numeric: oldstyle-nums; line-height: 1; color: #4F4A30; } .ds-wb-title { grid-area: title; margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 1.375rem; line-height: 1.25; color: #4F4A30; } .ds-wb-leader { grid-area: leader; height: 4px; background-image: radial-gradient(circle, rgba(79,74,48,0.45) 1.25px, transparent 1.75px); background-size: 8px 4px; background-repeat: repeat-x; background-position: left bottom; } .ds-wb-who { grid-area: who; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 1.375rem; line-height: 1.25; color: #4F4A30; } .ds-wb-text { grid-area: text; margin: 8px 0 0; max-width: 48ch; font-size: 1.125rem; line-height: 1.6; }"
+    },
+    {
+      "name": "Snelmenu",
+      "kind": "nav",
+      "refersTo": "snelmenu",
+      "description": "Ankerlinks per soort op Projecten, tussen twee haarlijnen: onderstreepte naam, los aantal in muted met tabulaire cijfers, 48px hoog, hover olijf.",
+      "html": "<nav class=\"ds-quick\" aria-label=\"Projecten per soort\"><ul class=\"ds-quick-list\"><li><a class=\"ds-quick-link\" href=\"#pvc\"><span class=\"ds-quick-name\">Pvc-vloeren</span><span class=\"ds-quick-count\">3</span></a></li><li><a class=\"ds-quick-link\" href=\"#laminaat\"><span class=\"ds-quick-name\">Laminaat</span><span class=\"ds-quick-count\">3</span></a></li><li><a class=\"ds-quick-link\" href=\"#vloerbedekking\"><span class=\"ds-quick-name\">Vloerbedekking</span><span class=\"ds-quick-count\">2</span></a></li><li><a class=\"ds-quick-link\" href=\"#tapijt\"><span class=\"ds-quick-name\">Tapijt</span><span class=\"ds-quick-count\">1</span></a></li><li><a class=\"ds-quick-link\" href=\"#binnenzonwering\"><span class=\"ds-quick-name\">Binnenzonwering</span><span class=\"ds-quick-count\">0</span></a></li></ul></nav>",
+      "css": ".ds-quick { border-top: 1px solid #D9DAD3; border-bottom: 1px solid #D9DAD3; font-family: 'Source Sans 3', system-ui, sans-serif; } .ds-quick-list { display: flex; flex-wrap: wrap; column-gap: 32px; margin: 0; padding: 4px 0; list-style: none; } .ds-quick-link { display: inline-flex; align-items: baseline; gap: 6px; min-height: 48px; padding-top: 12px; box-sizing: border-box; color: #4F4E4A; font-size: 1.0625rem; font-weight: 500; text-decoration: none; } .ds-quick-link:hover { color: #4F4A30; } .ds-quick-link:focus-visible { outline: 2px solid #0884AF; outline-offset: 2px; } .ds-quick-name { text-decoration: underline; text-underline-offset: 0.2em; text-decoration-thickness: 1px; } .ds-quick-link:hover .ds-quick-name { text-decoration-thickness: 2px; } .ds-quick-count { color: #67665F; font-weight: 400; font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Opleverlijst",
+      "kind": "custom",
+      "refersTo": "opleverlijst",
+      "description": "Een soort op Projecten: h2 met muted aantal rechts (onder sm eronder), haarlijn, rijen 4/7 met foto 4:3 links en rechts h3, body1 (max 52ch) en optioneel \"Ook: …\" in body2 muted. Onder sm foto boven tekst.",
+      "html": "<section class=\"ds-ol\"><div class=\"ds-ol-head\"><h2 class=\"ds-ol-h2\">Pvc-vloeren</h2><p class=\"ds-ol-count\">3 projecten</p></div><ul class=\"ds-ol-list\"><li class=\"ds-ol-row\"><div class=\"ds-ol-photo\" aria-hidden=\"true\">Projectfoto volgt</div><div><h3 class=\"ds-ol-h3\">Voorbeeldproject 1</h3><p class=\"ds-ol-text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p><p class=\"ds-ol-also\">Ook: laminaat</p></div></li></ul></section>",
+      "css": ".ds-ol { font-family: 'Source Sans 3', system-ui, sans-serif; color: #4F4E4A; } .ds-ol-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; column-gap: 24px; row-gap: 4px; padding-bottom: 16px; border-bottom: 1px solid #D9DAD3; } .ds-ol-h2 { margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 2.6rem; line-height: 1.15; letter-spacing: -0.01em; color: #4F4A30; } .ds-ol-count { margin: 0; font-size: 1.125rem; line-height: 1.6; color: #67665F; } .ds-ol-list { margin: 0; padding: 0; list-style: none; } .ds-ol-row { display: grid; grid-template-columns: 4fr 7fr; align-items: start; gap: 40px; padding: 32px 0; border-bottom: 1px solid #D9DAD3; } .ds-ol-photo { aspect-ratio: 4 / 3; display: flex; align-items: flex-end; padding: 16px; background: #E2E3DD; border: 1px solid #D9DAD3; border-radius: 4px; font-size: 0.9375rem; } .ds-ol-h3 { margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 1.375rem; line-height: 1.25; color: #4F4A30; } .ds-ol-text { margin: 8px 0 0; max-width: 52ch; font-size: 1.125rem; line-height: 1.6; } .ds-ol-also { margin: 12px 0 0; font-size: 1rem; line-height: 1.55; color: #67665F; }"
     },
     {
       "name": "Formulierveld",
@@ -479,7 +496,7 @@
       },
       {
         "name": "The Royale-maat Rule",
-        "body": "Lopende tekst is minimaal 18px (`body1`); kleiner alleen voor korte samenvattingen (16px), footer, placeholderlabels, de kolomkoppen van de werkbon (16px) en de korte formulierhulp (labels 17px; hints, foutmeldingen, teller en privacynotitie 16px). Wat de bezoeker typt is 18px. De doelgroep is deels 50+.",
+        "body": "Lopende tekst is minimaal 18px (`body1`); kleiner alleen voor korte samenvattingen (16px), footer, placeholderlabels, de kolomkoppen van de werkbon (16px), de regel \"Ook: …\" onder een project (16px) en de korte formulierhulp (labels 17px; hints, foutmeldingen, teller en privacynotitie 16px). Wat de bezoeker typt is 18px. De doelgroep is deels 50+.",
         "section": "typography"
       },
       {

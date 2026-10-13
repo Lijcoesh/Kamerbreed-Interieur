@@ -1,6 +1,6 @@
 import type { Service } from 'src/Definitions/Service';
 
-// Namen bevestigd door de PO; de omschrijvingen schrijft hij zelf (tot die tijd lorem ipsum).
+// Namen en volgorde bevestigd (13-10-2026); de omschrijvingen schrijft de PO zelf (tot die tijd lorem ipsum).
 export const services: Service[] = [
     {
         id: 'pvc',
@@ -9,22 +9,22 @@ export const services: Service[] = [
         summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.',
     },
     {
-        id: 'tapijt',
-        name: 'Tapijt',
-        group: 'vloeren',
-        summary: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
-    },
-    {
         id: 'laminaat',
         name: 'Laminaat',
         group: 'vloeren',
         summary: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.',
     },
     {
-        id: 'vloeronderhoud',
-        name: 'Vloeronderhoud',
+        id: 'vloerbedekking',
+        name: 'Vloerbedekking',
         group: 'vloeren',
         summary: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.',
+    },
+    {
+        id: 'tapijt',
+        name: 'Tapijt',
+        group: 'vloeren',
+        summary: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
     },
     {
         id: 'binnenzonwering',

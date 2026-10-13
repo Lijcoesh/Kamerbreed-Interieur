@@ -32,7 +32,7 @@ Eén vakman die alles zelf doet. Hij komt bij de klant thuis, adviseert, en legt
 
 ## Operating Context
 
-- Vloeren, alles behalve steen: pvc, tapijt, laminaat, vloeronderhoud. Dat is het grootste deel van het werk.
+- Vloeren, alles behalve steen: pvc, laminaat, vloerbedekking en tapijt. Dat is het grootste deel van het werk. (Bijgesteld 13-10-2026: vloerbedekking erbij, vloeronderhoud niet meer op de site.)
 - Daarnaast raambekleding binnen (binnenzonwering).
 - Werkgebied: het Westland.
 - Hij werkt alleen, vanuit huis. Er is geen showroom; hij komt bij de klant langs.
