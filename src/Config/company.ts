@@ -4,8 +4,8 @@ export const companyName = 'Kamerbreed Interieur';
 export const slogan = 'Thuis kiezen en je thuis voelen!';
 export const region = 'Westland';
 
-// Voornaam van de eigenaar, uit de KvK-inschrijving. TODO: laten bevestigen dat hij met naam op de site wil (Gesprek-PO.md, vraag 6).
-export const ownerName = 'Jeroen';
+// Naam van de eigenaar, zoals de PO hem in zijn tekst voor Over mij schrijft (28-10-2026)
+export const ownerName = 'Jeroen van der Eijk';
 
 export const phoneDisplay = '06-22243488';
 export const phoneHref = 'tel:+31622243488';
@@ -32,10 +32,10 @@ export const serviceArea = [
     'Heenweg',
 ];
 
-// TODO: account volgt van de PO (Gesprek-PO.md, "Nog open"). Alleen een link, geen ingesloten feed.
-export const instagramUrl: string | null = null;
+// Account kamer.breed.interieur (PO, 28-10-2026). Alleen een link, geen ingesloten feed.
+export const instagramUrl: string | null = 'https://www.instagram.com/kamer.breed.interieur/';
 
 // TODO: KvK-nummer laten bevestigen door de PO; gevonden via Drimble, klopt volgens kvk.nl.
 export const kvkNumber = '27067893';
-// TODO: btw-nummer volgt van de PO.
-export const vatNumber: string | null = null;
+// Van de PO (28-10-2026)
+export const vatNumber: string | null = 'NL803473655B01';

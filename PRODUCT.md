@@ -32,7 +32,7 @@ Eén vakman die alles zelf doet. Hij komt bij de klant thuis, adviseert, en legt
 
 ## Operating Context
 
-- Vloeren, alles behalve steen: pvc, laminaat, vloerbedekking en tapijt. Dat is het grootste deel van het werk. (Bijgesteld 13-10-2026: vloerbedekking erbij, vloeronderhoud niet meer op de site.)
+- Vloeren, alles behalve steen: pvc, tapijt, houten vloeren en laminaat, plus egaliseren. Dat is het grootste deel van het werk. (Bijgesteld 28-10-2026 volgens de teksten van de PO: houten vloeren en egaliseren erbij, vloerbedekking niet meer apart.)
 - Daarnaast raambekleding binnen (binnenzonwering).
 - Werkgebied: het Westland.
 - Hij werkt alleen, vanuit huis. Er is geen showroom; hij komt bij de klant langs.
@@ -52,7 +52,7 @@ Eén vakman die alles zelf doet. Hij komt bij de klant thuis, adviseert, en legt
 
 - Naam: **Kamerbreed Interieur**.
 - Slogan: **"Thuis kiezen en je thuis voelen!"** blijft.
-- Logo blijft: "KAMER" in blauwe strepen als een jaloezie, "BREED" wit op een zwarte tapijtrol, "INTERIEUR" in blauwe blokletters. Het staat samen met de bedrijfsnaam in de appbar. Het originele bestand moet nog komen.
+- Logo blijft: "KAMER" in blauwe strepen als een jaloezie, "BREED" wit op een zwarte tapijtrol, "INTERIEUR" in blauwe blokletters. Het staat samen met de bedrijfsnaam in de appbar. Het originele bestand is een JPEG van 310 px; groter is er niet.
 - Gevoel, in de woorden van de eigenaar: **netjes en persoonlijk**. Liever rustig en verzorgd dan spectaculair.
 - Kleuren van de huidige site blijven, aangevuld met de logokleuren (zie Gesprek-PO.md). Deze zijn door de eigenaar vastgelegd. Uitzondering: de knopkleur is een donkerdere tint van de oker (koper), zodat witte knoptekst leesbaar blijft (13-10-2026, nog laten zien aan de PO).
 - De eigenaar schrijft zijn teksten zelf. Tot die tijd: lorem ipsum.
@@ -61,8 +61,9 @@ Eén vakman die alles zelf doet. Hij komt bij de klant thuis, adviseert, en legt
 
 ## Evidence on Hand
 
-- Logo: alleen een kleine JPEG (320 px) van de huidige site.
-- Projectfoto's en een foto van de eigenaar: komen later. Tot die tijd staan er tijdelijke stockfoto's (CC0) in het voorbeeld-design, op verzoek van de ontwikkelaar (13-10-2026). Die gaan er vóór livegang uit; ze zijn niet zijn werk.
+- Logo: alleen een kleine JPEG (310 px); dat is ook het origineel.
+- Sfeerbeelden bij Home en de diensten: van de PO (28-10-2026), herkomst nog navragen. Geen projecten.
+- Projectfoto's en een foto van de eigenaar: komen later. Tot die tijd een placeholder: alleen beeld van de PO op de site (de tijdelijke stockfoto's zijn weg sinds 28-10-2026).
 - Teksten: komen later.
 - **Niet aanwezig, dus niet verzinnen:** reviews, klantcijfers, keurmerken, garanties en prijzen. Het cijfer op Telefoonboek (5,6 uit 2017) wordt niet gebruikt. Geen gegenereerde beelden van interieurs of vloeren: die zouden doorgaan voor zijn werk.
 

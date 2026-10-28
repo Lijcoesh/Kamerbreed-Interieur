@@ -4,6 +4,7 @@ import { makeStyles } from 'tss-react/mui';
 
 import ArrowForwardIcon from 'src/Components/Icons/ArrowForwardIcon';
 import Photo from 'src/Components/Photo/Photo';
+import { ownerName } from 'src/Config/company';
 import { ownerPhoto } from 'src/Config/photos';
 import { sectionSpacing } from 'src/Theme/sizes';
 
@@ -37,20 +38,16 @@ export default function HomeAbout() {
 
     return (
         <Container component="section" aria-labelledby="about-title" className={classes.root}>
-            {/* TODO: nu een tijdelijke stockfoto (src/Config/photos.ts); foto van de eigenaar als hij die wil (Gesprek-PO.md, vraag 6) */}
+            {/* TODO: foto van de eigenaar als hij die wil (src/Config/photos.ts, Gesprek-PO.md, vraag 6) */}
             <Photo photo={ownerPhoto} ratio="4 / 5" className={classes.photo} />
             <div>
                 <Typography variant="h2" id="about-title">
                     Over mij
                 </Typography>
+                {/* De eerste alinea van de tekst van de PO op Over mij */}
                 <Typography variant="body1" className={classes.text}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </Typography>
-                <Typography variant="body1" className={classes.text}>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.
+                    Mijn naam is {ownerName}. Ik ben geboren en getogen in het Westland en inmiddels
+                    al bijna 30 jaar met veel plezier werkzaam in de woninginrichting.
                 </Typography>
                 <Button
                     component={RouterLink}

@@ -4,7 +4,7 @@
 
 | Bestand | Herkomst | Licentie | Status |
 |---|---|---|---|
-| `Logo/kamerbreed-logo.jpeg` | Gedownload van de oude site: `https://kamerbreedinterieur.nl/wp-content/uploads/2025/01/KamerBreed_Interieur_logo.jpeg` (12-10-2026). 310 × 264 px. | Eigen logo van de PO. | **Tijdelijk.** Vervangen door het originele bestand (liefst svg) zodra de PO het stuurt. |
+| `Logo/kamerbreed-logo.jpeg` | Gedownload van de oude site: `https://kamerbreedinterieur.nl/wp-content/uploads/2025/01/KamerBreed_Interieur_logo.jpeg` (12-10-2026). 310 × 264 px. | Eigen logo van de PO. | Dit is het originele bestand: de PO stuurde op 28-10-2026 precies dezelfde JPEG. |
 
 ## Fonts
 
@@ -27,29 +27,26 @@ Getekend als SVG-paden in `src/Components/Icons/`:
 
 ## Foto's
 
-### Tijdelijk: stockfoto's voor het eerste voorbeeld-design
-
-Toegevoegd 13-10-2026 op verzoek van de ontwikkelaar, zodat het eerste design er met beeld uitziet. **Dit is niet het werk van de PO** en de foto's moeten vóór livegang weg (launch-checklist). Allemaal CC0: vrij te gebruiken, ook commercieel, zonder naamsvermelding. Gedownload als 960 px brede versie, opnieuw gecomprimeerd; de herkomst staat ook in elk bestand (JPEG-commentaar). Gekoppeld in `src/Config/projects.ts` en `src/Config/photos.ts`.
-
-| Bestand | Bron | Licentie |
-|---|---|---|
-| `Photos/Temp/hero.jpg` | "Interior Table", Breather, StockSnap: https://stocksnap.io/photo/interior-table-BN4W83DV5X | CC0 1.0 |
-| `Photos/Temp/eigenaar.jpg` | "Person Craftsman", Burst, StockSnap: https://stocksnap.io/photo/person-craftsman-YJ5A5WPFYV | CC0 1.0 |
-| `Photos/Temp/pvc-1.jpg` | "Interior Design", Breather, StockSnap: https://stocksnap.io/photo/interior-design-478BZDEA2Y | CC0 1.0 |
-| `Photos/Temp/pvc-2.jpg` | "Interior Living", Jarosław Ceborski, StockSnap: https://stocksnap.io/photo/interior-living-6SMA09U7Y8 | CC0 1.0 |
-| `Photos/Temp/pvc-3.jpg` | "House Interior", Dahl House Design, StockSnap: https://stocksnap.io/photo/house-interior-HTE9LOGFC1 | CC0 1.0 |
-| `Photos/Temp/laminaat-1.jpg` | "Interior Indoor", Philipp Berndt, StockSnap: https://stocksnap.io/photo/interior-indoor-Q0EGF4XNXG | CC0 1.0 |
-| `Photos/Temp/laminaat-2.jpg` | "Interior Design", Breather, StockSnap: https://stocksnap.io/photo/interior-design-L73NCN14NG | CC0 1.0 |
-| `Photos/Temp/laminaat-3.jpg` | "Bedroom Bed", Mary Whitney, StockSnap: https://stocksnap.io/photo/bedroom-bed-9R85GU3I2P | CC0 1.0 |
-| `Photos/Temp/vloerbedekking-1.jpg` | "Free bedroom image", onbekend (public domain), rawpixel: https://www.rawpixel.com/image/5922673/photo-image-public-domain-room-interior | CC0 1.0 |
-| `Photos/Temp/vloerbedekking-2.jpg` | "Table Chair", Kari Shea, StockSnap: https://stocksnap.io/photo/table-chair-P6MMDB86TO | CC0 1.0 |
-| `Photos/Temp/tapijt-1.jpg` | "Coffee Table", Kristin Hardwick, StockSnap: https://stocksnap.io/photo/coffee-table-8JQITZ05LX | CC0 1.0 |
-| `Photos/Temp/tapijt-2.jpg` | "Bedroom Bed", Mary Whitney, StockSnap: https://stocksnap.io/photo/bedroom-bed-XWI13131WH | CC0 1.0 |
-| `Photos/Temp/binnenzonwering-1.jpg` | "Condo Loft", Leeroy, StockSnap: https://stocksnap.io/photo/condo-loft-15134A07A3 | CC0 1.0 |
-| `Photos/Temp/binnenzonwering-2.jpg` | "Macbook Laptop", Negative Space, StockSnap: https://stocksnap.io/photo/macbook-laptop-LZABBOPC51 | CC0 1.0 |
-
-`eigenaar.jpg` laat bewust geen gezicht zien: het is niet de PO.
-
 ### Van de PO
 
-Nog geen. Projectfoto's en een foto van de eigenaar komen van de PO. Leg bij elke foto vast wie hem gemaakt heeft en of er toestemming is (zie de launch-checklist).
+Leg bij elke foto vast wie hem gemaakt heeft en of er toestemming is (zie de launch-checklist).
+
+#### Sfeerbeelden bij Home en de diensten (28-10-2026)
+
+Gestuurd door de PO, met als bestandsnaam de plek waar hij ze wil hebben. Omgezet van PNG (640 px) naar JPEG, kwaliteit 85; de herkomst staat ook in elk bestand (JPEG-commentaar). Gekoppeld in `src/Config/photos.ts` (`home.jpg`) en `src/Config/services.ts`.
+
+**Herkomst onbekend.** Ze zien eruit als met AI gemaakte beelden, niet als foto's van zijn werk. Navragen bij de PO waar ze vandaan komen en of commercieel gebruik mag (`Gesprek-PO.md`, vraag 13). Gebruik ze als sfeerbeeld bij een dienst, nooit als project.
+
+| Bestand | Origineel van de PO | Herkomst | Licentie |
+|---|---|---|---|
+| `Photos/home.jpg` | `1ste foto.PNG` | onbekend | onbekend |
+| `Photos/Services/pvc.jpg` | `PVC.PNG` | onbekend | onbekend |
+| `Photos/Services/tapijt.jpg` | `Tapijt.PNG` | onbekend | onbekend |
+| `Photos/Services/houten-vloeren.jpg` | `Houten Vloeren.PNG` | onbekend | onbekend |
+| `Photos/Services/laminaat.jpg` | `Laminaat.PNG` | onbekend | onbekend |
+| `Photos/Services/egaliseren.jpg` | `Egaliseren.PNG` | onbekend | onbekend |
+| `Photos/Services/binnenzonwering.jpg` | `Foto voor bij binnen zonwering.PNG` | onbekend | onbekend |
+
+#### Projectfoto's en portret
+
+Nog geen.

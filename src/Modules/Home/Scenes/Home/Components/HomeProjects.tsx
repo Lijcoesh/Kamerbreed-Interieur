@@ -50,11 +50,7 @@ export default function HomeProjects() {
     return (
         <section aria-labelledby="projects-title" className={classes.root}>
             <Container>
-                <SectionHeader
-                    id="projects-title"
-                    title="Projecten"
-                    lead="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tellus sed augue semper porta."
-                />
+                <SectionHeader id="projects-title" title="Projecten" />
                 <div className={classes.grid}>
                     {latest.map((project, index) => (
                         <Photo

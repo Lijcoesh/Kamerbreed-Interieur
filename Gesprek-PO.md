@@ -10,7 +10,7 @@ Kennismakingsgesprek 12-10-2026, aangevuld met wat daarvoor al bekend was.
 ### Bedrijf
 
 - **Naam op de site:** Kamerbreed Interieur.
-- **Wat hij doet:** vooral vloeren, alles behalve steen: pvc, laminaat, vloerbedekking en tapijt. Daarnaast raambekleding binnen (binnenzonwering). Bijgesteld 13-10-2026: vloerbedekking erbij, vloeronderhoud staat niet meer op de site.
+- **Wat hij doet:** vooral vloeren, alles behalve steen: pvc, laminaat, vloerbedekking en tapijt. Daarnaast raambekleding binnen (binnenzonwering). Bijgesteld 13-10-2026: vloerbedekking erbij, vloeronderhoud staat niet meer op de site. Bijgesteld 28-10-2026 (zijn teksten): pvc-vloeren, tapijt, houten vloeren, laminaat en egaliseren; vloerbedekking staat er niet meer apart in.
 - **Werkwijze:** hij werkt alleen, komt bij de klant thuis en doet alles zelf van begin tot eind. De klant heeft één aanspreekpunt, er zit niemand tussen. Dit is het verschil met anderen. Het hoeft niet uitgebreid op de site, maar moet er wel uit spreken.
 - **Klanten:** in het Westland.
 - **Hoe klanten hem nu vinden:** via via. Met de site wil hij ook nieuwe klanten bereiken.
@@ -27,7 +27,7 @@ Kennismakingsgesprek 12-10-2026, aangevuld met wat daarvoor al bekend was.
 ### Inhoud en gegevens
 
 - **Telefoon (06-22243488) en e-mail (info@kamerbreedinterieur.nl):** mogen op de site.
-- **Teksten:** schrijft hij zelf. Het eerste design en de MVP krijgen lorem ipsum.
+- **Teksten:** schrijft hij zelf. Ontvangen 28-10-2026 (`Website.pages`, omgezet naar `src/Extra info/Website.md`) en 1 op 1 op de site gezet. Waar hij geen tekst gaf, staat er nu geen.
 - **Projectfoto's:** stuurt hij later.
 
 ### Uitstraling
@@ -63,25 +63,34 @@ Vragen voor een volgend contact (bellen of appen is genoeg).
    - zelf navragen of het zonder adres mag, bijvoorbeeld bij de KvK of zijn boekhouder.
 
    _Adres alleen klein in de footer bij KvK- en btw-nummer._
-2. ★ **KvK en btw.** Klopt KvK-nummer 27067893? Wat is het btw-nummer? En is het nog een vof, of inmiddels een eenmanszaak (hij werkt alleen)?
+2. ★ **KvK en btw.** Klopt KvK-nummer 27067893? ~~Wat is het btw-nummer?~~ NL803473655B01 (28-10-2026; in zijn document stond er een * achter, waarom?) En is het nog een vof, of inmiddels een eenmanszaak (hij werkt alleen)?
 3. ★ **Contact.** Hoe wil hij benaderd worden: bellen, mailen, WhatsApp? Staat WhatsApp op het 06-nummer? _Knoppen voor bellen, mailen en WhatsApp, geen contactformulier. Bij een formulier worden berichten opgeslagen en is een privacyverklaring nodig._
-4. ★ **Instagram.** Wat is de accountnaam of link? _Alleen een link met icoon (in de footer en op Contact), geen ingesloten feed. Een feed laadt scripts van Meta, en dan zijn een cookiebanner en privacyverklaring nodig._
-5. **Projecten.** Hoeveel ongeveer, en wat per project: alleen foto's, of ook plaats en wat er gedaan is? Welke dienst hoort bij elk project (pvc, laminaat, vloerbedekking, tapijt, binnenzonwering)? Dat bepaalt of een filter op dienst zin heeft. _Foto's met een korte titel (soort vloer, plaats in het Westland), geen klantnamen of huisnummers._
-6. **Over mij.** Wil hij met naam en foto op die pagina? Mag erbij dat het bedrijf er sinds 1994 is (KvK)? _Ja, met naam ("Jeroen" staat er al), en een foto als hij die stuurt. 1994 weglaten._
+4. ★ **Instagram.** ~~Wat is de accountnaam of link?~~ kamer.breed.interieur (28-10-2026), als link in de footer. _Alleen een link met icoon (in de footer en op Contact), geen ingesloten feed. Een feed laadt scripts van Meta, en dan zijn een cookiebanner en privacyverklaring nodig._
+5. **Projecten.** Hoeveel ongeveer, en wat per project: alleen foto's, of ook plaats en wat er gedaan is? Welke dienst hoort bij elk project (pvc, tapijt, houten vloeren, laminaat, egaliseren, binnenzonwering)? Dat bepaalt of een filter op dienst zin heeft. _Foto's met een korte titel (soort vloer, plaats in het Westland), geen klantnamen of huisnummers._
+6. **Over mij.** ~~Wil hij met naam~~ (ja: "Jeroen van der Eijk" in zijn tekst, 28-10-2026) en foto op die pagina? Mag erbij dat het bedrijf er sinds 1994 is (KvK)? _Ja, met naam ("Jeroen" staat er al), en een foto als hij die stuurt. 1994 weglaten._
 7. **Particulier of zakelijk.** Werkt hij ook voor bedrijven? _De site richt zich op particulieren._
 8. **Binnenzonwering.** Hoe groot is dat deel van zijn werk? Wil hij de merknaam BD Line noemen, en mag hij hun beeldmateriaal gebruiken? _Binnenzonwering kort noemen naast de vloeren, zonder merknaam en zonder beeld van BD Line._
 9. **Reviews.** Heeft hij echte reviews (Google, Werkspot) of keurmerken en garanties? _Geen reviews op de site. Het cijfer op Telefoonboek (5,6, laatste review uit 2017) gebruiken we niet._
+10. **Teksten nalopen.** Zijn teksten staan 1 op 1 op de site. Mag ik dit verbeteren?
+    - Typfouten: "Van persoonlijk advies **to** vakkundige plaatsing" (tot), "een vertrouwde wereld waarin **in** opgroeide" (ik), "echt hout. **tijdloos**" (hoofdletter), geen punt na "betaalbaarheid".
+    - Je of u: Home, de diensten en Over mij zeggen "je/jouw", de werkwijze "u", en stap 3 begint met "ik verzorg" en eindigt met "Zo heb **je**". Kiezen we één vorm?
+
+    _Typfouten verbeteren, overal "je"._
+11. **Vloerbedekking.** Stond eerst als aparte dienst, in zijn teksten niet meer. Valt het onder tapijt, of doet hij het niet meer? _Weglaten; de voorbeeldprojecten met vloerbedekking staan nu onder tapijt._
+12. **"Bijna 30 jaar ervaring" en "drie generaties".** Staat nu op Home en Over mij. Klopt dat met de KvK (sinds 1994)? _Laten staan, het is zijn eigen tekst._
+13. **Foto's (28-10-2026).** Waar komen de zeven foto's vandaan die hij stuurde? Ze lijken met AI gemaakt. Met welk programma, en mag het beeld commercieel gebruikt worden? Heeft hij ze groter dan 640 px? _Gebruiken als sfeerbeeld bij Home en de diensten, niet als projecten. Groter formaat hoeft niet als het er niet is._
+14. **Projectenpagina.** Er zijn nog geen projectfoto's. Wil hij de pagina Projecten (en het blok op Home) houden en later foto's van zijn werk sturen, of liever helemaal weg? _Weghalen tot er echte foto's zijn: lege "Projectfoto volgt"-vlakken mogen niet live._
 
 ## Na het gesprek opsturen
 
-- [ ] Logo (origineel bestand, geen JPEG van de website)
+- [x] Logo: de JPEG van 310 px is het origineel; een groter bestand is er niet (28-10-2026)
 - [ ] Foto's van projecten, in volle grootte (via WeTransfer, niet via WhatsApp: dat maakt ze kleiner). Komen later.
 - [ ] Foto van hemzelf voor "Over mij" (als hij die wil)
-- [ ] Btw-nummer
+- [x] Btw-nummer
 - [ ] Inloggegevens van Mijndomein, of een contactpersoon daar
-- [ ] Link naar Instagram
+- [x] Link naar Instagram
 - [ ] Links naar echte reviews, keurmerken of garanties (als die er zijn)
-- [ ] Teksten per pagina (schrijft hij zelf; tot die tijd lorem ipsum)
+- [x] Teksten per pagina (28-10-2026)
 
 ## Gevonden op internet vóór het gesprek (12-10-2026)
 

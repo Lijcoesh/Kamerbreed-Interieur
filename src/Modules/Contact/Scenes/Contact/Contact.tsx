@@ -31,10 +31,6 @@ const useStyles = makeStyles()(theme => ({
     intro: {
         gridArea: 'intro',
     },
-    lead: {
-        marginTop: theme.spacing(2),
-        maxWidth: '40ch',
-    },
     buttons: {
         marginTop: theme.spacing(4),
         maxWidth: 420,
@@ -52,11 +48,7 @@ const useStyles = makeStyles()(theme => ({
         },
     },
     panelTitle: {
-        marginBottom: theme.spacing(1),
-    },
-    panelLead: {
         marginBottom: theme.spacing(4),
-        maxWidth: '52ch',
     },
     details: {
         gridArea: 'details',
@@ -78,10 +70,6 @@ export default function Contact() {
         <Container className={classes.root}>
             <div className={classes.intro}>
                 <Typography variant="h1">Contact</Typography>
-                <Typography variant="body1" className={classes.lead}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                    incididunt ut labore.
-                </Typography>
                 <ContactButtons layout="stack" className={classes.buttons} />
             </div>
 
@@ -93,9 +81,6 @@ export default function Contact() {
                     className={classes.panelTitle}
                 >
                     Stuur een bericht
-                </Typography>
-                <Typography variant="body1" className={classes.panelLead}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </Typography>
                 <ContactForm />
             </section>

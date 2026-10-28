@@ -15,10 +15,6 @@ const useStyles = makeStyles()(theme => ({
     root: {
         paddingTop: 'clamp(40px, 6vw, 88px)',
     },
-    lead: {
-        marginTop: theme.spacing(2),
-        maxWidth: '58ch',
-    },
     nav: {
         marginTop: theme.spacing(4),
         borderTop: `1px solid ${border}`,
@@ -72,10 +68,6 @@ export default function ProjectsIntro(props: IProps) {
     return (
         <Container className={classes.root}>
             <Typography variant="h1">Projecten</Typography>
-            <Typography variant="body1" className={classes.lead}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
-            </Typography>
             <nav aria-label="Projecten per soort" className={classes.nav}>
                 <ul className={classes.list}>
                     {groups.map(({ service, count }) => (

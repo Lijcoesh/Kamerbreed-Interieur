@@ -4,9 +4,7 @@ import { makeStyles } from 'tss-react/mui';
 import { border, white } from 'src/colors';
 import Photo from 'src/Components/Photo/Photo';
 import SectionHeader from 'src/Components/SectionHeader/SectionHeader';
-import { projects } from 'src/Config/projects';
 import { services } from 'src/Config/services';
-import type { ServiceId } from 'src/Definitions/Service';
 import { borderRadius, sectionSpacing } from 'src/Theme/sizes';
 
 const useStyles = makeStyles()(theme => ({
@@ -18,11 +16,14 @@ const useStyles = makeStyles()(theme => ({
     },
     floors: {
         display: 'grid',
-        gridTemplateColumns: 'repeat(4, 1fr)',
+        gridTemplateColumns: 'repeat(5, 1fr)',
         gap: theme.spacing(5, 3),
         margin: 0,
         padding: 0,
         listStyle: 'none',
+        [theme.breakpoints.down('lg')]: {
+            gridTemplateColumns: 'repeat(3, 1fr)',
+        },
         [theme.breakpoints.down('md')]: {
             gridTemplateColumns: 'repeat(2, 1fr)',
         },
@@ -81,11 +82,6 @@ const useStyles = makeStyles()(theme => ({
     },
 }));
 
-// De foto van het nieuwste project in die soort
-function photoFor(serviceId: ServiceId) {
-    return projects.find(project => project.services.includes(serviceId) && project.photo)?.photo;
-}
-
 export default function HomeServices() {
     const { classes } = useStyles();
 
@@ -95,17 +91,13 @@ export default function HomeServices() {
     return (
         <section aria-labelledby="services-title" className={classes.root}>
             <Container>
-                <SectionHeader
-                    id="services-title"
-                    title="Wat ik doe"
-                    lead="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio, praesent libero sed cursus ante dapibus diam."
-                />
+                <SectionHeader id="services-title" title="Wat ik doe" />
 
                 <ul className={classes.floors}>
                     {floors.map(service => (
                         <li key={service.id} className={classes.floor}>
                             <Photo
-                                photo={photoFor(service.id)}
+                                photo={service.photo}
                                 ratio="4 / 3"
                                 className={classes.floorPhoto}
                             />
@@ -123,15 +115,9 @@ export default function HomeServices() {
 
                 {extras.map(service => (
                     <div key={service.id} className={classes.extra}>
-                        <Photo
-                            photo={photoFor(service.id)}
-                            ratio="3 / 2"
-                            className={classes.extraPhoto}
-                        />
+                        <Photo photo={service.photo} ratio="3 / 2" className={classes.extraPhoto} />
                         <div className={classes.extraText}>
-                            <Typography variant="h3">
-                                Daarnaast: {service.name.toLowerCase()}
-                            </Typography>
+                            <Typography variant="h3">{service.name}</Typography>
                             <Typography variant="body1" className={classes.summary}>
                                 {service.summary}
                             </Typography>

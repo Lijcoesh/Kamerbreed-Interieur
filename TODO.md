@@ -21,10 +21,8 @@ Op volgorde. Vragen voor de PO staan in `Gesprek-PO.md` ("Nog open"), juridische
 - [ ] Titel per pagina (document title)
 
 ## Zodra de PO iets aanlevert
-
-- [ ] Origineel logo verwerken (liefst svg), tijdelijke JPEG weghalen
-- [ ] Projectfoto's en een foto van de eigenaar verwerken, verkleinen naar webformaat, herkomst vastleggen. Ze vervangen de tijdelijke stockfoto's in `src/Config/projects.ts` en `src/Config/photos.ts`; daarna `src/Resources/Photos/Temp/` weghalen.
-- [ ] Teksten van de PO in plaats van lorem ipsum en de werktitels
+- [ ] Opmaakwensen van de PO (`src/Extra info/Website.md`): witte appbar groter en iets donkerder dan de achtergrond, logo groter in appbar en footer met "Jeroen van der Eijk" onder de bedrijfsnaam, kopje Projecten weg
+- [ ] Typfouten en je/u in zijn teksten, na zijn antwoord (`Gesprek-PO.md`, vraag 10)
 - [ ] Bedrijfsgegevens in de footer (`src/Config/company.ts`: KvK bevestigen, btw, adres volgens de beslissing van de PO, Instagram-URL)
 
 ## Livegang

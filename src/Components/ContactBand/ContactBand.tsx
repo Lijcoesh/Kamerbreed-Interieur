@@ -3,7 +3,7 @@ import { alpha } from '@mui/material/styles';
 import { Link as RouterLink } from 'react-router';
 import { makeStyles } from 'tss-react/mui';
 
-import { olive, onOlive, onOliveMuted, white } from 'src/colors';
+import { olive, onOlive, white } from 'src/colors';
 import ContactButtons from 'src/Components/ContactButtons/ContactButtons';
 import ArrowForwardIcon from 'src/Components/Icons/ArrowForwardIcon';
 import { sectionSpacing } from 'src/Theme/sizes';
@@ -32,11 +32,6 @@ const useStyles = makeStyles()(theme => ({
     title: {
         color: onOlive,
     },
-    lead: {
-        marginTop: theme.spacing(2),
-        color: onOliveMuted,
-        maxWidth: '46ch',
-    },
     // Alle acties bij elkaar: bellen en mailen bovenaan, het formulier eronder over de volle breedte
     actions: {
         display: 'flex',
@@ -60,15 +55,10 @@ export default function ContactBand() {
     return (
         <section aria-labelledby="contact-title" className={classes.root}>
             <Container className={classes.inner}>
-                <div>
-                    <Typography variant="h2" id="contact-title" className={classes.title}>
-                        Neem contact op
-                    </Typography>
-                    <Typography variant="body1" className={classes.lead}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-                        tempor incididunt ut labore.
-                    </Typography>
-                </div>
+                {/* Bewust zonder tekst eronder (PO, 28-10-2026) */}
+                <Typography variant="h2" id="contact-title" className={classes.title}>
+                    Neem contact op
+                </Typography>
                 <div className={classes.actions}>
                     <ContactButtons />
                     <Button

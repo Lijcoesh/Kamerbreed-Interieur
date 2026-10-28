@@ -3,7 +3,6 @@ import { makeStyles } from 'tss-react/mui';
 
 import { logoBlue, olive } from 'src/colors';
 import { companyName } from 'src/Config/company';
-// TODO: tijdelijke JPEG van de oude site; vervangen door het originele logo (zie src/Resources/README.md)
 import logo from 'src/Resources/Logo/kamerbreed-logo.jpeg';
 import { serifFontFamily } from 'src/Theme/typography';
 

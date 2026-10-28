@@ -6,19 +6,19 @@ import SectionHeader from 'src/Components/SectionHeader/SectionHeader';
 import { sectionSpacing } from 'src/Theme/sizes';
 import { serifFontFamily } from 'src/Theme/typography';
 
-// Werktitels; de PO schrijft de definitieve tekst. De volgorde is de werkwijze zelf.
+// Tekst 1 op 1 van de PO (28-10-2026). De volgorde is de werkwijze zelf.
 const steps = [
     {
-        title: 'Je belt of mailt',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+        title: 'U belt of mailt',
+        text: 'Tijdens het eerste gesprek bespreken we wat uw wensen zijn en de eventuele mogelijkheden.',
     },
     {
-        title: 'Ik kom bij je thuis',
-        text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.',
+        title: 'Ik kom bij u thuis',
+        text: 'Ik heb geen fysieke winkel maar kom met stalen bij u thuis, zodat u het al op uw eigen vloer en in het juiste licht kunt zien.',
     },
     {
-        title: 'Ik doe het werk zelf',
-        text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.',
+        title: 'Alles in eigen beheer',
+        text: 'Van het eerste adviesgesprek en de offerte tot het leveren en vakkundig plaatsen: ik verzorg alles persoonlijk. Zo heb je van begin tot eind één vertrouwd aanspreekpunt.',
     },
 ];
 
@@ -73,11 +73,7 @@ export default function HomeWorkflow() {
 
     return (
         <Container component="section" aria-labelledby="workflow-title" className={classes.root}>
-            <SectionHeader
-                id="workflow-title"
-                title="Werkwijze"
-                lead="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sem at nibh elementum imperdiet."
-            />
+            <SectionHeader id="workflow-title" title="Werkwijze" />
             <ol className={classes.steps}>
                 {steps.map(step => (
                     <li key={step.title} className={classes.step}>

@@ -49,15 +49,15 @@ Dingen die makkelijk vergeten worden maar juridisch, ethisch of qua toegankelijk
 
 _Noteer hier tijdens het werk punten die vóór oplevering nog geregeld moeten worden. Leeg = niets bekend, niet = alles gedaan; loop de lijst hierboven altijd volledig na._
 
-- Lorem ipsum in het MVP vervangen door de teksten van de PO (die schrijft hij zelf).
+- Teksten van de PO staan 1 op 1 op de site (28-10-2026), met zijn typfouten en een mix van "je" en "u". Laten nalopen door de PO (`Gesprek-PO.md`, vraag 10). Nog lorem: het bevestigingsbericht van het formulier, de projecten en de privacyverklaring.
 - Adres: de PO wil zijn (woon)adres niet op de site, maar art. 3:15d BW vraagt waarschijnlijk wel het vestigingsadres. De beslissing ligt bij de PO (`Gesprek-PO.md`, "Nog open").
-- KvK-nummer bevestigen en btw-nummer ontvangen voor de bedrijfsgegevens in de footer.
+- KvK-nummer bevestigen. Btw-nummer staat erin (28-10-2026); vragen waarom er in zijn document een * achter stond.
 - Instagram alleen als gewone link, geen ingesloten feed of embed (die laadt scripts van Meta, en dan zijn cookieconsent en een privacyverklaring nodig).
-- Tijdelijke stockfoto's (`src/Resources/Photos/Temp/`, CC0, sinds 13-10-2026) vervangen door werk en een foto van de PO, of terug naar de placeholder. Ze staan nu bij de projecten, op Home en bij Over mij en zouden doorgaan voor zijn werk; zo mogen ze niet live. Daarna de map `Temp` weghalen.
+- Sfeerbeelden van de PO (28-10-2026) op Home en bij de diensten: herkomst en licentie onbekend, ze lijken met AI gemaakt. Vóór livegang laten bevestigen dat commercieel gebruik mag (`Gesprek-PO.md`, vraag 13) en in `src/Resources/README.md` invullen. Niet als project gebruiken: dat zou doorgaan voor zijn werk.
 - Logo en projectfoto's: herkomst en toestemming vastleggen in `src/Resources/README.md`. Op projectfoto's geen klantnamen, huisnummers of herkenbare personen zonder toestemming.
-- Logo: nu een tijdelijke JPEG van 310 px van de oude site (onscherp). Vervangen door het originele bestand van de PO.
+- Logo: de JPEG van 310 × 264 px is het originele bestand van de PO (28-10-2026); een groter bestand is er niet. Eigen logo van de PO, dus geen licentiepunt.
 - Contactformulier: verstuurt pas als de backend in `/server` er is (`contactEndpoint` in `src/Config/api.ts`). Vóór livegang nodig: de echte tekst van de privacyverklaring op `/privacy` (de opbouw met koppen, lorem en de link in de footer staan er, sinds 13-10-2026). Die moet noemen welke gegevens, met welk doel (reageren op je vraag), hoe lang berichten en mails bewaard worden, Brevo als verwerker (met verwerkersovereenkomst), de partij die de VPS host, en de rechten van betrokkenen. Een consent-checkbox is niet nodig zolang de gegevens alleen gebruikt worden om te reageren.
 - Werkgebied op Contact: alle kernen van de gemeente Westland. Laten bevestigen door de PO dat hij overal komt.
-- Placeholders die vóór livegang weg moeten: "Foto volgt"-vlakken, "Instagram volgt" en "Btw-nummer volgt" in de footer en op Contact, en het lorem-bevestigingsbericht van het formulier.
-- Projecten: de placeholderprojecten in `src/Config/projects.ts` ("Voorbeeldproject 1/2/3" met lorem) en de lorem-inleiding vervangen door echt werk van de PO, met foto, titel, tekst en de juiste dienst(en).
-- Over mij: lorem in het verhaal, het portret (nu een tijdelijke stockfoto) en de werktitel "Ik ben Jeroen. Kamerbreed Interieur, dat ben ik." De voornaam (uit de KvK) laten bevestigen door de PO. "Sinds 1994" staat er bewust niet op tot de PO het bevestigt.
+- Placeholders die vóór livegang weg moeten: "Foto volgt"-vlakken, en het lorem-bevestigingsbericht van het formulier.
+- Projecten: de placeholderprojecten in `src/Config/projects.ts` ("Voorbeeldproject 1/2/3" met lorem) vervangen door echt werk van de PO, met foto, titel, tekst en de juiste dienst(en).
+- Over mij: nog geen portret (placeholder). De tekst is van de PO zelf, inclusief "bijna 30 jaar" en "drie generaties" (ook op Home); dat zijn zijn eigen claims, laten bevestigen (`Gesprek-PO.md`, vraag 12).

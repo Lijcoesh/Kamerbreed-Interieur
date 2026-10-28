@@ -38,9 +38,6 @@ const useStyles = makeStyles()(theme => ({
     text: {
         gridArea: 'text',
     },
-    lead: {
-        marginTop: theme.spacing(2.5),
-    },
     body: {
         marginTop: theme.spacing(2),
         maxWidth: '56ch',
@@ -60,22 +57,27 @@ export default function AboutIntro() {
                 <Typography variant="h1" id="about-title">
                     Over mij
                 </Typography>
-                {/* Werktitel; de PO schrijft de definitieve tekst */}
-                <Typography variant="subtitle1" component="p" className={classes.lead}>
-                    Ik ben {ownerName}. Kamerbreed Interieur, dat ben ik.
+                {/* Tekst 1 op 1 van de PO (28-10-2026) */}
+                <Typography variant="body1" className={classes.body}>
+                    Mijn naam is {ownerName}. Ik ben geboren en getogen in het Westland en inmiddels
+                    al bijna 30 jaar met veel plezier werkzaam in de woninginrichting.
                 </Typography>
                 <Typography variant="body1" className={classes.body}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    De liefde voor het vak is mij met de paplepel ingegoten. Zowel mijn opa als mijn
+                    vader waren actief in de woninginrichting. Je kunt dus wel zeggen dat het
+                    vakmanschap al drie generaties in de familie zit.
                 </Typography>
                 <Typography variant="body1" className={classes.body}>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                    Wat ooit begon als een vertrouwde wereld waarin in opgroeide, is uitgegroeid tot
+                    mijn passie.
+                </Typography>
+                <Typography variant="body1" className={classes.body}>
+                    Met mijn jarenlange ervaring, oog voor detail en persoonlijke aanpak help ik
+                    klanten graag bij het creëren van een mooi en sfeervol thuis.
                 </Typography>
                 <ContactButtons className={classes.actions} />
             </div>
-            {/* TODO: nu een tijdelijke stockfoto (src/Config/photos.ts); foto van de eigenaar als hij die wil (Gesprek-PO.md, vraag 6) */}
+            {/* TODO: foto van de eigenaar als hij die wil (src/Config/photos.ts, Gesprek-PO.md, vraag 6) */}
             <Photo photo={ownerPhoto} ratio="4 / 5" eager className={classes.photo} />
         </Container>
     );

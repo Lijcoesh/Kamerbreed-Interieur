@@ -3,7 +3,7 @@ import { makeStyles } from 'tss-react/mui';
 
 import ContactButtons from 'src/Components/ContactButtons/ContactButtons';
 import Photo from 'src/Components/Photo/Photo';
-import { region, slogan } from 'src/Config/company';
+import { slogan } from 'src/Config/company';
 import { heroPhoto } from 'src/Config/photos';
 import { sectionSpacing } from 'src/Theme/sizes';
 
@@ -19,9 +19,6 @@ const useStyles = makeStyles()(theme => ({
             gridTemplateColumns: '1fr',
             gap: theme.spacing(5),
         },
-    },
-    slogan: {
-        marginTop: theme.spacing(2.5),
     },
     intro: {
         marginTop: theme.spacing(2),
@@ -47,16 +44,18 @@ export default function HomeHero() {
     return (
         <Container component="section" aria-labelledby="home-title" className={classes.root}>
             <div>
-                {/* Werktitel; de PO schrijft de definitieve tekst */}
+                {/* Tekst 1 op 1 van de PO (28-10-2026) */}
                 <Typography variant="h1" id="home-title">
-                    Vloeren en raambekleding in het {region}
-                </Typography>
-                <Typography variant="subtitle1" component="p" className={classes.slogan}>
                     {slogan}
                 </Typography>
                 <Typography variant="body1" className={classes.intro}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam.
+                    Een mooi interieur begint bij de juiste basis. Bij Kamerbreed Interieur draait
+                    alles om sfeer, kwaliteit en persoonlijke aandacht. Met bijna 30 jaar ervaring
+                    help ik graag bij het vinden van de perfecte vloer en raamdecoratie, passend bij
+                    jouw wensen en woonstijl.
+                </Typography>
+                <Typography variant="body1" className={classes.intro}>
+                    Van persoonlijk advies to vakkundige plaatsing, alles vertrouwd onder één dak.
                 </Typography>
                 <ContactButtons className={classes.actions} />
             </div>
