@@ -128,9 +128,9 @@ components:
 
 **Creative North Star: "De vakman aan de keukentafel"**
 
-Een lokale vakman die je al half kent, op z'n best gepresenteerd: logo en naam van de bus, een rustige schreefkop in olijfbruin, foto en tekst naast elkaar, en twee even grote okerknoppen om te bellen of te mailen. Het systeem is de categoriestandaard van een vloerenbedrijf (aanbod, diensten, werkwijze, projecten, over mij, contact), niet vernieuwd maar zorgvuldig uitgevoerd. De warmte komt uit de kleur van de oude "in aanbouw"-pagina en het logo, niet uit decoratie.
+Een lokale vakman die je al half kent, op z'n best gepresenteerd: logo en naam van de bus, een rustige schreefkop in olijfbruin, foto en tekst naast elkaar, en twee even grote okerknoppen om te bellen of te mailen. Het systeem is de categoriestandaard van een vloerenbedrijf (aanbod, diensten, werkwijze, over mij, contact), niet vernieuwd maar zorgvuldig uitgevoerd. De warmte komt uit de kleur van de oude "in aanbouw"-pagina en het logo, niet uit decoratie.
 
-Het vlak is gebroken wit (`background`); secties scheiden door haarlijnen (`border`), niet door schaduw of kaarten. Wit is uitzondering: appbar, footer, losse panelen en invoervelden. Eén olijfbruine contactband sluit Home en Projecten af; de contactpagina heeft er geen, want die pagina is zelf het contact, en Over mij en de privacyverklaring eindigen direct in de footer. Typografie is royaal (body 18px, tikdoelen 48px) omdat de doelgroep deels 50+ is en meestal op de telefoon kijkt.
+Het vlak is gebroken wit (`background`); secties scheiden door haarlijnen (`border`), niet door schaduw of kaarten. Wit is uitzondering: appbar, footer, losse panelen en invoervelden. Eén olijfbruine contactband sluit Home af; de contactpagina heeft er geen, want die pagina is zelf het contact, en Over mij en de privacyverklaring eindigen direct in de footer. Typografie is royaal (body 18px, tikdoelen 48px) omdat de doelgroep deels 50+ is en meestal op de telefoon kijkt.
 
 Bewust geweigerd (direction contract): de anonieme template met stockfoto, reviewslider en "wij"-taal, en trendy designstatements.
 
@@ -161,8 +161,8 @@ Een gedempt, warm aardepalet: olijf en oker van de oude site, logoblauw als func
 - **Gebroken wit** (`background`): de grond van elke pagina, ook van het mobiele menu. MUI `background.default`.
 - **Wit** (`white`): appbar, footer (de logo-JPEG heeft een witte grond) losse panelen zoals het binnenzonweringsblok en het formulierpaneel, en invoervelden. MUI `background.paper`. Ook de focusrand op de olijfband.
 - **Warm donkergrijs** (`ink`): lopende tekst, navigatielinks, tekst in placeholders, veldlabels en veldtekst, en de hoverrand van een invoerveld. MUI `text.primary`.
-- **Gedempt grijs** (`muted`): secundaire tekst in de footer, "(optioneel)" en hints bij veldlabels, de tekenteller, de privacynotitie onder het formulier, en op Projecten de aantallen (snelmenu en soortkop) en de regel "Ook: …". MUI `text.secondary`.
-- **Haarlijn** (`border`): sectiescheidingen, appbar- en footerrand, panelrand, stapscheidingen, het snelmenu en de opleverlijst op Projecten. MUI `divider`. Niet voor invoervelden: op wit haalt hij geen 3:1.
+- **Gedempt grijs** (`muted`): secundaire tekst in de footer, "(optioneel)" en hints bij veldlabels, de tekenteller, de privacynotitie onder het formulier. MUI `text.secondary`.
+- **Haarlijn** (`border`): sectiescheidingen, appbar- en footerrand, panelrand, stapscheidingen. MUI `divider`. Niet voor invoervelden: op wit haalt hij geen 3:1.
 - **Veldrand** (`inputBorder`): de rand van invoervelden in rust; haalt 3:1 op wit. Bron: `src/Theme/Components/inputs.ts`.
 - **Placeholdervlak** (`placeholder`): vlak van `PhotoPlaceholder`.
 - **Tekst op olijf** (`onOlive`, `onOliveMuted`): kop en lead in de contactband.
@@ -189,17 +189,17 @@ Een gedempt, warm aardepalet: olijf en oker van de oude site, logoblauw als func
 
 ### Hierarchy
 - **h1** (600, vloeiend 2.4 tot 3.75rem, 1.08, -0.015em): één per pagina, het aanbod.
-- **h2** (600, vloeiend 1.9 tot 2.6rem, 1.15, -0.01em): sectiekoppen via `SectionHeader`, de soortkoppen op Projecten, en de contactband.
-- **h3** (600, 1.375rem, 1.25): dienstnamen, stappen, projecttitels in de opleverlijst, paneelkoppen (ook "Stuur een bericht", "Werkgebied" en "Bedrijfsgegevens" op de contactpagina, als h2-element), de bevestiging na versturen.
+- **h2** (600, vloeiend 1.9 tot 2.6rem, 1.15, -0.01em): sectiekoppen via `SectionHeader` en de contactband.
+- **h3** (600, 1.375rem, 1.25): dienstnamen, stappen, paneelkoppen (ook "Stuur een bericht", "Werkgebied" en "Bedrijfsgegevens" op de contactpagina, als h2-element), de bevestiging na versturen.
 - **subtitle1** (500, vloeiend 1.25 tot 1.5rem, 1.4, olijf): een lead onder een h1. Nu nergens in gebruik: de slogan is sinds 28-10-2026 zelf de h1 op Home.
 - **body1** (400, 1.125rem = 18px, 1.6): lopende tekst; regels begrensd op 40 tot 62ch.
-- **body2** (400, 1rem, 1.55): korte samenvattingen onder dienstkaarten, de privacynotitie onder de verstuurknop, de regel "Ook: …" onder een project.
+- **body2** (400, 1rem, 1.55): korte samenvattingen onder dienstkaarten, de privacynotitie onder de verstuurknop.
 - **button** (600, 1.0625rem, geen hoofdletters, geen letterspatiëring).
 
 Alle koppen zijn olijf, gewicht 600, `text-wrap: balance`; body heeft `text-wrap: pretty`. Stapnummers in de werkwijze op Home zijn Source Serif 4 500, 2.25rem, oldstyle-cijfers, olijf, los boven hun stap. Formuliertekst: veldlabels 600, 1.0625rem, `ink`; veldtekst 1.125rem; hints, foutmeldingen (500) en de tekenteller 1rem, de teller met tabulaire cijfers.
 
 ### Named Rules
-**The Royale-maat Rule.** Lopende tekst is minimaal 18px (`body1`); kleiner alleen voor korte samenvattingen (16px), footer, placeholderlabels, de regel "Ook: …" onder een project (16px) en de korte formulierhulp (labels 17px; hints, foutmeldingen, teller en privacynotitie 16px). Wat de bezoeker typt is 18px. De doelgroep is deels 50+.
+**The Royale-maat Rule.** Lopende tekst is minimaal 18px (`body1`); kleiner alleen voor korte samenvattingen (16px), footer, placeholderlabels en de korte formulierhulp (labels 17px; hints, foutmeldingen, teller en privacynotitie 16px). Wat de bezoeker typt is 18px. De doelgroep is deels 50+.
 
 **The Zelf-gehost Rule.** Fonts komen uit `src/Resources/Fonts` met hun OFL-licentie ernaast. Geen Google Fonts of ander CDN.
 
@@ -215,11 +215,9 @@ Contactpagina: een tweekoloms grid 5/7 met benoemde gebieden. Links de intro (h1
 
 Over mij: alleen een intro, in een tweekoloms grid 4/7 (portret 4:5 links, rechts h1, vier alinea's tekst van de PO max 56ch (met `ownerName` uit `src/Config/company.ts`) en de `ContactButtons` naast elkaar, max 680px), kolomafstand 64px, verticaal gecentreerd. Marges zijn de sitestandaard op elk breakpoint: boven `clamp(40px, 6vw, 88px)`, onder `sectionSpacing`. Onder `md` één kolom (rijafstand 40px): eerst tekst en knoppen, dan het portret (max 420px). Geen contactband: de contactknoppen staan al in de intro en de pagina eindigt direct in de footer. Bron: `src/Modules/About/Scenes/About/Components/AboutIntro.tsx`. De intro vult minstens de schermhoogte onder de appbar (`calc(100dvh - headerHeight)`, onder `sm` met `headerHeightSmall`), met de inhoud verticaal gecentreerd, zodat de footer bij openen niet al in beeld staat.
 
-Projecten: bovenaan een intro (boven `clamp(40px, 6vw, 88px)`) met h1 en 32px lager het snelmenu (zie Components). Daarna één sectie per soort, in de volgorde van `src/Config/services.ts` (PVC-vloeren, Tapijt, Houten vloeren, Laminaat, Egaliseren, Binnenzonwering), elk met id `#<dienst-id>` zodat `/projecten#pvc` er direct heen gaat. Een soortsectie heeft bovenpadding `clamp(48px, 6vw, 80px)`; dat is krapper dan `sectionSpacing`, omdat de soorten samen één lijst vormen en geen losse secties. Een project met meer diensten staat onder elke soort. Na de laatste soort `sectionSpacing`, dan sluit de `ContactBand` de pagina af. Een anker landt onder de appbar via `scroll-padding-top`.
-
 Privacyverklaring (Read): een intro over de volle breedte (h1, lead in `body1` max 62ch, een regel "Concept. Laatst bijgewerkt: …" in `body2` `muted`) met een haarlijn eronder. Daaronder een grid 4/7: links de inhoudsopgave "Op deze pagina" (kop 600 1rem `muted`, onderstreepte links in `ink` 1.0625rem, 48px hoog, hover olijf), die op desktop meeloopt (`sticky`, 32px onder de appbar); rechts één leeskolom van max 65ch met per onderwerp een h3-stijl kop (als h2-element), alinea's in `body1` en lijsten met een olijf opsommingsteken. Onder `md` één kolom: intro, inhoudsopgave (met haarlijn eronder), tekst. Geen contactband. Bron: `src/Modules/Privacy/Scenes/Privacy/Privacy.tsx`.
 
-Navigatie: bij elke andere pagina begint de bezoeker bovenaan; met een anker in de URL (`/projecten#tapijt`) landt hij op die sectie. Beide direct, zonder vloeiend scrollen. Bron: `src/Hooks/useScrollOnNavigate.ts`, aangeroepen in `App.tsx`.
+Navigatie: bij elke andere pagina begint de bezoeker bovenaan; met een anker in de URL (`/privacy#gegevens`) landt hij op die sectie. Beide direct, zonder vloeiend scrollen. Bron: `src/Hooks/useScrollOnNavigate.ts`, aangeroepen in `App.tsx`.
 
 ## Elevation & Depth
 
@@ -244,7 +242,7 @@ Stevig en rustig: een gevuld vlak, geen schaduw, geen hoofdletters. Bron: `src/T
 - **Shape:** zacht afgerond (`borderRadius`), minimaal `touchTarget` hoog; `size="large"` minimaal 56px met 24px zijpadding.
 - **Contactknop (contained secondary):** oker vlak, witte tekst en wit icoon, icoon links, label ("Bellen"/"Mailen") met het nummer of adres eronder in gewicht 400. Komt alleen voor via `ContactButtons`.
 - **Verstuurknop (contained secondary, large):** hetzelfde okervlak met witte tekst, zonder icoon, links uitgelijnd onder het formulier; label "Versturen", tijdens verzenden "Bezig met versturen…".
-- **Outlined primary:** olijf tekst en rand op transparant, met pijlicoon rechts; voor doorlinken ("Alle projecten bekijken", "Meer over mij", en in `size="large"` "Nog een bericht sturen" na versturen op de contactpagina).
+- **Outlined primary:** olijf tekst en rand op transparant, met pijlicoon rechts; voor doorlinken ("Meer over mij", en in `size="large"` "Nog een bericht sturen" na versturen op de contactpagina).
 - **Hover / Focus:** achtergrond- en randkleur in 160ms ease-out naar de `dark`-toon. Focus: 2px `logoBlue` outline met offset 2 op elk `ButtonBase`-element; wit binnen de olijfband.
 - **Icon button:** `touchTarget` vierkant, olijf, zelfde radius.
 
@@ -274,7 +272,7 @@ Op één wit paneel met haarlijn en `borderRadius` (padding 40/48px, mobiel 24/2
 Bedrijfsnaam, KvK en btw onder elkaar, 1.125rem, regelhoogte 1.7; een ontbrekend gegeven in `muted`. Op de contactpagina op deze maat; de footer geeft een `className` mee die hem terugzet naar 1rem, gelijk aan de andere footerkolommen. Bron: `src/Components/CompanyDetails/CompanyDetails.tsx`.
 
 ### PhotoPlaceholder
-Neutraal vlak (`placeholder`) met 1px haarlijn, 4px radius en een klein label linksonder ("Foto volgt"/"Projectfoto volgt"), vaste `aspectRatio` per gebruik, `aria-hidden`. Is de terugval van `Photo` op elke plek waar een echte foto van de PO hoort, ook in de opleverlijst op Projecten (4:3). Bron: `src/Components/PhotoPlaceholder/PhotoPlaceholder.tsx`.
+Neutraal vlak (`placeholder`) met 1px haarlijn, 4px radius en een klein label linksonder ("Foto volgt"), vaste `aspectRatio` per gebruik, `aria-hidden`. Is de terugval van `Photo` op elke plek waar een echte foto van de PO hoort. Bron: `src/Components/PhotoPlaceholder/PhotoPlaceholder.tsx`.
 
 ### Navigation
 - **Appbar:** wit, sticky, haarlijn onder; `BrandLockup` (logo + "Kamerbreed Interieur" in Source Serif 4) links.
@@ -284,14 +282,9 @@ Neutraal vlak (`placeholder`) met 1px haarlijn, 4px radius en een klein label li
 ### SectionHeader
 h2 met optionele lead (`body1`) eronder, max 62ch, ondermarge 40px (onder `sm` 32px). Staat boven een sectie. Gebruikt op Home. Bron: `src/Components/SectionHeader/SectionHeader.tsx`.
 
-### Snelmenu (Projecten)
-Een `nav` ("Projecten per soort") tussen twee haarlijnen, boven en onder, met per soort een ankerlink naar zijn sectie. De links staan naast elkaar en lopen door over meerdere regels (kolomafstand 32px, onder `sm` 24px), elk minimaal `touchTarget` hoog: `ink`, 500, 1.0625rem, zoals de navigatie. Alleen de naam is onderstreept (1px, offset 0.2em, 2px bij hover); het aantal staat er los naast in `muted`, 400, tabulaire cijfers, zonder onderstreping. Hover: olijf. Schermlezers horen naam en aantal als één label ("Pvc-vloeren, 3 projecten"). Geen knoppen, chips of filters: het snelmenu springt naar een plek op de pagina en verbergt niets. Bron: `src/Modules/Projects/Scenes/Projects/Components/ProjectsIntro.tsx`.
-
-### Opleverlijst (signatuur, Projecten)
-Het opgeleverde werk per soort, rij na rij, zoals een vakman het in een map bijhoudt. Kop: de soortnaam als h2 met rechts het aantal ("3 projecten", "1 project", "Nog geen projecten") in `body1` `muted`, op de basislijn, met 16px eronder en een haarlijn; onder `sm` staat het aantal altijd onder de h2, zodat elke soort hetzelfde begint. Daaronder een lijst zonder opsommingstekens; elke rij heeft een haarlijn eronder en padding 32px boven en onder (onder `sm` 24px). Een rij is een grid 4/7 (gap 40px, onder `md` 24px): links de foto 4:3 met 4px radius, zolang er geen echte foto is een `PhotoPlaceholder` "Projectfoto volgt"; rechts de titel als h3, de tekst in `body1` (max 52ch) en, als het project ook onder andere soorten valt, een regel "Ook: …" in `body2` `muted` met die diensten als Nederlandse opsomming. Onder `sm` één kolom, de foto boven de tekst (gap 16px). Een soort zonder projecten toont één regel `body1` ("Hier komen binnenkort foto's van mijn werk.") met een haarlijn eronder. Geen kaarten, schaduw, filterknoppen of lightbox. Bron: `ProjectGroup.tsx` en `ProjectRow.tsx` in `src/Modules/Projects/Scenes/Projects/Components/`.
 
 ### Contactband
-Olijf vlak in twee verticaal gecentreerde kolommen (5/7): links de kop in `onOlive`, zonder tekst eronder (PO), rechts alle acties als één blok: de `ContactButtons` en daaronder over de volle breedte een outlined knop "Of stuur een bericht" naar `/contact` in `onOlive` (rand 70%, bij hover vol met een vlak van 8%). Zo is het formulier vindbaar zonder bellen of mailen te verdringen. De afsluiting van een inhoudspagina, nu op Home en Projecten. Niet op de contactpagina, Over mij en de privacyverklaring. Focusrand wordt hier wit. Bron: `src/Components/ContactBand/ContactBand.tsx`.
+Olijf vlak in twee verticaal gecentreerde kolommen (5/7): links de kop in `onOlive`, zonder tekst eronder (PO), rechts alle acties als één blok: de `ContactButtons` en daaronder over de volle breedte een outlined knop "Of stuur een bericht" naar `/contact` in `onOlive` (rand 70%, bij hover vol met een vlak van 8%). Zo is het formulier vindbaar zonder bellen of mailen te verdringen. De afsluiting van een inhoudspagina, nu alleen op Home. Niet op de contactpagina, Over mij en de privacyverklaring. Focusrand wordt hier wit. Bron: `src/Components/ContactBand/ContactBand.tsx`.
 
 ### Footer
 Wit met haarlijn boven: merk en slogan, contact, pagina's, bedrijfsgegevens (`CompanyDetails`, 1rem) in kolommen met serif-koppen (600, 1.125rem, olijf); links onderstreept. Onderaan, na een haarlijn, links het copyright in `muted` en rechts de link "Privacyverklaring" in `ink` (48px hoog); op een smal scherm onder elkaar.
@@ -329,4 +322,4 @@ Oker vlak met witte tekst, logoblauwe focusrand; eerste focusbare element.
 Wat in de build staat maar niet blijvend is (geen ontwerpregel):
 - **Logo:** `src/Resources/Logo/kamerbreed-logo.jpeg`, het originele bestand van de PO (310 × 264, witte grond; groter is er niet).
 - **Teksten:** lorem ipsum; de PO schrijft de definitieve teksten.
-- **Foto's:** alleen beeld van de PO. De foto naast de kop op Home en de beelden bij de diensten zijn sfeerbeelden van de PO (28-10-2026, `service.photo` in `src/Config/services.ts`), los van de projecten. Projecten en het portret hebben nog geen foto en tonen `PhotoPlaceholder`; de tijdelijke stockfoto's zijn weg (28-10-2026).
+- **Foto's:** alleen beeld van de PO. De foto naast de kop op Home en de beelden bij de diensten zijn sfeerbeelden van de PO (28-10-2026, `service.photo` in `src/Config/services.ts`), Het portret heeft nog geen foto en tonen `PhotoPlaceholder`; de tijdelijke stockfoto's zijn weg (28-10-2026).

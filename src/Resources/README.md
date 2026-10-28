@@ -35,7 +35,7 @@ Leg bij elke foto vast wie hem gemaakt heeft en of er toestemming is (zie de lau
 
 Gestuurd door de PO, met als bestandsnaam de plek waar hij ze wil hebben. Omgezet van PNG (640 px) naar JPEG, kwaliteit 85; de herkomst staat ook in elk bestand (JPEG-commentaar). Gekoppeld in `src/Config/photos.ts` (`home.jpg`) en `src/Config/services.ts`.
 
-**Herkomst onbekend.** Ze zien eruit als met AI gemaakte beelden, niet als foto's van zijn werk. Navragen bij de PO waar ze vandaan komen en of commercieel gebruik mag (`Gesprek-PO.md`, vraag 13). Gebruik ze als sfeerbeeld bij een dienst, nooit als project.
+**Herkomst onbekend.** Ze zien eruit als met AI gemaakte beelden, niet als foto's van zijn werk. Navragen bij de PO waar ze vandaan komen en of commercieel gebruik mag (`Gesprek-PO.md`, vraag 13). Gebruik ze als sfeerbeeld, niet als zijn werk.
 
 | Bestand | Origineel van de PO | Herkomst | Licentie |
 |---|---|---|---|
@@ -47,6 +47,6 @@ Gestuurd door de PO, met als bestandsnaam de plek waar hij ze wil hebben. Omgeze
 | `Photos/Services/egaliseren.jpg` | `Egaliseren.PNG` | onbekend | onbekend |
 | `Photos/Services/binnenzonwering.jpg` | `Foto voor bij binnen zonwering.PNG` | onbekend | onbekend |
 
-#### Projectfoto's en portret
+#### Portret
 
 Nog geen.

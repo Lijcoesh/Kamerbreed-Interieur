@@ -19,7 +19,7 @@ Kennismakingsgesprek 12-10-2026, aangevuld met wat daarvoor al bekend was.
 ### Wat moet de site doen
 
 - **Doel:** informatie geven en contact opleveren.
-- **Pagina's:** Home · Projecten · Over mij · Contact. Er komt geen aparte dienstenpagina; de diensten staan op Home. Het is "Over mij" en niet "Over ons", omdat hij alleen werkt.
+- **Pagina's:** Home · Over mij · Contact (Projecten is weggehaald op 28-10-2026: er zijn geen projectfoto's). Er komt geen aparte dienstenpagina; de diensten staan op Home. Het is "Over mij" en niet "Over ons", omdat hij alleen werkt.
 - **Instagram:** ergens op de site.
 - **Prijzen:** niet op de site.
 - **Onderhoud:** weinig. Ongeveer één keer per jaar komen er projecten bij. Ik pas dat aan, hij hoeft niet in te loggen.
@@ -66,7 +66,7 @@ Vragen voor een volgend contact (bellen of appen is genoeg).
 2. ★ **KvK en btw.** Klopt KvK-nummer 27067893? ~~Wat is het btw-nummer?~~ NL803473655B01 (28-10-2026; in zijn document stond er een * achter, waarom?) En is het nog een vof, of inmiddels een eenmanszaak (hij werkt alleen)?
 3. ★ **Contact.** Hoe wil hij benaderd worden: bellen, mailen, WhatsApp? Staat WhatsApp op het 06-nummer? _Knoppen voor bellen, mailen en WhatsApp, geen contactformulier. Bij een formulier worden berichten opgeslagen en is een privacyverklaring nodig._
 4. ★ **Instagram.** ~~Wat is de accountnaam of link?~~ kamer.breed.interieur (28-10-2026), als link in de footer. _Alleen een link met icoon (in de footer en op Contact), geen ingesloten feed. Een feed laadt scripts van Meta, en dan zijn een cookiebanner en privacyverklaring nodig._
-5. **Projecten.** Hoeveel ongeveer, en wat per project: alleen foto's, of ook plaats en wat er gedaan is? Welke dienst hoort bij elk project (pvc, tapijt, houten vloeren, laminaat, egaliseren, binnenzonwering)? Dat bepaalt of een filter op dienst zin heeft. _Foto's met een korte titel (soort vloer, plaats in het Westland), geen klantnamen of huisnummers._
+5. ~~**Projecten.**~~ Vervallen: de pagina is weg (zie 14).
 6. **Over mij.** ~~Wil hij met naam~~ (ja: "Jeroen van der Eijk" in zijn tekst, 28-10-2026) en foto op die pagina? Mag erbij dat het bedrijf er sinds 1994 is (KvK)? _Ja, met naam ("Jeroen" staat er al), en een foto als hij die stuurt. 1994 weglaten._
 7. **Particulier of zakelijk.** Werkt hij ook voor bedrijven? _De site richt zich op particulieren._
 8. **Binnenzonwering.** Hoe groot is dat deel van zijn werk? Wil hij de merknaam BD Line noemen, en mag hij hun beeldmateriaal gebruiken? _Binnenzonwering kort noemen naast de vloeren, zonder merknaam en zonder beeld van BD Line._
@@ -76,15 +76,15 @@ Vragen voor een volgend contact (bellen of appen is genoeg).
     - Je of u: Home, de diensten en Over mij zeggen "je/jouw", de werkwijze "u", en stap 3 begint met "ik verzorg" en eindigt met "Zo heb **je**". Kiezen we één vorm?
 
     _Typfouten verbeteren, overal "je"._
-11. **Vloerbedekking.** Stond eerst als aparte dienst, in zijn teksten niet meer. Valt het onder tapijt, of doet hij het niet meer? _Weglaten; de voorbeeldprojecten met vloerbedekking staan nu onder tapijt._
+11. **Vloerbedekking.** Stond eerst als aparte dienst, in zijn teksten niet meer. Valt het onder tapijt, of doet hij het niet meer? _Weglaten._
 12. **"Bijna 30 jaar ervaring" en "drie generaties".** Staat nu op Home en Over mij. Klopt dat met de KvK (sinds 1994)? _Laten staan, het is zijn eigen tekst._
-13. **Foto's (28-10-2026).** Waar komen de zeven foto's vandaan die hij stuurde? Ze lijken met AI gemaakt. Met welk programma, en mag het beeld commercieel gebruikt worden? Heeft hij ze groter dan 640 px? _Gebruiken als sfeerbeeld bij Home en de diensten, niet als projecten. Groter formaat hoeft niet als het er niet is._
-14. **Projectenpagina.** Er zijn nog geen projectfoto's. Wil hij de pagina Projecten (en het blok op Home) houden en later foto's van zijn werk sturen, of liever helemaal weg? _Weghalen tot er echte foto's zijn: lege "Projectfoto volgt"-vlakken mogen niet live._
+13. **Foto's (28-10-2026).** Waar komen de zeven foto's vandaan die hij stuurde? Ze lijken met AI gemaakt. Met welk programma, en mag het beeld commercieel gebruikt worden? Heeft hij ze groter dan 640 px? _Gebruiken als sfeerbeeld bij Home en de diensten. Groter formaat hoeft niet als het er niet is._
+14. ~~**Projectenpagina.**~~ Weggehaald op 28-10-2026: er zijn geen projectfoto's. Wil hij ooit zijn werk laten zien, dan kan hij foto's sturen en komt de pagina terug (staat in de git-historie).
 
 ## Na het gesprek opsturen
 
 - [x] Logo: de JPEG van 310 px is het origineel; een groter bestand is er niet (28-10-2026)
-- [ ] Foto's van projecten, in volle grootte (via WeTransfer, niet via WhatsApp: dat maakt ze kleiner). Komen later.
+- [ ] ~~Foto's van projecten~~ (vervallen, de projectenpagina is weg)
 - [ ] Foto van hemzelf voor "Over mij" (als hij die wil)
 - [x] Btw-nummer
 - [ ] Inloggegevens van Mijndomein, of een contactpersoon daar

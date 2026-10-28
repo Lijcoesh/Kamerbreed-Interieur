@@ -1,6 +1,6 @@
 import type { PhotoSource } from './PhotoSource';
 
-// Diensten. Projecten verwijzen hiernaar, zodat er later op dienst gefilterd kan worden.
+// Diensten, zoals ze op Home staan
 export type ServiceId =
     'pvc' | 'tapijt' | 'houten-vloeren' | 'laminaat' | 'egaliseren' | 'binnenzonwering';
 
@@ -10,6 +10,6 @@ export interface Service {
     // Vloeren zijn de hoofdzaak; binnenzonwering komt erbij
     group: 'vloeren' | 'raambekleding';
     summary: string;
-    // Sfeerbeeld bij de dienst op Home, los van de projecten
+    // Sfeerbeeld bij de dienst op Home
     photo?: PhotoSource;
 }

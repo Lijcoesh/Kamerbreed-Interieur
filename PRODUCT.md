@@ -40,11 +40,10 @@ Eén vakman die alles zelf doet. Hij komt bij de klant thuis, adviseert, en legt
 
 ## Capabilities and Constraints
 
-- Pagina's: Home, Projecten, Over mij, Contact. Diensten staan op Home, er is geen aparte dienstenpagina. "Over mij" omdat hij alleen werkt.
+- Pagina's: Home, Over mij, Contact. (Projecten weggehaald op 28-10-2026: de PO heeft geen projectfoto's.) Diensten staan op Home, er is geen aparte dienstenpagina. "Over mij" omdat hij alleen werkt.
 - Contact: telefoon 06-22243488 en info@kamerbreedinterieur.nl. Of WhatsApp erbij komt, is nog open (de knop staat klaar, maar uit).
 - Contactformulier op de contactpagina (besloten 13-10-2026): naam, e-mail en/of telefoon, bericht. Verzenden gaat straks via een eigen backend in `/server` (eigen VPS, e-mail via Brevo); die is nog niet gebouwd. Door het formulier is een privacyverklaring nodig.
 - Instagram: alleen als link, geen ingesloten feed (die zou scripts van Meta laden).
-- Projecten: ongeveer één keer per jaar komt er iets bij. De ontwikkelaar voegt ze toe, er is geen CMS. Elk project krijgt de dienst(en) als veld; een filter op dienst komt er pas als er genoeg projecten zijn.
 - Het woonadres staat niet op de site, tenzij de wet het vereist (open, zie Gesprek-PO.md).
 - Bedrijfsgegevens (KvK, btw) in de footer; KvK-nummer en rechtsvorm nog te bevestigen.
 
@@ -62,8 +61,8 @@ Eén vakman die alles zelf doet. Hij komt bij de klant thuis, adviseert, en legt
 ## Evidence on Hand
 
 - Logo: alleen een kleine JPEG (310 px); dat is ook het origineel.
-- Sfeerbeelden bij Home en de diensten: van de PO (28-10-2026), herkomst nog navragen. Geen projecten.
-- Projectfoto's en een foto van de eigenaar: komen later. Tot die tijd een placeholder: alleen beeld van de PO op de site (de tijdelijke stockfoto's zijn weg sinds 28-10-2026).
+- Sfeerbeelden bij Home en de diensten: van de PO (28-10-2026), herkomst nog navragen.
+- Een foto van de eigenaar: komt later, als hij die wil. Tot die tijd een placeholder: alleen beeld van de PO op de site (de tijdelijke stockfoto's zijn weg sinds 28-10-2026).
 - Teksten: komen later.
 - **Niet aanwezig, dus niet verzinnen:** reviews, klantcijfers, keurmerken, garanties en prijzen. Het cijfer op Telefoonboek (5,6 uit 2017) wordt niet gebruikt. Geen gegenereerde beelden van interieurs of vloeren: die zouden doorgaan voor zijn werk.
 

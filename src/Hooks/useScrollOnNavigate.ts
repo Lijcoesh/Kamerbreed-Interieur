@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router';
 
-// Bij een andere pagina naar boven; met een #anker (/projecten#tapijt) naar die sectie.
+// Bij een andere pagina naar boven; met een #anker (/privacy#gegevens) naar die sectie.
 // De router doet dit niet zelf. Direct, niet vloeiend: de html heeft scroll-behavior smooth.
 export function useScrollOnNavigate() {
     const { pathname, hash } = useLocation();
