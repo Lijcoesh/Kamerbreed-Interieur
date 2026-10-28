@@ -5,8 +5,8 @@ export const pageGutter = 28;
 export const pageGutterSmall = 20;
 
 // Hoogte van de appbar; ook de scroll-marge onder een sticky header
-export const headerHeight = 76;
-export const headerHeightSmall = 64;
+export const headerHeight = 100;
+export const headerHeightSmall = 72;
 
 // Tikdoel voor knoppen en menu-items
 export const touchTarget = 48;

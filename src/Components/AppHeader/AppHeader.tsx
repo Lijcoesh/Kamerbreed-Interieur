@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { NavLink } from 'react-router';
 import { makeStyles } from 'tss-react/mui';
 
-import { border, ink, logoBlue, ochre, olive, white } from 'src/colors';
+import { border, headerBackground, ink, logoBlue, ochre, olive } from 'src/colors';
 import BrandLockup from 'src/Components/BrandLockup/BrandLockup';
 import MenuIcon from 'src/Components/Icons/MenuIcon';
 import PhoneIcon from 'src/Components/Icons/PhoneIcon';
@@ -18,7 +18,7 @@ const useStyles = makeStyles()(theme => ({
         position: 'sticky',
         top: 0,
         zIndex: theme.zIndex.appBar,
-        backgroundColor: white,
+        backgroundColor: headerBackground,
         borderBottom: `1px solid ${border}`,
     },
     bar: {
@@ -29,6 +29,7 @@ const useStyles = makeStyles()(theme => ({
         height: headerHeight,
         [theme.breakpoints.down('sm')]: {
             height: headerHeightSmall,
+            gap: theme.spacing(1),
         },
     },
     nav: {

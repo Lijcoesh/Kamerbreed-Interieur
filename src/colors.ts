@@ -25,6 +25,8 @@ export const onOliveMuted = '#D6D4C6';
 
 // Vlakken en lijnen
 export const background = '#F0F1EE';
+// Appbar: iets donkerder dan de achtergrond (PO, 28-10-2026). Ink 6,6:1, muted 4,6:1, logoblauw 3,4:1.
+export const headerBackground = '#E5E6E0';
 export const placeholder = '#E2E3DD';
 export const border = '#D9DAD3';
 // Rand van invoervelden: haalt 3:1 op wit, want de rand is wat het veld herkenbaar maakt

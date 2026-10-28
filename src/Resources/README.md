@@ -5,6 +5,7 @@
 | Bestand | Herkomst | Licentie | Status |
 |---|---|---|---|
 | `Logo/kamerbreed-logo.jpeg` | Gedownload van de oude site: `https://kamerbreedinterieur.nl/wp-content/uploads/2025/01/KamerBreed_Interieur_logo.jpeg` (12-10-2026). 310 × 264 px. | Eigen logo van de PO. | Dit is het originele bestand: de PO stuurde op 28-10-2026 precies dezelfde JPEG. |
+| `Logo/kamerbreed-logo.png` | Afgeleid van de JPEG hierboven (28-10-2026): de witte achtergrond rond het logo transparant gemaakt (vanaf de randen, met zachte overgang), zodat het op de donkerdere appbar staat. Het wit binnen het logo is gebleven. Dit bestand wordt gebruikt. | Eigen logo van de PO. | |
 
 ## Fonts
 

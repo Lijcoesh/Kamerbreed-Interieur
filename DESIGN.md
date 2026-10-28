@@ -13,6 +13,7 @@ colors:
   onOlive: "#F0F1EE"
   onOliveMuted: "#D6D4C6"
   background: "#F0F1EE"
+  headerBackground: "#E5E6E0"
   placeholder: "#E2E3DD"
   border: "#D9DAD3"
   inputBorder: "#8A887F"
@@ -63,8 +64,8 @@ spacing:
   pageGutterSmall: "20px"
   pageGutter: "28px"
   touchTarget: "48px"
-  headerHeightSmall: "64px"
-  headerHeight: "76px"
+  headerHeightSmall: "72px"
+  headerHeight: "100px"
   sectionSpacing: "clamp(64px, 8vw, 120px)"
   contentMaxWidth: "1200px"
 components:
@@ -99,9 +100,9 @@ components:
     rounded: "{rounded.borderRadius}"
     size: "48px"
   appbar:
-    backgroundColor: "{colors.white}"
+    backgroundColor: "{colors.headerBackground}"
     textColor: "{colors.ink}"
-    height: "76px"
+    height: "100px"
   contact-band:
     backgroundColor: "{colors.olive}"
     textColor: "{colors.onOlive}"
@@ -130,7 +131,7 @@ components:
 
 Een lokale vakman die je al half kent, op z'n best gepresenteerd: logo en naam van de bus, een rustige schreefkop in olijfbruin, foto en tekst naast elkaar, en twee even grote okerknoppen om te bellen of te mailen. Het systeem is de categoriestandaard van een vloerenbedrijf (aanbod, diensten, werkwijze, over mij, contact), niet vernieuwd maar zorgvuldig uitgevoerd. De warmte komt uit de kleur van de oude "in aanbouw"-pagina en het logo, niet uit decoratie.
 
-Het vlak is gebroken wit (`background`); secties scheiden door haarlijnen (`border`), niet door schaduw of kaarten. Wit is uitzondering: appbar, footer, losse panelen en invoervelden. Eén olijfbruine contactband sluit Home af; de contactpagina heeft er geen, want die pagina is zelf het contact, en Over mij en de privacyverklaring eindigen direct in de footer. Typografie is royaal (body 18px, tikdoelen 48px) omdat de doelgroep deels 50+ is en meestal op de telefoon kijkt.
+Het vlak is gebroken wit (`background`); secties scheiden door haarlijnen (`border`), niet door schaduw of kaarten. De appbar is iets donkerder dan de grond (`headerBackground`). Wit is uitzondering: footer, losse panelen en invoervelden. Eén olijfbruine contactband sluit Home af; de contactpagina heeft er geen, want die pagina is zelf het contact, en Over mij en de privacyverklaring eindigen direct in de footer. Typografie is royaal (body 18px, tikdoelen 48px) omdat de doelgroep deels 50+ is en meestal op de telefoon kijkt.
 
 Bewust geweigerd (direction contract): de anonieme template met stockfoto, reviewslider en "wij"-taal, en trendy designstatements.
 
@@ -159,7 +160,8 @@ Een gedempt, warm aardepalet: olijf en oker van de oude site, logoblauw als func
 
 ### Neutral
 - **Gebroken wit** (`background`): de grond van elke pagina, ook van het mobiele menu. MUI `background.default`.
-- **Wit** (`white`): appbar, footer (de logo-JPEG heeft een witte grond) losse panelen zoals het binnenzonweringsblok en het formulierpaneel, en invoervelden. MUI `background.paper`. Ook de focusrand op de olijfband.
+- **Appbar** (`headerBackground`): iets donkerder dan de grond, op verzoek van de PO (28-10-2026). Ink 6,6:1, muted 4,6:1, logoblauw (focus) 3,4:1, oker (actief) 4,0:1.
+- **Wit** (`white`): footer, losse panelen zoals het binnenzonweringsblok en het formulierpaneel, en invoervelden. MUI `background.paper`. Ook de focusrand op de olijfband.
 - **Warm donkergrijs** (`ink`): lopende tekst, navigatielinks, tekst in placeholders, veldlabels en veldtekst, en de hoverrand van een invoerveld. MUI `text.primary`.
 - **Gedempt grijs** (`muted`): secundaire tekst in de footer, "(optioneel)" en hints bij veldlabels, de tekenteller, de privacynotitie onder het formulier. MUI `text.secondary`.
 - **Haarlijn** (`border`): sectiescheidingen, appbar- en footerrand, panelrand, stapscheidingen. MUI `divider`. Niet voor invoervelden: op wit haalt hij geen 3:1.
@@ -176,7 +178,7 @@ Een gedempt, warm aardepalet: olijf en oker van de oude site, logoblauw als func
 
 **The Blauw-blijft-logo Rule.** Logoblauw verschijnt alleen in het logo en als focusrand (ook om een fout invoerveld met focus). Op de olijfband wordt de focusrand wit, omdat blauw daar geen 3:1 haalt.
 
-**The Gebroken-wit-is-grond Rule.** `background` is de grond van de hele pagina. Wit alleen voor appbar, footer, losse panelen en invoervelden.
+**The Gebroken-wit-is-grond Rule.** `background` is de grond van de hele pagina. De appbar heeft `headerBackground`; wit alleen voor footer, losse panelen en invoervelden.
 
 **The Veld-is-herkenbaar Rule.** Een invoerveld is wit met een `inputBorder`-rand die 3:1 haalt, nooit alleen de haarlijn: de rand is wat een leeg veld als veld herkenbaar maakt.
 
@@ -275,7 +277,8 @@ Bedrijfsnaam, KvK en btw onder elkaar, 1.125rem, regelhoogte 1.7; een ontbrekend
 Neutraal vlak (`placeholder`) met 1px haarlijn, 4px radius en een klein label linksonder ("Foto volgt"), vaste `aspectRatio` per gebruik, `aria-hidden`. Is de terugval van `Photo` op elke plek waar een echte foto van de PO hoort. Bron: `src/Components/PhotoPlaceholder/PhotoPlaceholder.tsx`.
 
 ### Navigation
-- **Appbar:** wit, sticky, haarlijn onder; `BrandLockup` (logo + "Kamerbreed Interieur" in Source Serif 4) links.
+- **Appbar:** `headerBackground`, sticky, haarlijn onder, 100px hoog (onder `sm` 72px); `BrandLockup` links.
+- **BrandLockup** (appbar en footer): logo 72px hoog (onder `sm` 42px, krimpt niet), rechts ervan "Kamerbreed Interieur" in Source Serif 4 600 1.4rem olijf (onder `sm` 0.875rem) en daaronder `ownerName` ("Jeroen van der Eijk") in `ink` 1.0625rem (onder `sm` 0.875rem), op wens van de PO. Gap 12px (onder `sm` 8px). Bron: `src/Components/BrandLockup/BrandLockup.tsx`.
 - **Desktop (vanaf md):** links in `ink`, 500, 1.0625rem, 48px hoog. Hover: olijf. Actief: olijf, 600, met een 3px oker streep die in 200ms vanaf links inschuift (uit bij reduced motion). Geen los telefoonnummer, zodat bellen en mailen gelijk blijven.
 - **Mobiel (onder md):** belknop en menuknop (icoonknoppen). Het menu is een drawer van rechts (`min(360px, 88vw)`) op gebroken wit; het actieve item krijgt een okerblokje, onderaan staan de `ContactButtons` gestapeld.
 
@@ -301,7 +304,7 @@ Oker vlak met witte tekst, logoblauwe focusrand; eerste focusbare element.
 - **Do** gebruik oker alleen als knopvlak met `white` tekst of als "actief"-teken.
 - **Do** toon bellen en mailen altijd samen en even zwaar, via `ContactButtons`.
 - **Do** scheid secties met een 1px `border`-haarlijn en `sectionSpacing`.
-- **Do** gebruik `background` als paginagrond; wit alleen voor appbar, footer, losse panelen en invoervelden.
+- **Do** gebruik `background` als paginagrond; de appbar `headerBackground`; wit alleen voor footer, losse panelen en invoervelden.
 - **Do** geef elk bedienbaar element minimaal `touchTarget` (48px) en een 2px `logoBlue` focusrand met offset 2 (wit op olijf). Invoervelden tonen focus met een 2px olijf rand.
 - **Do** bouw formuliervelden met `FormField`: label erboven, fout eronder in `error`, `inputBorder` als rand.
 - **Do** toon beeld via `Photo` (`src/Components/Photo/Photo.tsx`): een foto op een vaste verhouding (`object-fit: cover`, 4px radius, `loading="lazy"` behalve in het eerste scherm), of `PhotoPlaceholder` zolang de foto ontbreekt.
@@ -320,6 +323,6 @@ Oker vlak met witte tekst, logoblauwe focusrand; eerste focusbare element.
 ## Tijdelijk
 
 Wat in de build staat maar niet blijvend is (geen ontwerpregel):
-- **Logo:** `src/Resources/Logo/kamerbreed-logo.jpeg`, het originele bestand van de PO (310 × 264, witte grond; groter is er niet).
+- **Logo:** `src/Resources/Logo/kamerbreed-logo.png`: het originele bestand van de PO (`kamerbreed-logo.jpeg`, 310 × 264; groter is er niet) met de witte achtergrond transparant gemaakt, zodat het ook op de appbar staat. Het wit in "BREED" en de rol is gebleven.
 - **Teksten:** lorem ipsum; de PO schrijft de definitieve teksten.
 - **Foto's:** alleen beeld van de PO. De foto naast de kop op Home en de beelden bij de diensten zijn sfeerbeelden van de PO (28-10-2026, `service.photo` in `src/Config/services.ts`), Het portret heeft nog geen foto en tonen `PhotoPlaceholder`; de tijdelijke stockfoto's zijn weg (28-10-2026).
