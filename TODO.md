@@ -20,7 +20,7 @@ Op volgorde. Vragen voor de PO staan in `Gesprek-PO.md` ("Nog open"), juridische
 - [x] Privacyverklaring: opbouw met koppen volgens de AVG en lorem, inhoudsopgave, link in de footer en vanuit het formulier
 - [x] Echte tekst voor de privacyverklaring (concept, 29-10-2026)
 - [ ] Privacyverklaring laten controleren door de PO of een jurist: bewaartermijn, verwerkersovereenkomsten (launch-checklist)
-- [ ] Titel per pagina (document title)
+- [x] Titel per pagina (document title), via `src/Hooks/useDocumentTitle.ts` (29-10-2026)
 
 ## Zodra de PO iets aanlevert
 - [x] Opmaakwensen van de PO (28-10-2026): appbar groter (100px) en iets donkerder dan de achtergrond, logo groter in appbar en footer met "Jeroen van der Eijk" onder de bedrijfsnaam

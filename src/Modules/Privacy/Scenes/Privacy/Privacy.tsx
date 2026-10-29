@@ -10,6 +10,7 @@ import {
     phoneDisplay,
     phoneHref,
 } from 'src/Config/company';
+import { useDocumentTitle } from 'src/Hooks/useDocumentTitle';
 import { headerHeight, sectionSpacing, touchTarget } from 'src/Theme/sizes';
 
 interface Section {
@@ -184,6 +185,8 @@ const useStyles = makeStyles()(theme => ({
 
 export default function Privacy() {
     const { classes } = useStyles();
+
+    useDocumentTitle('Privacyverklaring | Kamerbreed Interieur');
 
     return (
         <Container className={classes.root}>

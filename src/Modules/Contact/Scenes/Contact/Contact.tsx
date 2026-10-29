@@ -4,6 +4,7 @@ import { makeStyles } from 'tss-react/mui';
 import { border, white } from 'src/colors';
 import CompanyDetails from 'src/Components/CompanyDetails/CompanyDetails';
 import ContactButtons from 'src/Components/ContactButtons/ContactButtons';
+import { useDocumentTitle } from 'src/Hooks/useDocumentTitle';
 import { borderRadius, sectionSpacing } from 'src/Theme/sizes';
 
 import ContactForm from './Components/ContactForm';
@@ -65,6 +66,8 @@ const useStyles = makeStyles()(theme => ({
 
 export default function Contact() {
     const { classes } = useStyles();
+
+    useDocumentTitle('Contact | Kamerbreed Interieur');
 
     return (
         <Container className={classes.root}>
