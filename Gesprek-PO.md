@@ -73,9 +73,9 @@ Vragen voor een volgend contact (bellen of appen is genoeg).
 9. **Reviews.** Heeft hij echte reviews (Google, Werkspot) of keurmerken en garanties? _Geen reviews op de site. Het cijfer op Telefoonboek (5,6, laatste review uit 2017) gebruiken we niet._
 10. ~~**Teksten nalopen.**~~ Verwerkt op de site (29-10-2026). Zijn teksten staan 1 op 1 op de site. Mag ik dit verbeteren?
     - Typfouten: "Van persoonlijk advies **to** vakkundige plaatsing" (tot), "een vertrouwde wereld waarin **in** opgroeide" (ik), "echt hout. **tijdloos**" (hoofdletter), geen punt na "betaalbaarheid".
-    - Je of u: Home, de diensten en Over mij zeggen "je/jouw", de werkwijze "u", en stap 3 begint met "ik verzorg" en eindigt met "Zo heb **je**". Kiezen we één vorm?
+    - ~~Je of u:~~ Home, de diensten en Over mij zeggen "je/jouw", de werkwijze "u", en stap 3 begint met "ik verzorg" en eindigt met "Zo heb **je**". Besloten 29-10-2026: overal "u", een keuze van de PO zelf.
 
-    _Typfouten verbeteren, overal "je"._
+    _Typfouten verbeterd, overal "u"._
 11. **Vloerbedekking.** Stond eerst als aparte dienst, in zijn teksten niet meer. Valt het onder tapijt, of doet hij het niet meer? _Weglaten._
 12. **"Bijna 30 jaar ervaring" en "drie generaties".** Staat nu op Home en Over mij. Klopt dat met de KvK (sinds 1994)? _Laten staan, het is zijn eigen tekst._
 13. **Foto's (28-10-2026).** Waar komen de zeven foto's vandaan die hij stuurde? ~~Ze lijken met AI gemaakt. Met welk programma, en mag het beeld commercieel gebruikt worden?~~ Allemaal ChatGPT, commercieel gebruik mag (29-10-2026). Heeft hij ze groter dan 640 px? _Gebruiken als sfeerbeeld bij Home en de diensten. Groter formaat hoeft niet als het er niet is._

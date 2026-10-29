@@ -49,7 +49,7 @@ Dingen die makkelijk vergeten worden maar juridisch, ethisch of qua toegankelijk
 
 _Noteer hier tijdens het werk punten die vóór oplevering nog geregeld moeten worden. Leeg = niets bekend, niet = alles gedaan; loop de lijst hierboven altijd volledig na._
 
-- Teksten van de PO staan op de site (28-10-2026); typfouten verbeterd en overal "u/uw" (29-10-2026, besluit van de gebruiker; de PO had in `Gesprek-PO.md`, vraag 10, "je" goedgekeurd, dus even melden). Nog lorem: het bevestigingsbericht van het formulier.
+- Teksten van de PO staan op de site (28-10-2026); typfouten verbeterd en overal "u/uw" (29-10-2026, keuze van de PO zelf). Nog lorem: het bevestigingsbericht van het formulier.
 - Adres: Schubertstraat 13, 2671 TA Naaldwijk staat alleen in de footer (art. 3:15d BW). De PO heeft het adres en de keuze bevestigd (29-10-2026).
 - KvK-nummer 27067893 en rechtsvorm vof bevestigd (29-10-2026). Btw-nummer staat erin (28-10-2026); het * achter het nummer in zijn document is opmaak en hoeft niet bij het nummer (29-10-2026).
 - Instagram alleen als gewone link, geen ingesloten feed of embed (die laadt scripts van Meta, en dan zijn cookieconsent en een privacyverklaring nodig).
