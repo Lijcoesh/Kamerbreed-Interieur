@@ -51,7 +51,7 @@ _Noteer hier tijdens het werk punten die vóór oplevering nog geregeld moeten w
 
 - Teksten van de PO staan op de site (28-10-2026); typfouten verbeterd en overal "u/uw" (29-10-2026, besluit van de gebruiker; de PO had in `Gesprek-PO.md`, vraag 10, "je" goedgekeurd, dus even melden). Nog lorem: het bevestigingsbericht van het formulier.
 - Adres: de PO wil zijn (woon)adres niet op de site, maar art. 3:15d BW vraagt waarschijnlijk wel het vestigingsadres. De beslissing ligt bij de PO (`Gesprek-PO.md`, "Nog open").
-- KvK-nummer bevestigen. Btw-nummer staat erin (28-10-2026); vragen waarom er in zijn document een * achter stond.
+- KvK-nummer 27067893 en rechtsvorm vof bevestigd (29-10-2026). Btw-nummer staat erin (28-10-2026); vragen waarom er in zijn document een * achter stond.
 - Instagram alleen als gewone link, geen ingesloten feed of embed (die laadt scripts van Meta, en dan zijn cookieconsent en een privacyverklaring nodig).
 - Sfeerbeelden van de PO (28-10-2026) op Home en bij de diensten: gemaakt met ChatGPT (29-10-2026, volgens de PO). De voorwaarden van OpenAI staan commercieel gebruik toe, maar zuiver AI-beelden zijn waarschijnlijk niet auteursrechtelijk beschermd en OpenAI garandeert geen vrijheid van rechten van derden. Vóór livegang laten bevestigen dat de PO ze zelf met zijn account heeft gemaakt (`Gesprek-PO.md`, vraag 13), de actuele voorwaarden controleren, nagaan of een AI-label nodig is (AI Act art. 50) en in `src/Resources/README.md` invullen. Niet presenteren als zijn werk.
 - Foto's van de PO: herkomst en toestemming vastleggen in `src/Resources/README.md`. Komen er ooit foto's van zijn werk: geen klantnamen, huisnummers of herkenbare personen zonder toestemming.

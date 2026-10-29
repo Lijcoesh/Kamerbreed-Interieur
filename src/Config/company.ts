@@ -20,7 +20,7 @@ export const whatsappNumber: string | null = null;
 // Account kamer.breed.interieur (PO, 28-10-2026). Alleen een link, geen ingesloten feed.
 export const instagramUrl: string | null = 'https://www.instagram.com/kamer.breed.interieur/';
 
-// TODO: KvK-nummer laten bevestigen door de PO; gevonden via Drimble, klopt volgens kvk.nl.
+// KvK-nummer bevestigd (29-10-2026). Rechtsvorm: vof.
 export const kvkNumber = '27067893';
 // Van de PO (28-10-2026)
 export const vatNumber: string | null = 'NL803473655B01';

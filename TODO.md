@@ -4,7 +4,7 @@ Op volgorde. Vragen voor de PO staan in `Gesprek-PO.md` ("Nog open"), juridische
 
 ## Nu
 
-- [ ] De ★-vragen uit "Nog open" bij de PO navragen: adres, KvK/btw, contactkanalen, Instagram
+- [ ] De ★-vragen uit "Nog open" bij de PO navragen: adres, btw-*, contactkanalen, Instagram
 
 ## MVP (lorem ipsum)
 
@@ -23,7 +23,7 @@ Op volgorde. Vragen voor de PO staan in `Gesprek-PO.md` ("Nog open"), juridische
 ## Zodra de PO iets aanlevert
 - [x] Opmaakwensen van de PO (28-10-2026): appbar groter (100px) en iets donkerder dan de achtergrond, logo groter in appbar en footer met "Jeroen van der Eijk" onder de bedrijfsnaam
 - [ ] Typfouten en je/u in zijn teksten, na zijn antwoord (`Gesprek-PO.md`, vraag 10)
-- [ ] Bedrijfsgegevens in de footer (`src/Config/company.ts`: KvK bevestigen, btw, adres volgens de beslissing van de PO, Instagram-URL)
+- [ ] Bedrijfsgegevens in de footer (`src/Config/company.ts`: btw, adres volgens de beslissing van de PO, Instagram-URL)
 
 ## Livegang
 

@@ -63,7 +63,7 @@ Vragen voor een volgend contact (bellen of appen is genoeg).
    - zelf navragen of het zonder adres mag, bijvoorbeeld bij de KvK of zijn boekhouder.
 
    _Adres alleen klein in de footer bij KvK- en btw-nummer._
-2. ★ **KvK en btw.** Klopt KvK-nummer 27067893? ~~Wat is het btw-nummer?~~ NL803473655B01 (28-10-2026; in zijn document stond er een * achter, waarom?) En is het nog een vof, of inmiddels een eenmanszaak (hij werkt alleen)?
+2. ★ **KvK en btw.** ~~Klopt KvK-nummer 27067893?~~ Ja, en het is een vof (29-10-2026). ~~Wat is het btw-nummer?~~ NL803473655B01 (28-10-2026; in zijn document stond er een * achter, waarom?)
 3. ★ **Contact.** Hoe wil hij benaderd worden: bellen, mailen, WhatsApp? Staat WhatsApp op het 06-nummer? _Knoppen voor bellen, mailen en WhatsApp, geen contactformulier. Bij een formulier worden berichten opgeslagen en is een privacyverklaring nodig._
 4. ★ **Instagram.** ~~Wat is de accountnaam of link?~~ kamer.breed.interieur (28-10-2026), als link in de footer. _Alleen een link met icoon (in de footer en op Contact), geen ingesloten feed. Een feed laadt scripts van Meta, en dan zijn een cookiebanner en privacyverklaring nodig._
 5. ~~**Projecten.**~~ Vervallen: de pagina is weg (zie 14).
