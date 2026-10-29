@@ -177,7 +177,11 @@ export default function ContactForm() {
                     Bedankt, uw bericht is verstuurd.
                 </Typography>
                 <Typography variant="body1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.
+                    Ik neem zo snel mogelijk contact met u op. Heeft u haast? Bel me dan op{' '}
+                    <Link href={phoneHref} className={classes.nowrap}>
+                        {phoneDisplay}
+                    </Link>
+                    .
                 </Typography>
                 <Button variant="outlined" color="primary" size="large" onClick={startOver}>
                     Nog een bericht sturen

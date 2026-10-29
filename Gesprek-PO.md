@@ -80,6 +80,7 @@ Vragen voor een volgend contact (bellen of appen is genoeg).
 12. **"Bijna 30 jaar ervaring" en "drie generaties".** Staat nu op Home en Over mij. Klopt dat met de KvK (sinds 1994)? _Laten staan, het is zijn eigen tekst._
 13. **Foto's (28-10-2026).** Waar komen de zeven foto's vandaan die hij stuurde? ~~Ze lijken met AI gemaakt. Met welk programma, en mag het beeld commercieel gebruikt worden?~~ Allemaal ChatGPT, commercieel gebruik mag (29-10-2026). Heeft hij ze groter dan 640 px? _Gebruiken als sfeerbeeld bij Home en de diensten. Groter formaat hoeft niet als het er niet is._
 14. ~~**Projectenpagina.**~~ Weggehaald op 28-10-2026: er zijn geen projectfoto's. Wil hij ooit zijn werk laten zien, dan kan hij foto's sturen en komt de pagina terug (staat in de git-historie).
+15. ~~**Bevestiging contactformulier.**~~ De PO laat de tekst aan ons over (29-10-2026). Nu: "Bedankt, uw bericht is verstuurd." met daaronder "Ik neem zo snel mogelijk contact met u op. Heeft u haast? Bel me dan op 06-22243488." Laten zien bij de oplevering.
 
 ## Na het gesprek opsturen
 
