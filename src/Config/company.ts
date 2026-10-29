@@ -20,6 +20,9 @@ export const whatsappNumber: string | null = null;
 // Account kamer.breed.interieur (PO, 28-10-2026). Alleen een link, geen ingesloten feed.
 export const instagramUrl: string | null = 'https://www.instagram.com/kamer.breed.interieur/';
 
+// Vestigingsadres, alleen in de footer (art. 3:15d BW). Het is een woonadres; bron: BD Line en Telefoonboek, door de PO nog te bevestigen.
+export const address = ['Schubertstraat 13', '2671 TA Naaldwijk'];
+
 // KvK-nummer bevestigd (29-10-2026). Rechtsvorm: vof.
 export const kvkNumber = '27067893';
 // Van de PO (28-10-2026)

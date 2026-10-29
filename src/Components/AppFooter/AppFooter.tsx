@@ -161,7 +161,7 @@ export default function AppFooter() {
 
                     <div>
                         <h2 className={classes.heading}>Bedrijfsgegevens</h2>
-                        <CompanyDetails className={classes.companyDetails} />
+                        <CompanyDetails className={classes.companyDetails} showAddress />
                     </div>
                 </div>
 

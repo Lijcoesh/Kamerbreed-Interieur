@@ -1,10 +1,12 @@
+import { Fragment } from 'react';
 import { makeStyles } from 'tss-react/mui';
 
 import { muted } from 'src/colors';
-import { companyName, kvkNumber, vatNumber } from 'src/Config/company';
+import { address, companyName, kvkNumber, vatNumber } from 'src/Config/company';
 
 interface IProps {
     className?: string;
+    showAddress?: boolean;
 }
 
 // Bedrijfsgegevens zoals in de footer en op Contact
@@ -20,7 +22,7 @@ const useStyles = makeStyles()({
 });
 
 export default function CompanyDetails(props: IProps) {
-    const { className } = props;
+    const { className, showAddress = false } = props;
 
     const { classes, cx } = useStyles();
 
@@ -28,6 +30,13 @@ export default function CompanyDetails(props: IProps) {
         <p className={cx(classes.root, className)}>
             {companyName}
             <br />
+            {showAddress &&
+                address.map(line => (
+                    <Fragment key={line}>
+                        {line}
+                        <br />
+                    </Fragment>
+                ))}
             KvK {kvkNumber}
             <br />
             {vatNumber ? (
@@ -36,7 +45,6 @@ export default function CompanyDetails(props: IProps) {
                 // TODO: btw-nummer volgt van de PO
                 <span className={classes.pending}>Btw-nummer volgt</span>
             )}
-            {/* Geen adres: besloten 29-10-2026, het is een woonadres (launch-checklist, "Openstaand"). */}
         </p>
     );
 }
