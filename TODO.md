@@ -4,7 +4,7 @@ Op volgorde. Vragen voor de PO staan in `Gesprek-PO.md` ("Nog open"), juridische
 
 ## Nu
 
-- [ ] De ★-vragen uit "Nog open" bij de PO navragen: btw-*, contactkanalen, Instagram
+- [ ] De ★-vragen uit "Nog open" bij de PO navragen: contactkanalen, Instagram
 
 ## MVP (lorem ipsum)
 
