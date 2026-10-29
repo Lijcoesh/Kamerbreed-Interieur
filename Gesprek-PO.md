@@ -71,7 +71,7 @@ Vragen voor een volgend contact (bellen of appen is genoeg).
 7. **Particulier of zakelijk.** Werkt hij ook voor bedrijven? _De site richt zich op particulieren._
 8. **Binnenzonwering.** Hoe groot is dat deel van zijn werk? Wil hij de merknaam BD Line noemen, en mag hij hun beeldmateriaal gebruiken? _Binnenzonwering kort noemen naast de vloeren, zonder merknaam en zonder beeld van BD Line._
 9. **Reviews.** Heeft hij echte reviews (Google, Werkspot) of keurmerken en garanties? _Geen reviews op de site. Het cijfer op Telefoonboek (5,6, laatste review uit 2017) gebruiken we niet._
-10. **Teksten nalopen.** Zijn teksten staan 1 op 1 op de site. Mag ik dit verbeteren?
+10. ~~**Teksten nalopen.**~~ Verwerkt op de site (29-10-2026). Zijn teksten staan 1 op 1 op de site. Mag ik dit verbeteren?
     - Typfouten: "Van persoonlijk advies **to** vakkundige plaatsing" (tot), "een vertrouwde wereld waarin **in** opgroeide" (ik), "echt hout. **tijdloos**" (hoofdletter), geen punt na "betaalbaarheid".
     - Je of u: Home, de diensten en Over mij zeggen "je/jouw", de werkwijze "u", en stap 3 begint met "ik verzorg" en eindigt met "Zo heb **je**". Kiezen we één vorm?
 

@@ -34,7 +34,7 @@ export const services: Service[] = [
         id: 'houten-vloeren',
         name: 'Houten vloeren',
         group: 'vloeren',
-        summary: 'De pure schoonheid van echt hout. tijdloos, karaktervol en uniek.',
+        summary: 'De pure schoonheid van echt hout. Tijdloos, karaktervol en uniek.',
         photo: {
             src: houtenVloerenPhoto,
             alt: 'Woonkamer met een eikenhouten plankenvloer en een eethoek op de achtergrond',
@@ -44,7 +44,7 @@ export const services: Service[] = [
         id: 'laminaat',
         name: 'Laminaat',
         group: 'vloeren',
-        summary: 'De warme uitstraling van hout, gecombineerd met gemak en betaalbaarheid',
+        summary: 'De warme uitstraling van hout, gecombineerd met gemak en betaalbaarheid.',
         photo: {
             src: laminaatPhoto,
             alt: 'Slaapkamer met donkerbruin laminaat, een tweepersoonsbed en een vloerkleed',

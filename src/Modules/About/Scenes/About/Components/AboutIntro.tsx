@@ -68,7 +68,7 @@ export default function AboutIntro() {
                     vakmanschap al drie generaties in de familie zit.
                 </Typography>
                 <Typography variant="body1" className={classes.body}>
-                    Wat ooit begon als een vertrouwde wereld waarin in opgroeide, is uitgegroeid tot
+                    Wat ooit begon als een vertrouwde wereld waarin ik opgroeide, is uitgegroeid tot
                     mijn passie.
                 </Typography>
                 <Typography variant="body1" className={classes.body}>

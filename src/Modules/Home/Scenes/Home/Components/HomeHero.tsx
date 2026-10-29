@@ -55,7 +55,7 @@ export default function HomeHero() {
                     jouw wensen en woonstijl.
                 </Typography>
                 <Typography variant="body1" className={classes.intro}>
-                    Van persoonlijk advies to vakkundige plaatsing, alles vertrouwd onder één dak.
+                    Van persoonlijk advies tot vakkundige plaatsing, alles vertrouwd onder één dak.
                 </Typography>
                 <ContactButtons className={classes.actions} />
             </div>

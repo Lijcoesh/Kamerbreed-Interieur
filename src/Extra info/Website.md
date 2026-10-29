@@ -10,7 +10,7 @@
 
 Een mooi interieur begint bij de juiste basis. Bij Kamerbreed Interieur draait alles om sfeer, kwaliteit en persoonlijke aandacht. Met bijna 30 jaar ervaring help ik graag bij het vinden van de perfecte vloer en raamdecoratie, passend bij jouw wensen en woonstijl.
 
-Van persoonlijk advies to vakkundige plaatsing, alles vertrouwd onder één dak.
+Van persoonlijk advies tot vakkundige plaatsing, alles vertrouwd onder één dak.
 
 ## Wat ik doe
 
@@ -21,7 +21,7 @@ Van persoonlijk advies to vakkundige plaatsing, alles vertrouwd onder één dak.
   Ervaar de luxe van zachtheid, warmte en optimaal wooncomfort.
 - **Houten vloeren**
   De pure schoonheid van echt hout.
-  tijdloos, karaktervol en uniek.
+  Tijdloos, karaktervol en uniek.
 - **Laminaat**
   De warme uitstraling van hout,
   gecombineerd met gemak en betaalbaarheid
@@ -47,7 +47,7 @@ Mijn naam is Jeroen van der Eijk. Ik ben geboren en getogen in het Westland en i
 
 De liefde voor het vak is mij met de paplepel ingegoten. Zowel mijn opa als mijn vader waren actief in de woninginrichting. Je kunt dus wel zeggen dat het vakmanschap al drie generaties in de familie zit.
 
-Wat ooit begon als een vertrouwde wereld waarin in opgroeide, is uitgegroeid tot mijn passie.
+Wat ooit begon als een vertrouwde wereld waarin ik opgroeide, is uitgegroeid tot mijn passie.
 Met mijn jarenlange ervaring, oog voor detail en persoonlijke aanpak help ik klanten graag bij het creëren van een mooi en sfeervol thuis.
 
 ## Neem contact op
