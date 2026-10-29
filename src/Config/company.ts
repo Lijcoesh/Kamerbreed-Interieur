@@ -17,21 +17,6 @@ export const emailHref = `mailto:${email}`;
 // Zet hier het nummer in internationale vorm zonder + of spaties ('31622243488') om de knop te tonen.
 export const whatsappNumber: string | null = null;
 
-// Kernen van de gemeente Westland. TODO: laten bevestigen dat hij overal komt.
-export const serviceArea = [
-    'Naaldwijk',
-    'Wateringen',
-    "'s-Gravenzande",
-    'Monster',
-    'De Lier',
-    'Maasdijk',
-    'Honselersdijk',
-    'Poeldijk',
-    'Kwintsheul',
-    'Ter Heijde',
-    'Heenweg',
-];
-
 // Account kamer.breed.interieur (PO, 28-10-2026). Alleen een link, geen ingesloten feed.
 export const instagramUrl: string | null = 'https://www.instagram.com/kamer.breed.interieur/';
 
