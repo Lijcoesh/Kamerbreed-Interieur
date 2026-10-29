@@ -271,7 +271,7 @@ Eén veld met label erboven (600, 1.0625rem), optioneel "(optioneel)" in `muted`
 Op één wit paneel met haarlijn en `borderRadius` (padding 40/48px, mobiel 24/20px), kop in h3. `noValidate`; de controle zit in `src/Helpers/validateContactMessage.ts` en de focus gaat naar het eerste foute veld. E-mail en telefoon staan als paar in een `fieldset` met een legend die alleen schermlezers horen (geen zichtbare kop of hint); de regel "één van beide" verschijnt pas als groepsfout onder het paar. Mislukt verzenden: een melding met 1px `error` rand rondom (geen zijstreep), titel "Niet verstuurd" in `error`, tekst in `ink` en links naar telefoon en e-mail. Gelukt: de bevestiging vervangt het formulier en krijgt de focus, met een outlined knop om nog een bericht te sturen. Onder de verstuurknop een korte privacynotitie met link. Bron: `src/Modules/Contact/Scenes/Contact/Components/ContactForm.tsx`.
 
 ### CompanyDetails
-Bedrijfsnaam, KvK en btw onder elkaar, 1.125rem, regelhoogte 1.7; een ontbrekend gegeven in `muted`. Op de contactpagina op deze maat; de footer geeft een `className` mee die hem terugzet naar 1rem, gelijk aan de andere footerkolommen. Bron: `src/Components/CompanyDetails/CompanyDetails.tsx`.
+Bedrijfsnaam met rechtsvorm (vof, art. 6:230b BW), adres (alleen in de footer), KvK en btw onder elkaar, 1.125rem, regelhoogte 1.7; een ontbrekend gegeven in `muted`. Op de contactpagina op deze maat; de footer geeft een `className` mee die hem terugzet naar 1rem, gelijk aan de andere footerkolommen. Bron: `src/Components/CompanyDetails/CompanyDetails.tsx`.
 
 ### PhotoPlaceholder
 Neutraal vlak (`placeholder`) met 1px haarlijn, 4px radius en een klein label linksonder ("Foto volgt"), vaste `aspectRatio` per gebruik, `aria-hidden`. Is de terugval van `Photo` op elke plek waar een echte foto van de PO hoort. Bron: `src/Components/PhotoPlaceholder/PhotoPlaceholder.tsx`.
@@ -315,7 +315,7 @@ Oker vlak met witte tekst, logoblauwe focusrand; eerste focusbare element.
 - **Don't** gebruik logoblauw buiten het logo en de focusrand.
 - **Don't** gebruik schaduw voor kaarten, panelen of secties; alleen menu's en de drawer hebben diepte.
 - **Don't** maak bellen of mailen dominanter dan de ander, ook niet met een los nummer in de desktop-appbar.
-- **Don't** gebruik gegenereerde of stockbeelden in de live site; die zouden doorgaan voor zijn werk. (Uitzondering: de tijdelijke voorbeeldfoto's, zie Tijdelijk.)
+- **Don't** gebruik stockbeelden of zelf gegenereerde beelden; die zouden doorgaan voor zijn werk. De AI-sfeerbeelden van de PO staan er zonder label (zie Tijdelijk).
 - **Don't** laad fonts via een CDN.
 - **Don't** zet lopende tekst kleiner dan 18px.
 - **Don't** geef een invoerveld de haarlijn (`border`) als rand; die haalt op wit geen 3:1.
@@ -325,4 +325,4 @@ Oker vlak met witte tekst, logoblauwe focusrand; eerste focusbare element.
 Wat in de build staat maar niet blijvend is (geen ontwerpregel):
 - **Logo:** `src/Resources/Logo/kamerbreed-logo.png`: het originele bestand van de PO (`kamerbreed-logo.jpeg`, 310 × 264; groter is er niet) met de witte achtergrond transparant gemaakt, zodat het ook op de appbar staat. Het wit in "BREED" en de rol is gebleven.
 - **Teksten:** lorem ipsum; de PO schrijft de definitieve teksten.
-- **Foto's:** alleen beeld van de PO. De foto naast de kop op Home en de beelden bij de diensten zijn sfeerbeelden van de PO (28-10-2026, `service.photo` in `src/Config/services.ts`), Het portret heeft nog geen foto en tonen `PhotoPlaceholder`; de tijdelijke stockfoto's zijn weg (28-10-2026).
+- **Foto's:** alleen beeld van de PO. De foto naast de kop op Home en de beelden bij de diensten zijn sfeerbeelden van de PO (28-10-2026, `service.photo` in `src/Config/services.ts`), gemaakt met ChatGPT, zonder AI-label (keuze 29-10-2026, zie de launch-checklist). Het portret heeft nog geen foto en tonen `PhotoPlaceholder`; de tijdelijke stockfoto's zijn weg (28-10-2026).

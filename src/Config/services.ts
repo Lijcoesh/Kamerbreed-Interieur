@@ -7,7 +7,7 @@ import pvcPhoto from 'src/Resources/Photos/Services/pvc.jpg';
 import tapijtPhoto from 'src/Resources/Photos/Services/tapijt.jpg';
 
 // Namen, volgorde en omschrijvingen 1 op 1 van de PO (Website.pages, 28-10-2026).
-// De foto's stuurde hij erbij (28-10-2026); herkomst in src/Resources/README.md.
+// De foto's stuurde hij erbij (28-10-2026), gemaakt met ChatGPT; herkomst in src/Resources/README.md.
 export const services: Service[] = [
     {
         id: 'pvc',

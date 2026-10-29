@@ -60,6 +60,7 @@ Layer-first: één map per technische rol, de feature is de bestandsnaam-prefix.
 - De mail aan Kamerbreed heeft de bezoeker als reply-to, als die een e-mailadres gaf.
 - Faalt de mail, dan krijgt de client een 500 en toont het formulier telefoon en e-mail.
 - De privacyverklaring zegt dat de website niets opslaat: geen database, geen berichten op schijf. Log nooit formulierinhoud, e-mailadressen of IP-adressen, en zet in Caddy geen toegangslog aan. Wijzig je dit, pas dan `/privacy` aan.
+- Brevo bewaart verzendlogs en een preview met de volledige mail standaard voor onbepaalde tijd. In het account (Settings → Transactional emails → Retention rules) staan de logs op een maand en previews op "never store"; dat zegt de privacyverklaring. De instelling geldt voor het hele gedeelde account.
 
 ## C#-stijl
 

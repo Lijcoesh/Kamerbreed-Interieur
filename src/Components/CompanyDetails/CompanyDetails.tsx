@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import { makeStyles } from 'tss-react/mui';
 
 import { muted } from 'src/colors';
-import { address, companyName, kvkNumber, vatNumber } from 'src/Config/company';
+import { address, companyName, kvkNumber, legalForm, vatNumber } from 'src/Config/company';
 
 interface IProps {
     className?: string;
@@ -28,7 +28,7 @@ export default function CompanyDetails(props: IProps) {
 
     return (
         <p className={cx(classes.root, className)}>
-            {companyName}
+            {companyName} {legalForm}
             <br />
             {showAddress &&
                 address.map(line => (

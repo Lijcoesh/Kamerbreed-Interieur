@@ -19,7 +19,9 @@ export const instagramUrl: string | null = 'https://www.instagram.com/kamer.bree
 // Vestigingsadres, alleen in de footer (art. 3:15d BW). Het is een woonadres; bron: BD Line en Telefoonboek, door de PO nog te bevestigen.
 export const address = ['Schubertstraat 13', '2671 TA Naaldwijk'];
 
-// KvK-nummer bevestigd (29-10-2026). Rechtsvorm: vof.
+// KvK-nummer bevestigd (29-10-2026)
 export const kvkNumber = '27067893';
+// Bevestigd (29-10-2026). Hoort bij de bedrijfsgegevens (art. 6:230b BW).
+export const legalForm = 'vof';
 // Van de PO (28-10-2026)
 export const vatNumber: string | null = 'NL803473655B01';

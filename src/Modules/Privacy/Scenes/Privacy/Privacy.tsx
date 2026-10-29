@@ -7,6 +7,7 @@ import {
     email,
     emailHref,
     kvkNumber,
+    legalForm,
     phoneDisplay,
     phoneHref,
 } from 'src/Config/company';
@@ -18,71 +19,105 @@ interface Section {
     title: string;
     paragraphs: string[];
     list?: string[];
+    // Alinea's na de lijst
+    after?: string[];
 }
 
-// Alleen wat de AVG (art. 13) vraagt voor het contactformulier, het enige formulier op de site.
-// Concept: de bewaartermijn en de verwerkersovereenkomsten laat de PO bevestigen (launch-checklist, "Openstaand").
+// Wat de AVG (art. 13) vraagt voor het contactformulier, het enige formulier op de site.
+// Elke zin moet kloppen met wat de site en server/ echt doen: wijzig je daar iets, pas dit dan aan
+// (onder meer: geen cookies, geen toegangslog in Caddy, IP max. een uur in de rate limiter,
+// Brevo-logs een maand en geen previews). Concept: laten controleren (launch-checklist, "Openstaand").
 const sections: Section[] = [
     {
         id: 'wie',
         title: 'Wie is verantwoordelijk',
         paragraphs: [
-            `${companyName} is verantwoordelijk voor de verwerking van uw gegevens via deze website. Voor vragen over uw privacy kunt u mij bereiken via:`,
+            `${companyName} ${legalForm} is verantwoordelijk voor wat er met uw gegevens gebeurt als u via deze website contact met mij opneemt. Voor vragen over uw privacy kunt u mij bereiken via:`,
+        ],
+    },
+    {
+        id: 'bezoek',
+        title: 'Als u de website bezoekt',
+        paragraphs: [
+            "Deze website plaatst geen cookies en bewaart niets in uw browser. Ik gebruik geen analyse- of advertentiediensten, en de website laadt geen lettertypen, kaarten, video's of andere inhoud van andere partijen.",
+            'Zoals bij elke website ontvangt de server uw IP-adres om u de pagina te kunnen sturen. De server houdt geen bezoekerslog bij en bewaart uw IP-adres niet.',
+            'Op de website staat een link naar mijn Instagram-pagina. Klikt u daarop, dan gaat u naar Instagram en geldt het privacybeleid van Meta.',
         ],
     },
     {
         id: 'gegevens',
         title: 'Welke gegevens ik verwerk',
-        paragraphs: [
-            'Het contactformulier is het enige formulier op deze website. Wat u daarin invult, ontvang ik:',
-            'Deze website plaatst geen cookies, gebruikt geen analyse- of advertentiediensten en laadt geen lettertypen of andere inhoud van derden.',
-        ],
+        paragraphs: ['Stuurt u mij een bericht via het contactformulier, dan ontvang ik:'],
         list: [
             'uw naam',
-            'uw e-mailadres of telefoonnummer (één van beide is genoeg)',
-            'uw bericht',
+            'uw e-mailadres, uw telefoonnummer of allebei (één van beide is genoeg)',
+            'uw bericht, met wat u daarin over uzelf of uw woning vertelt',
+        ],
+        after: [
+            'Uw IP-adres gaat ook mee naar de server. Dat gebruik ik alleen om te voorkomen dat iemand het formulier misbruikt door veel berichten achter elkaar te sturen. Het staat niet in het bericht dat ik ontvang.',
+            'Belt of mailt u mij rechtstreeks, dan ontvang ik uw telefoonnummer of e-mailadres en wat u mij vertelt of schrijft. Voor die gegevens geldt deze verklaring ook.',
         ],
     },
     {
         id: 'doel',
         title: 'Waarvoor en op welke grond',
         paragraphs: [
-            'Ik gebruik uw gegevens alleen om te reageren op uw bericht en, als u dat wilt, een afspraak of offerte voor te bereiden. Ik gebruik ze niet voor reclame of nieuwsbrieven.',
-            'De grond is dat u zelf contact met mij opneemt: ik verwerk uw gegevens om uw verzoek te beantwoorden (art. 6 lid 1 sub b AVG).',
+            'Ik gebruik uw gegevens alleen om op uw vraag te reageren en, als u dat wilt, een afspraak of offerte met u te maken. Ik gebruik ze niet voor reclame of nieuwsbrieven.',
+        ],
+        list: [
+            'Vraagt u om een offerte of afspraak, dan verwerk ik uw gegevens omdat dat nodig is om op uw verzoek een overeenkomst voor te bereiden (art. 6 lid 1 sub b AVG).',
+            'Heeft u een andere vraag, dan verwerk ik uw gegevens omdat ik er belang bij heb uw vraag te beantwoorden (gerechtvaardigd belang, art. 6 lid 1 sub f AVG).',
+            'Uw IP-adres verwerk ik om het formulier tegen misbruik te beschermen (gerechtvaardigd belang, art. 6 lid 1 sub f AVG).',
+            'Komt er een opdracht, dan moet ik de gegevens voor de offerte en factuur bewaren voor de Belastingdienst (wettelijke plicht, art. 6 lid 1 sub c AVG).',
+        ],
+        after: [
+            'U bent niet verplicht uw gegevens te geven. Zonder uw naam en een e-mailadres of telefoonnummer kan ik alleen niet reageren.',
+            'Ik neem geen besluiten over u die alleen door een computer worden genomen.',
         ],
     },
     {
         id: 'bewaren',
         title: 'Hoe lang ik ze bewaar',
         paragraphs: [
-            'De website slaat uw bericht niet op. Het formulier stuurt het door als e-mail, die bij mij in de mailbox terechtkomt.',
-            'Is uw vraag afgehandeld en volgt er geen opdracht, dan bewaar ik die e-mail niet langer dan nodig is om uw vraag af te handelen.',
-            'Volgt er wel een opdracht, dan vallen de gegevens die ik daarvoor nodig heb onder mijn administratie. Die bewaar ik zo lang als de wet vereist (zeven jaar).',
+            'De website zelf slaat uw bericht niet op. Het formulier stuurt het meteen door als e-mail, die bij mij in de mailbox binnenkomt.',
+        ],
+        list: [
+            'Uw IP-adres houdt de server alleen in zijn werkgeheugen bij, tot uiterlijk een uur na uw laatste bericht.',
+            'Brevo, de dienst die de e-mail verstuurt, houdt een registratie van de verzending bij, met onder meer het tijdstip, de e-mailadressen en het onderwerp (daarin staat uw naam). Die verwijdert Brevo na een maand. De inhoud van uw bericht bewaart Brevo niet.',
+            'De e-mail in mijn mailbox bewaar ik tot uw vraag is afgehandeld, en daarna niet langer dan nodig is voor eventuele vervolgvragen. Daarna verwijder ik hem.',
+            'Komt er een opdracht, dan worden de gegevens die ik voor de offerte en factuur nodig heb onderdeel van mijn administratie. Die moet ik zeven jaar bewaren (fiscale bewaarplicht).',
         ],
     },
     {
         id: 'delen',
-        title: 'Met wie ik ze deel',
+        title: 'Wie uw gegevens nog meer zien',
         paragraphs: [
-            'Ik verkoop uw gegevens niet en geef ze niet door voor andere doelen. Voor de techniek schakel ik twee partijen in, die uw gegevens alleen in mijn opdracht verwerken:',
+            'Ik verkoop uw gegevens niet en geef ze niet aan anderen voor hun eigen doelen. Voor de techniek werk ik met deze partijen. Zij verwerken uw gegevens alleen in mijn opdracht en mogen er zelf niets anders mee doen:',
         ],
         list: [
-            'Brevo (Frankrijk) verstuurt het bericht van het formulier naar mijn e-mail.',
-            'TransIP (Nederland) host de server waarop de website en het formulier draaien.',
+            'Brevo (Frankrijk) verstuurt het bericht van het formulier als e-mail naar mij.',
+            'TransIP (Nederland) host de server waarop de website en het formulier draaien, en mijn e-mail. Daar komt uw bericht binnen.',
+            'Mijn webbouwer beheert de website, de server en de verzending via Brevo.',
+        ],
+        after: [
+            'Deze partijen bewaren uw gegevens in de Europese Unie. Brevo werkt voor een deel van zijn dienst, zoals beveiliging en klantenservice, met eigen leveranciers waarvan sommige buiten de EU zitten. Daarvoor gebruikt Brevo de standaardcontractbepalingen van de Europese Commissie.',
+            'Verder geef ik uw gegevens alleen aan anderen als de wet mij daartoe verplicht, bijvoorbeeld aan de Belastingdienst.',
         ],
     },
     {
         id: 'rechten',
         title: 'Uw rechten',
-        paragraphs: [
-            'Neem contact met mij op via de gegevens hierboven; ik reageer binnen een maand. U heeft het recht om:',
-        ],
+        paragraphs: ['U kunt mij vragen om:'],
         list: [
             'uw gegevens in te zien',
-            'onjuiste gegevens te laten corrigeren',
+            'onjuiste gegevens te laten verbeteren',
             'uw gegevens te laten verwijderen',
             'de verwerking te laten beperken',
-            'uw gegevens in een gangbaar formaat mee te nemen',
+            'uw gegevens in een gangbaar formaat te krijgen of aan een ander te laten geven',
+            'bezwaar te maken tegen een verwerking die op mijn gerechtvaardigd belang steunt',
+        ],
+        after: [
+            'Neem daarvoor contact met mij op via de gegevens hierboven. Dat is gratis, en ik reageer binnen een maand. Om zeker te weten dat het verzoek van u komt, kan ik u vragen wie u bent.',
         ],
     },
     {
@@ -90,6 +125,13 @@ const sections: Section[] = [
         title: 'Een klacht indienen',
         paragraphs: [
             'Bent u het niet eens met hoe ik met uw gegevens omga? Neem dan eerst contact met mij op. U kunt ook een klacht indienen bij de Autoriteit Persoonsgegevens (autoriteitpersoonsgegevens.nl).',
+        ],
+    },
+    {
+        id: 'wijzigingen',
+        title: 'Wijzigingen',
+        paragraphs: [
+            'Verandert er iets aan hoe ik met uw gegevens omga, dan pas ik deze verklaring aan. Bovenaan staat wanneer dat voor het laatst is gebeurd.',
         ],
     },
 ];
@@ -193,8 +235,8 @@ export default function Privacy() {
             <div className={classes.intro}>
                 <Typography variant="h1">Privacyverklaring</Typography>
                 <Typography variant="body1" className={classes.lead}>
-                    Als u mij via het contactformulier een bericht stuurt, verwerk ik uw gegevens.
-                    Hieronder leest u welke, waarom en hoe lang.
+                    Als u via deze website contact met mij opneemt, verwerk ik uw gegevens.
+                    Hieronder leest u welke, waarom, hoe lang en wat uw rechten zijn.
                 </Typography>
                 <Typography variant="body2" color="textSecondary" className={classes.note}>
                     Laatst bijgewerkt: 29 oktober 2026.
@@ -243,14 +285,23 @@ export default function Privacy() {
                                 ))}
                             </Typography>
                         )}
-                        {/* Contactgegevens zijn echt; het adres volgt zodra de PO beslist (Gesprek-PO.md, vraag 1) */}
+                        {section.after?.map(paragraph => (
+                            <Typography
+                                key={paragraph.slice(0, 24)}
+                                variant="body1"
+                                className={classes.paragraph}
+                            >
+                                {paragraph}
+                            </Typography>
+                        ))}
+                        {/* Het adres staat in de footer, op elke pagina (keuze PO, Gesprek-PO.md vraag 1) */}
                         {section.id === 'wie' && (
                             <Typography
                                 component="address"
                                 variant="body1"
                                 className={classes.contact}
                             >
-                                {companyName}
+                                {companyName} {legalForm}
                                 <br />
                                 <Link href={phoneHref}>{phoneDisplay}</Link>
                                 <br />

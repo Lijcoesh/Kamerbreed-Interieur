@@ -36,7 +36,7 @@ Leg bij elke foto vast wie hem gemaakt heeft en of er toestemming is (zie de lau
 
 Gestuurd door de PO, met als bestandsnaam de plek waar hij ze wil hebben. Omgezet van PNG (640 px) naar JPEG, kwaliteit 85; de herkomst staat ook in elk bestand (JPEG-commentaar). Gekoppeld in `src/Config/photos.ts` (`home.jpg`) en `src/Config/services.ts`.
 
-**Herkomst:** alle beelden zijn gemaakt met ChatGPT (opgave van de opdrachtgever, 29-10-2026). De voorwaarden van OpenAI staan commercieel gebruik toe; zuiver AI-beelden zijn waarschijnlijk niet auteursrechtelijk beschermd. Gebruik ze als sfeerbeeld, niet als zijn werk. Nog nagaan: of een AI-label nodig is (AI Act art. 50).
+**Herkomst:** alle beelden zijn gemaakt met ChatGPT (opgave van de opdrachtgever, 29-10-2026). De voorwaarden van OpenAI staan commercieel gebruik toe; zuiver AI-beelden zijn waarschijnlijk niet auteursrechtelijk beschermd. Gebruik ze als sfeerbeeld, niet als zijn werk. Geen AI-label op de site (keuze 29-10-2026, zie de launch-checklist).
 
 | Bestand | Origineel van de PO | Herkomst | Licentie |
 |---|---|---|---|

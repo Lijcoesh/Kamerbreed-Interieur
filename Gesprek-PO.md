@@ -81,6 +81,9 @@ Vragen voor een volgend contact (bellen of appen is genoeg).
 13. **Foto's (28-10-2026).** Waar komen de zeven foto's vandaan die hij stuurde? ~~Ze lijken met AI gemaakt. Met welk programma, en mag het beeld commercieel gebruikt worden?~~ Allemaal ChatGPT, commercieel gebruik mag (29-10-2026). Heeft hij ze groter dan 640 px? _Gebruiken als sfeerbeeld bij Home en de diensten. Groter formaat hoeft niet als het er niet is._
 14. ~~**Projectenpagina.**~~ Weggehaald op 28-10-2026: er zijn geen projectfoto's. Wil hij ooit zijn werk laten zien, dan kan hij foto's sturen en komt de pagina terug (staat in de git-historie).
 15. ~~**Bevestiging contactformulier.**~~ De PO laat de tekst aan ons over (29-10-2026). Nu: "Bedankt, uw bericht is verstuurd." met daaronder "Ik neem zo snel mogelijk contact met u op. Heeft u haast? Bel me dan op 06-22243488." Laten zien bij de oplevering.
+16. ~~★ **E-mail.** Staat de mailbox van info@kamerbreedinterieur.nl bij Mijndomein?~~ Nu wel, maar wij nemen de mail over en zetten hem bij TransIP (besloten 29-10-2026, ontwikkelaar). De privacyverklaring noemt TransIP.
+17. **Handelsnaam.** Bij de KvK staat "Kamerbreed Interieur Jeroen van der Eijk". Staat "Kamerbreed Interieur" daar ook als handelsnaam? Elke naam die u gebruikt, moet bij de KvK geregistreerd zijn. _Laten staan; anders de naam laten toevoegen bij de KvK._
+18. ★ **AI-label.** Sinds 2 augustus 2026 moet AI-beeld dat echt lijkt als "gemaakt met AI" worden aangeduid (AI Act). Of zijn sfeerbeelden daaronder vallen is niet zeker, maar de Europese Commissie leest het ruim. Wij hebben het label weggelaten omdat het lelijk staat (29-10-2026). Het risico (een boete) ligt bij hem als eigenaar van de site, en bij een vof ook privé. Gaat hij akkoord zonder label? Graag schriftelijk (app of mail). _Zonder label; zegt hij nee, dan een klein bijschrift onder elke foto. Echte foto's van zijn werk lossen het helemaal op._
 
 ## Na het gesprek opsturen
 
