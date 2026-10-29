@@ -36,7 +36,7 @@ export default function CompanyDetails(props: IProps) {
                 // TODO: btw-nummer volgt van de PO
                 <span className={classes.pending}>Btw-nummer volgt</span>
             )}
-            {/* TODO: adres? De PO wil het niet tonen, maar art. 3:15d BW vraagt waarschijnlijk het vestigingsadres. Beslissing staat open in Gesprek-PO.md. */}
+            {/* Geen adres: besloten 29-10-2026, het is een woonadres (launch-checklist, "Openstaand"). */}
         </p>
     );
 }
