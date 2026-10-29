@@ -3,8 +3,7 @@ import { makeStyles } from 'tss-react/mui';
 
 import MailIcon from 'src/Components/Icons/MailIcon';
 import PhoneIcon from 'src/Components/Icons/PhoneIcon';
-import WhatsAppIcon from 'src/Components/Icons/WhatsAppIcon';
-import { email, emailHref, phoneDisplay, phoneHref, whatsappNumber } from 'src/Config/company';
+import { email, emailHref, phoneDisplay, phoneHref } from 'src/Config/company';
 
 interface IProps {
     // 'row': naast elkaar zodra beide knoppen passen; 'stack': altijd onder elkaar (drawer)
@@ -12,7 +11,7 @@ interface IProps {
     className?: string;
 }
 
-// Bellen en mailen zijn even zwaar (keuze gebruiker, 12-10-2026); WhatsApp sluit zich als gelijke aan zodra hij aan staat
+// Bellen en mailen zijn even zwaar (keuze gebruiker, 12-10-2026)
 const useStyles = makeStyles()(theme => ({
     root: {
         display: 'grid',
@@ -81,21 +80,6 @@ export default function ContactButtons(props: IProps) {
                     <span className={classes.detail}>{email}</span>
                 </span>
             </Button>
-            {whatsappNumber && (
-                <Button
-                    href={`https://wa.me/${whatsappNumber}`}
-                    variant="contained"
-                    color="secondary"
-                    size="large"
-                    startIcon={<WhatsAppIcon />}
-                    className={classes.button}
-                >
-                    <span className={classes.text}>
-                        <span className={classes.label}>WhatsApp</span>
-                        <span className={classes.detail}>{phoneDisplay}</span>
-                    </span>
-                </Button>
-            )}
         </div>
     );
 }

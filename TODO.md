@@ -2,10 +2,6 @@
 
 Op volgorde. Vragen voor de PO staan in `Gesprek-PO.md` ("Nog open"), juridische punten in `.claude/conventions/launch-checklist.md`.
 
-## Nu
-
-- [ ] De ★-vragen uit "Nog open" bij de PO navragen: contactkanalen
-
 ## MVP (lorem ipsum)
 
 - [ ] Privacyverklaring laten controleren door de PO of een jurist: bewaartermijn, verwerkersovereenkomsten (launch-checklist)

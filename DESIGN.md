@@ -249,7 +249,7 @@ Stevig en rustig: een gevuld vlak, geen schaduw, geen hoofdletters. Bron: `src/T
 - **Icon button:** `touchTarget` vierkant, olijf, zelfde radius.
 
 ### ContactButtons (signatuur)
-Twee even grote, even zware okerknoppen voor bellen en mailen, altijd samen, met nummer en e-mailadres zichtbaar. Staat `whatsappNumber` in `src/Config/company.ts` aan, dan sluit een derde, even zware WhatsApp-knop aan (nu uit). Layout `row` (naast elkaar zodra beide passen, anders onder elkaar) of `stack` (drawer). Gebruikt in hero, contactband, mobiel menu en (gestapeld) op de contactpagina. Bron: `src/Components/ContactButtons/ContactButtons.tsx`.
+Twee even grote, even zware okerknoppen voor bellen en mailen, altijd samen, met nummer en e-mailadres zichtbaar. Geen WhatsApp (PO, 29-10-2026). Layout `row` (naast elkaar zodra beide passen, anders onder elkaar) of `stack` (drawer). Gebruikt in hero, contactband, mobiel menu en (gestapeld) op de contactpagina. Bron: `src/Components/ContactButtons/ContactButtons.tsx`.
 
 ### Cards / Containers
 - **Dienstkaart:** geen kaart: een fotoplaceholder, h3 en body2 direct op het gebroken wit.

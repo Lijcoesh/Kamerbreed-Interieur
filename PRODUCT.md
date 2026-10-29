@@ -41,7 +41,7 @@ Eén vakman die alles zelf doet. Hij komt bij de klant thuis, adviseert, en legt
 ## Capabilities and Constraints
 
 - Pagina's: Home, Over mij, Contact. (Projecten weggehaald op 28-10-2026: de PO heeft geen projectfoto's.) Diensten staan op Home, er is geen aparte dienstenpagina. "Over mij" omdat hij alleen werkt.
-- Contact: telefoon 06-22243488 en info@kamerbreedinterieur.nl. Of WhatsApp erbij komt, is nog open (de knop staat klaar, maar uit).
+- Contact: telefoon 06-22243488 en info@kamerbreedinterieur.nl. Geen WhatsApp (PO, 29-10-2026).
 - Contactformulier op de contactpagina (besloten 13-10-2026): naam, e-mail en/of telefoon, bericht. Verzenden gaat straks via een eigen backend in `/server` (eigen VPS, e-mail via Brevo); die is nog niet gebouwd. Door het formulier is een privacyverklaring nodig.
 - Instagram: alleen als link, geen ingesloten feed (die zou scripts van Meta laden).
 - Het woonadres staat niet op de site, tenzij de wet het vereist (open, zie Gesprek-PO.md).
