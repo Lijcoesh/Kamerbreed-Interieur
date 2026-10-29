@@ -50,7 +50,7 @@ Dingen die makkelijk vergeten worden maar juridisch, ethisch of qua toegankelijk
 _Noteer hier tijdens het werk punten die vóór oplevering nog geregeld moeten worden. Leeg = niets bekend, niet = alles gedaan; loop de lijst hierboven altijd volledig na._
 
 - Teksten van de PO staan op de site (28-10-2026); typfouten verbeterd en overal "u/uw" (29-10-2026, besluit van de gebruiker; de PO had in `Gesprek-PO.md`, vraag 10, "je" goedgekeurd, dus even melden). Nog lorem: het bevestigingsbericht van het formulier.
-- Adres: Schubertstraat 13, 2671 TA Naaldwijk staat sinds 29-10-2026 alleen in de footer (art. 3:15d BW), op besluit van de gebruiker; de PO wilde het eerst nergens tonen. Het adres komt uit openbare bronnen (BD Line, Telefoonboek): laten bevestigen dat het klopt en dat hij ermee akkoord is.
+- Adres: Schubertstraat 13, 2671 TA Naaldwijk staat alleen in de footer (art. 3:15d BW). De PO heeft het adres en de keuze bevestigd (29-10-2026).
 - KvK-nummer 27067893 en rechtsvorm vof bevestigd (29-10-2026). Btw-nummer staat erin (28-10-2026); het * achter het nummer in zijn document is opmaak en hoeft niet bij het nummer (29-10-2026).
 - Instagram alleen als gewone link, geen ingesloten feed of embed (die laadt scripts van Meta, en dan zijn cookieconsent en een privacyverklaring nodig).
 - Sfeerbeelden van de PO (28-10-2026) op Home en bij de diensten: allemaal gemaakt met ChatGPT, commercieel gebruik toegestaan volgens de opdrachtgever (29-10-2026; herkomst vastgelegd in `src/Resources/README.md`). Zuiver AI-beelden zijn waarschijnlijk niet auteursrechtelijk beschermd en OpenAI garandeert geen vrijheid van rechten van derden. Nog nagaan: of een AI-label nodig is (AI Act art. 50). Niet presenteren als zijn werk.

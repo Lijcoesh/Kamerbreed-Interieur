@@ -23,7 +23,7 @@ Op volgorde. Vragen voor de PO staan in `Gesprek-PO.md` ("Nog open"), juridische
 ## Zodra de PO iets aanlevert
 - [x] Opmaakwensen van de PO (28-10-2026): appbar groter (100px) en iets donkerder dan de achtergrond, logo groter in appbar en footer met "Jeroen van der Eijk" onder de bedrijfsnaam
 - [x] Typfouten en u/uw in zijn teksten (29-10-2026; "u" was zijn keuze)
-- [ ] Bedrijfsgegevens in de footer (`src/Config/company.ts`: btw, Instagram-URL; het adres staat erin (bron: openbare gegevens, PO laten bevestigen))
+- [x] Bedrijfsgegevens in de footer (`src/Config/company.ts`: btw, Instagram-URL, adres; adres bevestigd door de PO, 29-10-2026)
 
 ## Livegang
 

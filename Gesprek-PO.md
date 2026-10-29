@@ -58,11 +58,11 @@ Domein en hosting lopen via Mijndomein. Daar staat nu de WordPress-pagina "Websi
 
 Vragen voor een volgend contact (bellen of appen is genoeg).
 
-1. ★ **Adres.** Hij wil zijn adres niet op de site. Een zakelijke website moet volgens de wet waarschijnlijk wel het vestigingsadres noemen (art. 3:15d BW). Het adres staat bovendien al openbaar bij de KvK, BD Line en Telefoonboek. Ik laat hem kiezen tussen:
+1. ~~★ **Adres.**~~ Bevestigd door de PO (29-10-2026): het adres staat klein in de footer. Hij wil zijn adres niet op de site. Een zakelijke website moet volgens de wet waarschijnlijk wel het vestigingsadres noemen (art. 3:15d BW). Het adres staat bovendien al openbaar bij de KvK, BD Line en Telefoonboek. Ik laat hem kiezen tussen:
    - het adres alleen in de footer, bij de bedrijfsgegevens, zonder "showroom" of "kom langs";
    - zelf navragen of het zonder adres mag, bijvoorbeeld bij de KvK of zijn boekhouder.
 
-   _Adres alleen klein in de footer bij KvK- en btw-nummer._ Herzien 29-10-2026: het adres staat toch klein in de footer, omdat art. 3:15d BW waarschijnlijk een vestigingsadres vraagt. Het is zijn woonadres: laten bevestigen dat hij hiermee akkoord is.
+   _Adres alleen klein in de footer bij KvK- en btw-nummer._ Herzien 29-10-2026: het adres staat toch klein in de footer, omdat art. 3:15d BW waarschijnlijk een vestigingsadres vraagt. Het is zijn woonadres. Bevestigd door de PO (29-10-2026).
 2. ★ **KvK en btw.** ~~Klopt KvK-nummer 27067893?~~ Ja, en het is een vof (29-10-2026). ~~Wat is het btw-nummer?~~ NL803473655B01 (28-10-2026; het * in zijn document is opmaak, 29-10-2026)
 3. ★ **Contact.** Hoe wil hij benaderd worden: bellen, mailen, WhatsApp? Staat WhatsApp op het 06-nummer? _Knoppen voor bellen, mailen en WhatsApp, geen contactformulier. Bij een formulier worden berichten opgeslagen en is een privacyverklaring nodig._
 4. ★ **Instagram.** ~~Wat is de accountnaam of link?~~ kamer.breed.interieur (28-10-2026), als link in de footer. _Alleen een link met icoon (in de footer en op Contact), geen ingesloten feed. Een feed laadt scripts van Meta, en dan zijn een cookiebanner en privacyverklaring nodig._
