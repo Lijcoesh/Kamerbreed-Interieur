@@ -26,6 +26,12 @@ jobs:
             - run: npm run lint
             - run: npm run build
 
+            - uses: actions/setup-dotnet@v4
+              with:
+                  dotnet-version: 10.0.x
+            - run: dotnet test server --configuration Release
+            - run: dotnet publish server/Kamerbreed.API.csproj --configuration Release --output publish/api
+
             - name: Set up SSH
               run: |
                   mkdir -p ~/.ssh
@@ -33,5 +39,10 @@ jobs:
                   chmod 600 ~/.ssh/id_ed25519
                   echo "${{ secrets.VPS_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
 
-            - name: Upload site
-              run: rsync -az --delete --chmod=D755,F644 dist/ deploy@${{ secrets.VPS_HOST }}:/var/www/kamerbreed/
+            - name: Upload site and API
+              run: |
+                  rsync -az --delete --chmod=D755,F644 dist/ deploy@${{ secrets.VPS_HOST }}:/var/www/kamerbreed/site/
+                  rsync -az --delete --chmod=D755,F644 publish/api/ deploy@${{ secrets.VPS_HOST }}:/var/www/kamerbreed/api/
+
+            - name: Restart API
+              run: ssh deploy@${{ secrets.VPS_HOST }} sudo systemctl restart kamerbreed-api

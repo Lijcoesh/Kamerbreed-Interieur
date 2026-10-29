@@ -14,7 +14,9 @@ Op volgorde. Vragen voor de PO staan in `Gesprek-PO.md` ("Nog open"), juridische
 - [x] ~~Projecten: per soort een sectie met snelmenu (`/projecten#pvc`), placeholders uit `src/Config/projects.ts`. Een project met meer diensten staat onder elke soort, met "Ook: …" eronder.~~ Weggehaald op 28-10-2026: de PO heeft geen projectfoto's.
 - [x] Over mij: alleen de intro (portret, verhaal, bellen en mailen). "Hoe ik werk", "Wat ik doe" en de contactband zijn eraf gehaald (13-10-2026).
 - [x] Contact: bellen en mailen, contactformulier (verstuurt nog niet), werkgebied, bedrijfsgegevens. De WhatsApp-knop staat klaar: aanzetten met `whatsappNumber` in `src/Config/company.ts` zodra de PO bevestigt.
-- [ ] Backend in `/server` voor het contactformulier: .NET volgens de conventies van `F:/Development/UpNext/UpNext.API`, e-mail via Brevo, eigen VPS. Command met dezelfde velden en grenzen als `src/Helpers/validateContactMessage.ts` (of ruimer), een gevulde honeypot `website` stil negeren, rate limiting (429), CORS voor het domein. Daarna `contactEndpoint` in `src/Config/api.ts` invullen.
+- [x] Backend in `server/` voor het contactformulier (29-10-2026): opzet van WaterZacht, `POST /api/contact-messages`, mail via Brevo, honeypot, rate limiting. Geen CORS nodig: Caddy serveert site en API op hetzelfde adres.
+- [ ] API op de VPS zetten: `deploy/README.md`, "Eenmalig instellen". Stap 1, 3, 4 gedaan (29-10-2026); stap 2 (`api.env`, test met `lucanoort@gmail.com` als afzender en ontvanger) **vóór** de push naar `main`.
+- [ ] Formulier testen op de VPS: komt de mail binnen, werkt antwoorden (reply-to)?
 - [x] Privacyverklaring: opbouw met koppen volgens de AVG en lorem, inhoudsopgave, link in de footer en vanuit het formulier
 - [x] Echte tekst voor de privacyverklaring (concept, 29-10-2026)
 - [ ] Privacyverklaring laten controleren door de PO of een jurist: bewaartermijn, verwerkersovereenkomsten (launch-checklist)
@@ -29,4 +31,5 @@ Op volgorde. Vragen voor de PO staan in `Gesprek-PO.md` ("Nog open"), juridische
 
 - [ ] Domein naar de VPS laten wijzen (DNS bij Mijndomein) en in `deploy/kamerbreed.caddy` het IP vervangen door het domein, zodat Caddy HTTPS regelt; de WordPress-pagina vervalt dan. De site draait al op de VPS (`deploy/README.md`).
 - [ ] `noindex` uit `index.html` halen, meta-description en titel per pagina
+- [ ] Brevo: `kamerbreedinterieur.nl` verifiëren (DNS bij Mijndomein), afzender op dat domein in `api.env`, en `Mail__ContactMessageRecipient` uit `api.env` halen zodat de mail naar `info@kamerbreedinterieur.nl` gaat
 - [ ] Launch-checklist volledig nalopen

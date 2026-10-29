@@ -1,4 +1,4 @@
-// Wat het contactformulier verstuurt. Komt overeen met het Command van de backend in /server (nog te bouwen).
+// Wat het contactformulier verstuurt. Komt overeen met server/Commands/AddContactMessage.cs.
 export interface ContactMessage {
     name: string;
     email: string | null;

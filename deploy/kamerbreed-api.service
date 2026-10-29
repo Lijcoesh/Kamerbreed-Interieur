@@ -1,0 +1,25 @@
+# /etc/systemd/system/kamerbreed-api.service
+[Unit]
+Description=Kamerbreed API
+After=network.target
+
+[Service]
+User=kamerbreed
+WorkingDirectory=/var/www/kamerbreed/api
+ExecStart=/usr/bin/dotnet /var/www/kamerbreed/api/Kamerbreed.API.dll
+Restart=always
+RestartSec=5
+
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=ASPNETCORE_URLS=http://127.0.0.1:5082
+Environment=Api__TrustedProxyNetworks__0=127.0.0.1/32
+# Brevo__ApiKey en Brevo__SenderEmail (alleen leesbaar voor root)
+EnvironmentFile=/etc/kamerbreed/api.env
+
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
