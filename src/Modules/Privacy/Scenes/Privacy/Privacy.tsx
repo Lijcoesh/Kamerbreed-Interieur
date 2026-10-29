@@ -2,12 +2,16 @@ import { Container, Link, Typography } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
 
 import { border, ink, muted, olive } from 'src/colors';
-import { companyName, email, emailHref, phoneDisplay, phoneHref } from 'src/Config/company';
+import {
+    companyName,
+    email,
+    emailHref,
+    kvkNumber,
+    phoneDisplay,
+    phoneHref,
+} from 'src/Config/company';
 import { headerHeight, sectionSpacing, touchTarget } from 'src/Theme/sizes';
 
-// TODO: lorem ipsum onder de koppen van een privacyverklaring volgens de AVG, als voorbeeld voor de PO.
-// De echte tekst kan pas als adres, rechtsvorm, hostingpartij en bewaartermijnen bekend zijn
-// (launch-checklist, "Openstaand"); laat die door de PO of een jurist controleren.
 interface Section {
     id: string;
     title: string;
@@ -15,102 +19,75 @@ interface Section {
     list?: string[];
 }
 
+// Alleen wat de AVG (art. 13) vraagt voor het contactformulier, het enige formulier op de site.
+// Concept: de bewaartermijn en de verwerkersovereenkomsten laat de PO bevestigen (launch-checklist, "Openstaand").
 const sections: Section[] = [
     {
         id: 'wie',
         title: 'Wie is verantwoordelijk',
         paragraphs: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            `${companyName} is verantwoordelijk voor de verwerking van uw gegevens via deze website. Voor vragen over uw privacy kunt u mij bereiken via:`,
         ],
     },
     {
         id: 'gegevens',
         title: 'Welke gegevens ik verwerk',
         paragraphs: [
-            'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident:',
+            'Het contactformulier is het enige formulier op deze website. Wat u daarin invult, ontvang ik:',
+            'Deze website plaatst geen cookies, gebruikt geen analyse- of advertentiediensten en laadt geen lettertypen of andere inhoud van derden.',
         ],
         list: [
-            'Lorem ipsum dolor sit amet',
-            'Consectetur adipiscing elit',
-            'Sed do eiusmod tempor incididunt',
-            'Ut labore et dolore magna aliqua',
+            'uw naam',
+            'uw e-mailadres of telefoonnummer (één van beide is genoeg)',
+            'uw bericht',
         ],
     },
     {
         id: 'doel',
-        title: 'Waarvoor ik ze gebruik',
+        title: 'Waarvoor en op welke grond',
         paragraphs: [
-            'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
-            'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.',
-        ],
-    },
-    {
-        id: 'grondslag',
-        title: 'Op welke grond',
-        paragraphs: [
-            'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.',
+            'Ik gebruik uw gegevens alleen om te reageren op uw bericht en, als u dat wilt, een afspraak of offerte voor te bereiden. Ik gebruik ze niet voor reclame of nieuwsbrieven.',
+            'De grond is dat u zelf contact met mij opneemt: ik verwerk uw gegevens om uw verzoek te beantwoorden (art. 6 lid 1 sub b AVG).',
         ],
     },
     {
         id: 'bewaren',
         title: 'Hoe lang ik ze bewaar',
         paragraphs: [
-            'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.',
-        ],
-        list: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-            'Sed do eiusmod tempor incididunt ut labore',
-            'Ut enim ad minim veniam, quis nostrud exercitation',
+            'Is uw vraag afgehandeld en volgt er geen opdracht, dan verwijder ik uw bericht en gegevens uiterlijk zes maanden daarna.',
+            'Volgt er wel een opdracht, dan vallen de gegevens die ik daarvoor nodig heb onder mijn administratie. Die bewaar ik zo lang als de wet vereist (zeven jaar).',
         ],
     },
     {
         id: 'delen',
         title: 'Met wie ik ze deel',
         paragraphs: [
-            'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.',
-            'Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.',
+            'Ik verkoop uw gegevens niet en geef ze niet door voor andere doelen. Voor de techniek schakel ik twee partijen in, die uw gegevens alleen in mijn opdracht verwerken:',
         ],
-    },
-    {
-        id: 'cookies',
-        title: 'Cookies',
-        paragraphs: [
-            'Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.',
-        ],
-    },
-    {
-        id: 'beveiliging',
-        title: 'Beveiliging',
-        paragraphs: [
-            'Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus.',
+        list: [
+            'Brevo (Frankrijk) verstuurt het bericht van het formulier naar mijn e-mail.',
+            'TransIP (Nederland) host de server waarop de website en het formulier draaien.',
         ],
     },
     {
         id: 'rechten',
         title: 'Uw rechten',
         paragraphs: [
-            'Ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Lorem ipsum dolor sit amet, consectetur adipiscing elit:',
+            'Neem contact met mij op via de gegevens hierboven; ik reageer binnen een maand. U heeft het recht om:',
         ],
         list: [
-            'Lorem ipsum dolor sit amet',
-            'Consectetur adipiscing elit sed do',
-            'Eiusmod tempor incididunt ut labore',
-            'Et dolore magna aliqua ut enim',
-            'Ad minim veniam quis nostrud',
+            'uw gegevens in te zien',
+            'onjuiste gegevens te laten corrigeren',
+            'uw gegevens te laten verwijderen',
+            'de verwerking te laten beperken',
+            'uw gegevens in een gangbaar formaat mee te nemen',
         ],
     },
     {
         id: 'klacht',
         title: 'Een klacht indienen',
         paragraphs: [
-            'Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-        ],
-    },
-    {
-        id: 'wijzigingen',
-        title: 'Wijzigingen',
-        paragraphs: [
-            'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.',
+            'Bent u het niet eens met hoe ik met uw gegevens omga? Neem dan eerst contact met mij op. U kunt ook een klacht indienen bij de Autoriteit Persoonsgegevens (autoriteitpersoonsgegevens.nl).',
         ],
     },
 ];
@@ -212,12 +189,11 @@ export default function Privacy() {
             <div className={classes.intro}>
                 <Typography variant="h1">Privacyverklaring</Typography>
                 <Typography variant="body1" className={classes.lead}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco laboris.
+                    Als u mij via het contactformulier een bericht stuurt, verwerk ik uw gegevens.
+                    Hieronder leest u welke, waarom en hoe lang.
                 </Typography>
                 <Typography variant="body2" color="textSecondary" className={classes.note}>
-                    Concept. Laatst bijgewerkt: datum volgt.
+                    Laatst bijgewerkt: 29 oktober 2026.
                 </Typography>
             </div>
 
@@ -275,6 +251,8 @@ export default function Privacy() {
                                 <Link href={phoneHref}>{phoneDisplay}</Link>
                                 <br />
                                 <Link href={emailHref}>{email}</Link>
+                                <br />
+                                KvK {kvkNumber}
                             </Typography>
                         )}
                     </section>
