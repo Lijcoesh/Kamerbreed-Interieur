@@ -54,7 +54,8 @@ const sections: Section[] = [
         id: 'bewaren',
         title: 'Hoe lang ik ze bewaar',
         paragraphs: [
-            'Is uw vraag afgehandeld en volgt er geen opdracht, dan verwijder ik uw bericht en gegevens uiterlijk zes maanden daarna.',
+            'De website slaat uw bericht niet op. Het formulier stuurt het door als e-mail, die bij mij in de mailbox terechtkomt.',
+            'Is uw vraag afgehandeld en volgt er geen opdracht, dan bewaar ik die e-mail niet langer dan nodig is om uw vraag af te handelen.',
             'Volgt er wel een opdracht, dan vallen de gegevens die ik daarvoor nodig heb onder mijn administratie. Die bewaar ik zo lang als de wet vereist (zeven jaar).',
         ],
     },
