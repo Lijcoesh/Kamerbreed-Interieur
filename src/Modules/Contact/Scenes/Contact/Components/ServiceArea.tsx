@@ -25,7 +25,7 @@ export default function ServiceArea() {
     return (
         <>
             <Typography variant="body1" className={classes.intro}>
-                Ik kom bij je thuis in het {region}:
+                Ik kom bij u thuis in het {region}:
             </Typography>
             <ul className={classes.list}>
                 {serviceArea.map(place => (

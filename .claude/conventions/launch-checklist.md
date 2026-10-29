@@ -49,7 +49,7 @@ Dingen die makkelijk vergeten worden maar juridisch, ethisch of qua toegankelijk
 
 _Noteer hier tijdens het werk punten die vóór oplevering nog geregeld moeten worden. Leeg = niets bekend, niet = alles gedaan; loop de lijst hierboven altijd volledig na._
 
-- Teksten van de PO staan op de site (28-10-2026); typfouten verbeterd en overal "je" (29-10-2026, op zijn akkoord, `Gesprek-PO.md`, vraag 10). Nog lorem: het bevestigingsbericht van het formulier en de privacyverklaring.
+- Teksten van de PO staan op de site (28-10-2026); typfouten verbeterd en overal "u/uw" (29-10-2026, besluit van de gebruiker; de PO had in `Gesprek-PO.md`, vraag 10, "je" goedgekeurd, dus even melden). Nog lorem: het bevestigingsbericht van het formulier en de privacyverklaring.
 - Adres: de PO wil zijn (woon)adres niet op de site, maar art. 3:15d BW vraagt waarschijnlijk wel het vestigingsadres. De beslissing ligt bij de PO (`Gesprek-PO.md`, "Nog open").
 - KvK-nummer bevestigen. Btw-nummer staat erin (28-10-2026); vragen waarom er in zijn document een * achter stond.
 - Instagram alleen als gewone link, geen ingesloten feed of embed (die laadt scripts van Meta, en dan zijn cookieconsent en een privacyverklaring nodig).

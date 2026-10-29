@@ -52,7 +52,7 @@ export default function HomeHero() {
                     Een mooi interieur begint bij de juiste basis. Bij Kamerbreed Interieur draait
                     alles om sfeer, kwaliteit en persoonlijke aandacht. Met bijna 30 jaar ervaring
                     help ik graag bij het vinden van de perfecte vloer en raamdecoratie, passend bij
-                    jouw wensen en woonstijl.
+                    uw wensen en woonstijl.
                 </Typography>
                 <Typography variant="body1" className={classes.intro}>
                     Van persoonlijk advies tot vakkundige plaatsing, alles vertrouwd onder één dak.

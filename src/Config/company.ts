@@ -1,7 +1,7 @@
 // Bedrijfsgegevens. Eén plek, zodat appbar, footer en contactknoppen hetzelfde tonen.
 
 export const companyName = 'Kamerbreed Interieur';
-export const slogan = 'Thuis kiezen en je thuis voelen!';
+export const slogan = 'Thuis kiezen en u thuis voelen!';
 export const region = 'Westland';
 
 // Naam van de eigenaar, zoals de PO hem in zijn tekst voor Over mij schrijft (28-10-2026)

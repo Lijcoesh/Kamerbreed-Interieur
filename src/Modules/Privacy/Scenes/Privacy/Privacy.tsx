@@ -87,7 +87,7 @@ const sections: Section[] = [
     },
     {
         id: 'rechten',
-        title: 'Jouw rechten',
+        title: 'Uw rechten',
         paragraphs: [
             'Ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Lorem ipsum dolor sit amet, consectetur adipiscing elit:',
         ],

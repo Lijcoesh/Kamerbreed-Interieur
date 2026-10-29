@@ -65,7 +65,7 @@ export const services: Service[] = [
         name: 'Binnenzonwering',
         group: 'raambekleding',
         summary:
-            'Mooie raamdecoratie maakt je interieur helemaal compleet. Van stijlvolle plissés en sfeervolle gordijnen tot rolgordijnen, vouwgordijnen en jaloezieën. Er zijn volop mogelijkheden om jouw ramen perfect aan te laten sluiten bij je woonstijl.',
+            'Mooie raamdecoratie maakt uw interieur helemaal compleet. Van stijlvolle plissés en sfeervolle gordijnen tot rolgordijnen, vouwgordijnen en jaloezieën. Er zijn volop mogelijkheden om uw ramen perfect aan te laten sluiten bij uw woonstijl.',
         photo: {
             src: binnenzonweringPhoto,
             alt: 'Woonkamer met donkerblauwe plissés voor drie grote ramen',

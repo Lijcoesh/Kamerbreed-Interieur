@@ -23,9 +23,9 @@ export function validateContactMessage(input: ContactMessage): ContactErrors {
     const message = input.message.trim();
 
     if (!name) {
-        errors.name = 'Vul je naam in.';
+        errors.name = 'Vul uw naam in.';
     } else if (name.length > contactLimits.name) {
-        errors.name = `Je naam mag maximaal ${contactLimits.name} tekens zijn.`;
+        errors.name = `Uw naam mag maximaal ${contactLimits.name} tekens zijn.`;
     }
 
     if (email && (email.length > contactLimits.email || !emailPattern.test(email))) {
@@ -48,13 +48,13 @@ export function validateContactMessage(input: ContactMessage): ContactErrors {
     }
 
     if (!email && !phone) {
-        errors.contact = 'Vul je e-mailadres of telefoonnummer in, dan kan ik reageren.';
+        errors.contact = 'Vul uw e-mailadres of telefoonnummer in, dan kan ik reageren.';
     }
 
     if (!message) {
-        errors.message = 'Schrijf kort waar je vraag over gaat.';
+        errors.message = 'Schrijf kort waar uw vraag over gaat.';
     } else if (message.length > contactLimits.message) {
-        errors.message = `Je bericht mag maximaal ${contactLimits.message} tekens zijn.`;
+        errors.message = `Uw bericht mag maximaal ${contactLimits.message} tekens zijn.`;
     }
 
     return errors;

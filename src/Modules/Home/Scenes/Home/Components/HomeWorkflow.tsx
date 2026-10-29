@@ -18,7 +18,7 @@ const steps = [
     },
     {
         title: 'Alles in eigen beheer',
-        text: 'Van het eerste adviesgesprek en de offerte tot het leveren en vakkundig plaatsen: ik verzorg alles persoonlijk. Zo heb je van begin tot eind één vertrouwd aanspreekpunt.',
+        text: 'Van het eerste adviesgesprek en de offerte tot het leveren en vakkundig plaatsen: ik verzorg alles persoonlijk. Zo heeft u van begin tot eind één vertrouwd aanspreekpunt.',
     },
 ];
 

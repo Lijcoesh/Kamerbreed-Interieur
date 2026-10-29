@@ -64,7 +64,7 @@ export default function AboutIntro() {
                 </Typography>
                 <Typography variant="body1" className={classes.body}>
                     De liefde voor het vak is mij met de paplepel ingegoten. Zowel mijn opa als mijn
-                    vader waren actief in de woninginrichting. Je kunt dus wel zeggen dat het
+                    vader waren actief in de woninginrichting. U kunt dus wel zeggen dat het
                     vakmanschap al drie generaties in de familie zit.
                 </Typography>
                 <Typography variant="body1" className={classes.body}>

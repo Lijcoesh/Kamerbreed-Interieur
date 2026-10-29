@@ -22,7 +22,7 @@ const failureText: Record<Exclude<SendResult, 'sent'>, string> = {
     'not-connected': 'Het formulier werkt nog niet. Bel of mail me zolang direct.',
     'rate-limited':
         'Er zijn net veel berichten verstuurd. Probeer het over een paar minuten opnieuw, of bel of mail me direct.',
-    failed: 'Je bericht is niet verstuurd. Probeer het opnieuw, of bel of mail me direct.',
+    failed: 'Uw bericht is niet verstuurd. Probeer het opnieuw, of bel of mail me direct.',
 };
 
 const useStyles = makeStyles()(theme => ({
@@ -174,7 +174,7 @@ export default function ContactForm() {
         return (
             <div ref={successRef} tabIndex={-1} role="status" className={classes.success}>
                 <Typography variant="h3" component="p">
-                    Bedankt, je bericht is verstuurd.
+                    Bedankt, uw bericht is verstuurd.
                 </Typography>
                 <Typography variant="body1">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.
@@ -290,7 +290,7 @@ export default function ContactForm() {
                     {sending ? 'Bezig met versturen…' : 'Versturen'}
                 </Button>
                 <Typography variant="body2" id="contact-privacy" className={classes.privacy}>
-                    Ik gebruik je gegevens alleen om op je bericht te reageren. Lees meer in de{' '}
+                    Ik gebruik uw gegevens alleen om op uw bericht te reageren. Lees meer in de{' '}
                     <Link component={RouterLink} to="/privacy">
                         privacyverklaring
                     </Link>
