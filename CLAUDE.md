@@ -19,7 +19,7 @@ React 19 + Vite + TypeScript + MUI. Backend voor het contactformulier in `server
 - **Design**: zodra er een `PRODUCT.md` (doelgroep, positie, principes) en `DESIGN.md` (visueel systeem) zijn, zijn die leidend voor UI-werk. Wijzig je tokens of componentstijl, werk DESIGN.md mee bij.
 - **Structuur & naming**: zie @.claude/conventions/structure.md
 - **Backend (`server/`)**: Controllers → Services + Validators, Commands met validatie-attributen, rate limiting, geen database. Zie @.claude/conventions/server.md
-- **TODO.md**: het werk in de volgorde waarin het af moet. Zet nieuw werk op de plek waar het in die volgorde hoort, en vink af of verwijder wat klaar is. Juridische en inhoudelijke details blijven in de launch-checklist. Vragen en beslissingen voor de PO gaan in `Gesprek-PO.md`.
+- **TODO.md**: het werk in de volgorde waarin het af moet. Zet nieuw werk op de plek waar het in die volgorde hoort, en verwijder wat klaar is (niet afvinken, de lijst moet kort blijven). Juridische en inhoudelijke details blijven in de launch-checklist. Vragen en beslissingen voor de PO gaan in `Gesprek-PO.md`.
 - **Teksten**: teksten van de PO 1 op 1 overnemen, ook typfouten; verbeteringen als vraag in `Gesprek-PO.md`. Aanspreekvorm overal "u/uw", nooit "je/jij/jouw" (besloten 29-10-2026). Geen eigen teksten verzinnen: waar de PO geen tekst geeft, komt er geen. Hetzelfde voor beeld: alleen afbeeldingen van de PO, geen stockfoto's; waar hij niets stuurt, staat de placeholder.
 - **Commits**: subject begint met een werkwoord in de gebiedende wijs, Engels, geen punt.
   `Add hero section`, `Fix avatar overflow`, `Move colors to src/colors.ts` — niet `Added ...` / `hero section`.
