@@ -15,8 +15,8 @@ Op volgorde. Vragen voor de PO staan in `Gesprek-PO.md` ("Nog open"), juridische
 - [x] Over mij: alleen de intro (portret, verhaal, bellen en mailen). "Hoe ik werk", "Wat ik doe" en de contactband zijn eraf gehaald (13-10-2026).
 - [x] Contact: bellen en mailen, contactformulier (verstuurt nog niet), werkgebied, bedrijfsgegevens. De WhatsApp-knop staat klaar: aanzetten met `whatsappNumber` in `src/Config/company.ts` zodra de PO bevestigt.
 - [x] Backend in `server/` voor het contactformulier (29-10-2026): opzet van WaterZacht, `POST /api/contact-messages`, mail via Brevo, honeypot, rate limiting. Geen CORS nodig: Caddy serveert site en API op hetzelfde adres.
-- [ ] API op de VPS zetten: `deploy/README.md`, "Eenmalig instellen". Stap 1, 3, 4 gedaan (29-10-2026); stap 2 (`api.env`, test met `lucanoort@gmail.com` als afzender en ontvanger) **vóór** de push naar `main`.
-- [ ] Formulier testen op de VPS: komt de mail binnen, werkt antwoorden (reply-to)?
+- [x] API op de VPS zetten: `deploy/README.md`, "Eenmalig instellen" (stap 1 t/m 4, 29-10-2026)
+- [x] Formulier testen op de VPS: mail verstuurd (29-10-2026), komt hij binnen en werkt antwoorden (reply-to)?
 - [x] Privacyverklaring: opbouw met koppen volgens de AVG en lorem, inhoudsopgave, link in de footer en vanuit het formulier
 - [x] Echte tekst voor de privacyverklaring (concept, 29-10-2026)
 - [ ] Privacyverklaring laten controleren door de PO of een jurist: bewaartermijn, verwerkersovereenkomsten (launch-checklist)
